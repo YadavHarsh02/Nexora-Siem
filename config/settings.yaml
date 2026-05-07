@@ -1,0 +1,16 @@
+app:
+  name: mini-siem
+  debug: true
+
+paths:
+  raw_logs: data/raw/
+  parsed_logs: data/parsed/
+  labeled_logs: data/labeled/
+
+thresholds:
+  brute_force_attempts: 5
+  correlation_window_minutes: 10
+
+notifications:
+  slack_enabled: false
+  telegram_enabled: false
