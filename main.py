@@ -24,13 +24,13 @@ def main():
 
     print("\n1. Collect Logs")
     print("2. Parse Logs")
-    print("3. Run Detection Engine")
+    print("3. Run Detection + Correlation")
 
     choice = input("\nSelect mode: ")
 
     collector = FileCollector()
 
-    # LOG COLLECTION
+    # COLLECT LOGS
     if choice == "1":
 
         collected_file = collector.collect_batch()
@@ -38,7 +38,7 @@ def main():
         if collected_file:
             print(f"[SUCCESS] Collected file: {collected_file}")
 
-    # LOG PARSING
+    # PARSE LOGS
     elif choice == "2":
 
         latest_log = get_latest_log()
@@ -57,7 +57,7 @@ def main():
 
         parser.save_parsed_logs(output_file)
 
-    # DETECTION ENGINE
+    # DETECTION + CORRELATION
     elif choice == "3":
 
         detection_engine = DetectionEngine(
@@ -66,9 +66,13 @@ def main():
 
         if detection_engine.load_events():
 
-            alerts = detection_engine.run_detection()
+            detection_engine.run_detection()
+
+            detection_engine.run_correlation()
 
             detection_engine.display_alerts()
+
+            detection_engine.display_attack_chains()
 
     else:
         print("[ERROR] Invalid option")

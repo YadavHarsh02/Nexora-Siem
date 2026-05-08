@@ -32,10 +32,9 @@ class AuthLogParser:
 
         # SUDO COMMAND
         sudo_pattern = re.search(
-            r"(\w+\s+\d+\s+\d+:\d+:\d+).*sudo\[\d+\]:\s+(\w+)",
+            r"(\w+\s+\d+\s+\d+:\d+:\d+).*sudo\[\d+\]:\s+(\w+)\s+:",
             line
-        )
-
+         )
         # AUTHENTICATION FAILURE
         auth_fail_pattern = re.search(
             r"(\w+\s+\d+\s+\d+:\d+:\d+).*authentication failure",

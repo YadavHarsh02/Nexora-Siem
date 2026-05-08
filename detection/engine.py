@@ -2,6 +2,8 @@ import json
 import os
 
 from detection.rules import DetectionRules
+from detection.correlation import AlertCorrelationEngine
+from mitre.mapper import MitreMapper
 
 
 class DetectionEngine:
@@ -11,6 +13,9 @@ class DetectionEngine:
         self.parsed_log_file = parsed_log_file
         self.events = []
         self.alerts = []
+        self.attack_chains = []
+
+        self.mitre_mapper = MitreMapper()
 
     def load_events(self):
 
@@ -29,9 +34,29 @@ class DetectionEngine:
 
         rules = DetectionRules(self.events)
 
-        self.alerts = rules.run_all_rules()
+        raw_alerts = rules.run_all_rules()
+
+        self.alerts = [
+            self.mitre_mapper.enrich_alert(alert)
+            for alert in raw_alerts
+        ]
 
         return self.alerts
+
+    def run_correlation(self):
+
+        correlation_engine = AlertCorrelationEngine(
+            self.events
+        )
+
+        raw_chains = correlation_engine.run_correlation()
+
+        self.attack_chains = [
+            self.mitre_mapper.enrich_alert(chain)
+            for chain in raw_chains
+        ]
+
+        return self.attack_chains
 
     def display_alerts(self):
 
@@ -49,4 +74,43 @@ class DetectionEngine:
             print(f"\nAlert #{index}")
 
             for key, value in alert.items():
-                print(f"{key}: {value}")
+
+                if key == "mitre_attack":
+
+                    print("MITRE ATT&CK:")
+
+                    for mk, mv in value.items():
+                        print(f"   {mk}: {mv}")
+
+                else:
+                    print(f"{key}: {value}")
+
+    def display_attack_chains(self):
+
+        if not self.attack_chains:
+
+            print("\n[INFO] No attack chains detected")
+            return
+
+        print("\n" + "=" * 50)
+        print(" CORRELATED INCIDENTS ")
+        print("=" * 50)
+
+        for index, chain in enumerate(
+            self.attack_chains,
+            start=1
+        ):
+
+            print(f"\nIncident #{index}")
+
+            for key, value in chain.items():
+
+                if key == "mitre_attack":
+
+                    print("MITRE ATT&CK:")
+
+                    for mk, mv in value.items():
+                        print(f"   {mk}: {mv}")
+
+                else:
+                    print(f"{key}: {value}")
