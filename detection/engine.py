@@ -5,15 +5,21 @@ from detection.rules import DetectionRules
 from detection.correlation import AlertCorrelationEngine
 from mitre.mapper import MitreMapper
 
+from ml.features import FeatureExtractor
+from ml.model import ThreatClassifier
+
 
 class DetectionEngine:
 
     def __init__(self, parsed_log_file):
 
         self.parsed_log_file = parsed_log_file
+
         self.events = []
         self.alerts = []
         self.attack_chains = []
+
+        self.ml_result = None
 
         self.mitre_mapper = MitreMapper()
 
@@ -58,6 +64,24 @@ class DetectionEngine:
 
         return self.attack_chains
 
+    def run_ml_analysis(self):
+
+        extractor = FeatureExtractor(
+            self.events
+        )
+
+        features = extractor.extract_features()
+
+        classifier = ThreatClassifier()
+
+        classifier.train_model()
+
+        self.ml_result = (
+            classifier.predict_threat(features)
+        )
+
+        return self.ml_result
+
     def display_alerts(self):
 
         if not self.alerts:
@@ -69,7 +93,10 @@ class DetectionEngine:
         print(" DETECTED ALERTS ")
         print("=" * 50)
 
-        for index, alert in enumerate(self.alerts, start=1):
+        for index, alert in enumerate(
+            self.alerts,
+            start=1
+        ):
 
             print(f"\nAlert #{index}")
 
@@ -80,9 +107,11 @@ class DetectionEngine:
                     print("MITRE ATT&CK:")
 
                     for mk, mv in value.items():
+
                         print(f"   {mk}: {mv}")
 
                 else:
+
                     print(f"{key}: {value}")
 
     def display_attack_chains(self):
@@ -110,7 +139,22 @@ class DetectionEngine:
                     print("MITRE ATT&CK:")
 
                     for mk, mv in value.items():
+
                         print(f"   {mk}: {mv}")
 
                 else:
+
                     print(f"{key}: {value}")
+
+    def display_ml_result(self):
+
+        if not self.ml_result:
+            return
+
+        print("\n" + "=" * 50)
+        print(" ML THREAT ANALYSIS ")
+        print("=" * 50)
+
+        for key, value in self.ml_result.items():
+
+            print(f"{key}: {value}")

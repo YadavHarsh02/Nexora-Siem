@@ -1,3 +1,5 @@
+from alerts.generator import AlertGenerator
+
 import os
 import glob
 
@@ -24,7 +26,7 @@ def main():
 
     print("\n1. Collect Logs")
     print("2. Parse Logs")
-    print("3. Run Detection + Correlation")
+    print("3. Run Detection + Correlation + ML")
 
     choice = input("\nSelect mode: ")
 
@@ -36,7 +38,11 @@ def main():
         collected_file = collector.collect_batch()
 
         if collected_file:
-            print(f"[SUCCESS] Collected file: {collected_file}")
+
+            print(
+                f"[SUCCESS] Collected file: "
+                f"{collected_file}"
+            )
 
     # PARSE LOGS
     elif choice == "2":
@@ -44,20 +50,28 @@ def main():
         latest_log = get_latest_log()
 
         if not latest_log:
+
             print("[ERROR] No raw logs found")
             return
 
         parser = AuthLogParser()
 
-        parsed_logs = parser.parse_file(latest_log)
+        parsed_logs = parser.parse_file(
+            latest_log
+        )
 
-        print(f"[INFO] Parsed events: {len(parsed_logs)}")
+        print(
+            f"[INFO] Parsed events: "
+            f"{len(parsed_logs)}"
+        )
 
-        output_file = "data/parsed/parsed_logs.json"
+        output_file = (
+            "data/parsed/parsed_logs.json"
+        )
 
         parser.save_parsed_logs(output_file)
 
-    # DETECTION + CORRELATION
+    # DETECTION + CORRELATION + ML
     elif choice == "3":
 
         detection_engine = DetectionEngine(
@@ -70,13 +84,28 @@ def main():
 
             detection_engine.run_correlation()
 
+            detection_engine.run_ml_analysis()
+
             detection_engine.display_alerts()
 
             detection_engine.display_attack_chains()
 
+            detection_engine.display_ml_result()
+
+            # SAVE DASHBOARD DATA
+            generator = AlertGenerator(
+                detection_engine.alerts,
+                detection_engine.attack_chains,
+                detection_engine.ml_result
+            )
+
+            generator.save_dashboard_data()
+
     else:
+
         print("[ERROR] Invalid option")
 
 
 if __name__ == "__main__":
+
     main()

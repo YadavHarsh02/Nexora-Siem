@@ -1,0 +1,20 @@
+{
+    "alerts": [
+        {
+            "alert_type": "sudo_activity",
+            "severity": "LOW",
+            "username": "harsh",
+            "description": "Sudo command execution detected",
+            "mitre_attack": {
+                "technique_id": "T1548",
+                "technique": "Abuse Elevation Control Mechanism",
+                "tactic": "Privilege Escalation"
+            }
+        }
+    ],
+    "attack_chains": [],
+    "ml_analysis": {
+        "prediction": "benign",
+        "confidence": 1.76
+    }
+}
