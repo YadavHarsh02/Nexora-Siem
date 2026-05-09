@@ -1,64 +1,124 @@
 import json
 import os
 
-from detection.rules import DetectionRules
-from detection.correlation import AlertCorrelationEngine
-from mitre.mapper import MitreMapper
+from detection.rules import (
+    DetectionRules
+)
 
-from ml.features import FeatureExtractor
-from ml.model import ThreatClassifier
+from detection.correlation import (
+    AlertCorrelationEngine
+)
+
+from mitre.mapper import (
+    MitreMapper
+)
+
+from ml.features import (
+    FeatureExtractor
+)
+
+from ml.model import (
+    ThreatClassifier
+)
+
+from alerts.prioritizer import (
+    AlertPrioritizer
+)
 
 
 class DetectionEngine:
 
     def __init__(self, parsed_log_file):
 
-        self.parsed_log_file = parsed_log_file
+        self.parsed_log_file = (
+            parsed_log_file
+        )
 
         self.events = []
+
         self.alerts = []
+
         self.attack_chains = []
 
         self.ml_result = None
 
-        self.mitre_mapper = MitreMapper()
+        self.mitre_mapper = (
+            MitreMapper()
+        )
+
+        self.prioritizer = (
+            AlertPrioritizer()
+        )
 
     def load_events(self):
 
-        if not os.path.exists(self.parsed_log_file):
+        if not os.path.exists(
+            self.parsed_log_file
+        ):
 
-            print("[ERROR] Parsed log file not found")
+            print(
+                "[ERROR] Parsed log file "
+                "not found"
+            )
+
             return False
 
-        with open(self.parsed_log_file, "r") as file:
+        with open(
+            self.parsed_log_file,
+            "r"
+        ) as file:
 
-            self.events = json.load(file)
+            self.events = json.load(
+                file
+            )
 
         return True
 
     def run_detection(self):
 
-        rules = DetectionRules(self.events)
+        rules = DetectionRules(
+            self.events
+        )
 
-        raw_alerts = rules.run_all_rules()
+        raw_alerts = (
+            rules.run_all_rules()
+        )
 
-        self.alerts = [
-            self.mitre_mapper.enrich_alert(alert)
+        enriched_alerts = [
+
+            self.mitre_mapper
+            .enrich_alert(alert)
+
             for alert in raw_alerts
         ]
+
+        self.alerts = (
+            self.prioritizer
+            .prioritize_alerts(
+                enriched_alerts
+            )
+        )
 
         return self.alerts
 
     def run_correlation(self):
 
-        correlation_engine = AlertCorrelationEngine(
-            self.events
+        correlation_engine = (
+            AlertCorrelationEngine(
+                self.events
+            )
         )
 
-        raw_chains = correlation_engine.run_correlation()
+        raw_chains = (
+            correlation_engine
+            .run_correlation()
+        )
 
         self.attack_chains = [
-            self.mitre_mapper.enrich_alert(chain)
+
+            self.mitre_mapper
+            .enrich_alert(chain)
+
             for chain in raw_chains
         ]
 
@@ -66,18 +126,26 @@ class DetectionEngine:
 
     def run_ml_analysis(self):
 
-        extractor = FeatureExtractor(
-            self.events
+        extractor = (
+            FeatureExtractor(
+                self.events
+            )
         )
 
-        features = extractor.extract_features()
+        features = (
+            extractor.extract_features()
+        )
 
-        classifier = ThreatClassifier()
+        classifier = (
+            ThreatClassifier()
+        )
 
         classifier.train_model()
 
         self.ml_result = (
-            classifier.predict_threat(features)
+            classifier.predict_threat(
+                features
+            )
         )
 
         return self.ml_result
@@ -86,11 +154,16 @@ class DetectionEngine:
 
         if not self.alerts:
 
-            print("[INFO] No alerts detected")
+            print(
+                "[INFO] No alerts detected"
+            )
+
             return
 
         print("\n" + "=" * 50)
+
         print(" DETECTED ALERTS ")
+
         print("=" * 50)
 
         for index, alert in enumerate(
@@ -100,29 +173,47 @@ class DetectionEngine:
 
             print(f"\nAlert #{index}")
 
-            for key, value in alert.items():
+            for key, value in (
+                alert.items()
+            ):
 
                 if key == "mitre_attack":
 
-                    print("MITRE ATT&CK:")
+                    print(
+                        "MITRE ATT&CK:"
+                    )
 
-                    for mk, mv in value.items():
+                    for mk, mv in (
+                        value.items()
+                    ):
 
-                        print(f"   {mk}: {mv}")
+                        print(
+                            f"   {mk}: {mv}"
+                        )
 
                 else:
 
-                    print(f"{key}: {value}")
+                    print(
+                        f"{key}: {value}"
+                    )
 
     def display_attack_chains(self):
 
         if not self.attack_chains:
 
-            print("\n[INFO] No attack chains detected")
+            print(
+                "\n[INFO] No attack "
+                "chains detected"
+            )
+
             return
 
         print("\n" + "=" * 50)
-        print(" CORRELATED INCIDENTS ")
+
+        print(
+            " CORRELATED INCIDENTS "
+        )
+
         print("=" * 50)
 
         for index, chain in enumerate(
@@ -130,31 +221,52 @@ class DetectionEngine:
             start=1
         ):
 
-            print(f"\nIncident #{index}")
+            print(
+                f"\nIncident #{index}"
+            )
 
-            for key, value in chain.items():
+            for key, value in (
+                chain.items()
+            ):
 
                 if key == "mitre_attack":
 
-                    print("MITRE ATT&CK:")
+                    print(
+                        "MITRE ATT&CK:"
+                    )
 
-                    for mk, mv in value.items():
+                    for mk, mv in (
+                        value.items()
+                    ):
 
-                        print(f"   {mk}: {mv}")
+                        print(
+                            f"   {mk}: {mv}"
+                        )
 
                 else:
 
-                    print(f"{key}: {value}")
+                    print(
+                        f"{key}: {value}"
+                    )
 
     def display_ml_result(self):
 
         if not self.ml_result:
+
             return
 
         print("\n" + "=" * 50)
-        print(" ML THREAT ANALYSIS ")
+
+        print(
+            " ML THREAT ANALYSIS "
+        )
+
         print("=" * 50)
 
-        for key, value in self.ml_result.items():
+        for key, value in (
+            self.ml_result.items()
+        ):
 
-            print(f"{key}: {value}")
+            print(
+                f"{key}: {value}"
+            )

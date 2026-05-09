@@ -1,7 +1,13 @@
 import json
 import os
 
-from alerts.notifier import TelegramNotifier
+from alerts.notifier import (
+    TelegramNotifier
+)
+
+from database.db import (
+    ElasticsearchConnector
+)
 
 
 class AlertGenerator:
@@ -15,15 +21,23 @@ class AlertGenerator:
 
         self.alerts = alerts
 
-        self.attack_chains = attack_chains
+        self.attack_chains = (
+            attack_chains
+        )
 
-        self.ml_result = ml_result
+        self.ml_result = (
+            ml_result
+        )
 
-        self.notifier = TelegramNotifier()
+        self.notifier = (
+            TelegramNotifier()
+        )
 
-    def save_dashboard_data(self):
+        self.db = (
+            ElasticsearchConnector()
+        )
 
-        # SEND TELEGRAM ALERTS
+    def send_telegram_alerts(self):
 
         for alert in self.alerts:
 
@@ -32,14 +46,28 @@ class AlertGenerator:
                 "LOW"
             )
 
-            if severity in ["HIGH", "MEDIUM","LOW"]:
+            if severity in [
+                "HIGH",
+                "MEDIUM",
+                "LOW"
+            ]:
 
                 message = (
+
                     f"🚨 MINI SIEM ALERT 🚨\n\n"
+
                     f"Type: "
                     f"{alert.get('alert_type')}\n"
+
                     f"Severity: "
                     f"{severity}\n"
+
+                    f"Priority: "
+                    f"{alert.get('priority')}\n"
+
+                    f"Risk Score: "
+                    f"{alert.get('risk_score')}\n"
+
                     f"Description: "
                     f"{alert.get('description')}"
                 )
@@ -48,9 +76,16 @@ class AlertGenerator:
                     message
                 )
 
+        print(
+            "[INFO] Telegram alerts sent"
+        )
+
+    def save_dashboard_data(self):
+
         dashboard_data = {
 
-            "alerts": self.alerts,
+            "alerts":
+                self.alerts,
 
             "attack_chains":
                 self.attack_chains,
@@ -60,7 +95,9 @@ class AlertGenerator:
         }
 
         output_file = (
-            "dashboard/static/dashboard_data.json"
+
+            "dashboard/static/"
+            "dashboard_data.json"
         )
 
         os.makedirs(
@@ -68,15 +105,36 @@ class AlertGenerator:
             exist_ok=True
         )
 
-        with open(output_file, "w") as file:
+        with open(
+            output_file,
+            "w"
+        ) as file:
 
             json.dump(
+
                 dashboard_data,
+
                 file,
+
                 indent=4
             )
 
         print(
-            f"[INFO] Dashboard data saved: "
+
+            f"[INFO] Dashboard "
+            f"data saved: "
             f"{output_file}"
+        )
+
+    def store_alerts(self):
+
+        for alert in self.alerts:
+
+            self.db.store_alert(
+                alert
+            )
+
+        print(
+            "[INFO] Alerts stored "
+            "in Elasticsearch"
         )

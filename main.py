@@ -29,6 +29,7 @@ def get_latest_log():
     )
 
     if not log_files:
+
         return None
 
     return max(
@@ -40,11 +41,15 @@ def get_latest_log():
 def main():
 
     print("=" * 50)
+
     print(" MINI SIEM STARTED ")
+
     print("=" * 50)
 
     print("\n1. Collect Logs")
+
     print("2. Parse Logs")
+
     print(
         "3. Run Detection + "
         "Correlation + ML"
@@ -56,7 +61,10 @@ def main():
 
     collector = FileCollector()
 
+    # =========================
     # COLLECT LOGS
+    # =========================
+
     if choice == "1":
 
         collected_file = (
@@ -66,35 +74,49 @@ def main():
         if collected_file:
 
             print(
-                f"[SUCCESS] Collected file: "
+
+                f"[SUCCESS] "
+                f"Collected file: "
                 f"{collected_file}"
             )
 
+    # =========================
     # PARSE LOGS
+    # =========================
+
     elif choice == "2":
 
-        latest_log = get_latest_log()
+        latest_log = (
+            get_latest_log()
+        )
 
         if not latest_log:
 
             print(
-                "[ERROR] No raw logs found"
+                "[ERROR] "
+                "No raw logs found"
             )
 
             return
 
-        parser = AuthLogParser()
+        parser = (
+            AuthLogParser()
+        )
 
-        parsed_logs = parser.parse_file(
-            latest_log
+        parsed_logs = (
+            parser.parse_file(
+                latest_log
+            )
         )
 
         print(
+
             f"[INFO] Parsed events: "
             f"{len(parsed_logs)}"
         )
 
         output_file = (
+
             "data/parsed/"
             "parsed_logs.json"
         )
@@ -103,10 +125,18 @@ def main():
             output_file
         )
 
-    # DETECTION + CORRELATION + ML
+    # =========================
+    # DETECTION PIPELINE
+    # =========================
+
     elif choice == "3":
 
-        # UPDATE LIVE THREAT FEED
+        print(
+            "\n[INFO] Updating "
+            "threat intelligence feed..."
+        )
+
+        # UPDATE THREAT FEED
 
         feed_updater = (
             ThreatFeedUpdater()
@@ -116,6 +146,7 @@ def main():
 
         detection_engine = (
             DetectionEngine(
+
                 "data/parsed/"
                 "parsed_logs.json"
             )
@@ -123,11 +154,19 @@ def main():
 
         if detection_engine.load_events():
 
+            # RUN DETECTION
+
             detection_engine.run_detection()
+
+            # RUN CORRELATION
 
             detection_engine.run_correlation()
 
+            # RUN ML ANALYSIS
+
             detection_engine.run_ml_analysis()
+
+            # DISPLAY RESULTS
 
             detection_engine.display_alerts()
 
@@ -135,19 +174,40 @@ def main():
 
             detection_engine.display_ml_result()
 
-            # SAVE DASHBOARD DATA
+            # GENERATE OUTPUTS
 
-            generator = AlertGenerator(
-                detection_engine.alerts,
-                detection_engine.attack_chains,
-                detection_engine.ml_result
+            generator = (
+                AlertGenerator(
+
+                    detection_engine.alerts,
+
+                    detection_engine.attack_chains,
+
+                    detection_engine.ml_result
+                )
             )
+
+            # SAVE DASHBOARD
 
             generator.save_dashboard_data()
 
+            # SEND TELEGRAM ALERTS
+
+            generator.send_telegram_alerts()
+
+            # STORE ALERTS
+
+            generator.store_alerts()
+
+    # =========================
+    # INVALID OPTION
+    # =========================
+
     else:
 
-        print("[ERROR] Invalid option")
+        print(
+            "[ERROR] Invalid option"
+        )
 
 
 if __name__ == "__main__":

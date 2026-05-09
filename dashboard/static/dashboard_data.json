@@ -9,12 +9,79 @@
                 "technique_id": "T1548",
                 "technique": "Abuse Elevation Control Mechanism",
                 "tactic": "Privilege Escalation"
-            }
+            },
+            "risk_score": 20,
+            "priority": "LOW"
+        },
+        {
+            "alert_type": "sudo_activity",
+            "severity": "LOW",
+            "username": "root",
+            "description": "Sudo command execution detected",
+            "mitre_attack": {
+                "technique_id": "T1548",
+                "technique": "Abuse Elevation Control Mechanism",
+                "tactic": "Privilege Escalation"
+            },
+            "risk_score": 20,
+            "priority": "LOW"
+        },
+        {
+            "alert_type": "sudo_activity",
+            "severity": "LOW",
+            "username": "root",
+            "description": "Sudo command execution detected",
+            "mitre_attack": {
+                "technique_id": "T1548",
+                "technique": "Abuse Elevation Control Mechanism",
+                "tactic": "Privilege Escalation"
+            },
+            "risk_score": 20,
+            "priority": "LOW"
+        },
+        {
+            "alert_type": "sudo_activity",
+            "severity": "LOW",
+            "username": "root",
+            "description": "Sudo command execution detected",
+            "mitre_attack": {
+                "technique_id": "T1548",
+                "technique": "Abuse Elevation Control Mechanism",
+                "tactic": "Privilege Escalation"
+            },
+            "risk_score": 20,
+            "priority": "LOW"
+        },
+        {
+            "alert_type": "sudo_activity",
+            "severity": "LOW",
+            "username": "root",
+            "description": "Sudo command execution detected",
+            "mitre_attack": {
+                "technique_id": "T1548",
+                "technique": "Abuse Elevation Control Mechanism",
+                "tactic": "Privilege Escalation"
+            },
+            "risk_score": 20,
+            "priority": "LOW"
+        },
+        {
+            "alert_type": "authentication_failures",
+            "severity": "MEDIUM",
+            "count": 4,
+            "description": "Multiple authentication failures detected",
+            "mitre_attack": {
+                "technique_id": "T1110",
+                "technique": "Brute Force",
+                "tactic": "Credential Access"
+            },
+            "risk_score": 50,
+            "priority": "MEDIUM"
         }
     ],
     "attack_chains": [],
     "ml_analysis": {
         "prediction": "benign",
-        "confidence": 3.83
+        "confidence": 37.83
     }
 }

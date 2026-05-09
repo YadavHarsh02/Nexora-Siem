@@ -4,6 +4,10 @@ from threat_intel.intel_checker import (
     ThreatIntelChecker
 )
 
+from baseline.analyzer import (
+    BaselineAnalyzer
+)
+
 
 class DetectionRules:
 
@@ -15,6 +19,10 @@ class DetectionRules:
 
         self.threat_intel = (
             ThreatIntelChecker()
+        )
+
+        self.baseline_analyzer = (
+            BaselineAnalyzer(events)
         )
 
     def detect_brute_force(self):
@@ -175,6 +183,17 @@ class DetectionRules:
                         "IP detected"
                 })
 
+    def detect_behavior_anomalies(self):
+
+        anomalies = (
+            self.baseline_analyzer
+            .detect_anomalies()
+        )
+
+        self.alerts.extend(
+            anomalies
+        )
+
     def run_all_rules(self):
 
         self.detect_brute_force()
@@ -186,5 +205,7 @@ class DetectionRules:
         self.detect_auth_failures()
 
         self.detect_malicious_ip()
+
+        self.detect_behavior_anomalies()
 
         return self.alerts
