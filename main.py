@@ -1,21 +1,40 @@
-from alerts.generator import AlertGenerator
-
 import os
 import glob
 
-from collectors.file_collector import FileCollector
-from parsers.auth_parser import AuthLogParser
-from detection.engine import DetectionEngine
+from collectors.file_collector import (
+    FileCollector
+)
+
+from parsers.auth_parser import (
+    AuthLogParser
+)
+
+from detection.engine import (
+    DetectionEngine
+)
+
+from alerts.generator import (
+    AlertGenerator
+)
+
+from threat_intel.feed_updater import (
+    ThreatFeedUpdater
+)
 
 
 def get_latest_log():
 
-    log_files = glob.glob("data/raw/*.log")
+    log_files = glob.glob(
+        "data/raw/*.log"
+    )
 
     if not log_files:
         return None
 
-    return max(log_files, key=os.path.getctime)
+    return max(
+        log_files,
+        key=os.path.getctime
+    )
 
 
 def main():
@@ -26,16 +45,23 @@ def main():
 
     print("\n1. Collect Logs")
     print("2. Parse Logs")
-    print("3. Run Detection + Correlation + ML")
+    print(
+        "3. Run Detection + "
+        "Correlation + ML"
+    )
 
-    choice = input("\nSelect mode: ")
+    choice = input(
+        "\nSelect mode: "
+    )
 
     collector = FileCollector()
 
     # COLLECT LOGS
     if choice == "1":
 
-        collected_file = collector.collect_batch()
+        collected_file = (
+            collector.collect_batch()
+        )
 
         if collected_file:
 
@@ -51,7 +77,10 @@ def main():
 
         if not latest_log:
 
-            print("[ERROR] No raw logs found")
+            print(
+                "[ERROR] No raw logs found"
+            )
+
             return
 
         parser = AuthLogParser()
@@ -66,16 +95,30 @@ def main():
         )
 
         output_file = (
-            "data/parsed/parsed_logs.json"
+            "data/parsed/"
+            "parsed_logs.json"
         )
 
-        parser.save_parsed_logs(output_file)
+        parser.save_parsed_logs(
+            output_file
+        )
 
     # DETECTION + CORRELATION + ML
     elif choice == "3":
 
-        detection_engine = DetectionEngine(
-            "data/parsed/parsed_logs.json"
+        # UPDATE LIVE THREAT FEED
+
+        feed_updater = (
+            ThreatFeedUpdater()
+        )
+
+        feed_updater.update_feed()
+
+        detection_engine = (
+            DetectionEngine(
+                "data/parsed/"
+                "parsed_logs.json"
+            )
         )
 
         if detection_engine.load_events():
@@ -93,6 +136,7 @@ def main():
             detection_engine.display_ml_result()
 
             # SAVE DASHBOARD DATA
+
             generator = AlertGenerator(
                 detection_engine.alerts,
                 detection_engine.attack_chains,

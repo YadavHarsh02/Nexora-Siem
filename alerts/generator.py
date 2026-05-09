@@ -1,6 +1,8 @@
 import json
 import os
 
+from alerts.notifier import TelegramNotifier
+
 
 class AlertGenerator:
 
@@ -12,10 +14,39 @@ class AlertGenerator:
     ):
 
         self.alerts = alerts
+
         self.attack_chains = attack_chains
+
         self.ml_result = ml_result
 
+        self.notifier = TelegramNotifier()
+
     def save_dashboard_data(self):
+
+        # SEND TELEGRAM ALERTS
+
+        for alert in self.alerts:
+
+            severity = alert.get(
+                "severity",
+                "LOW"
+            )
+
+            if severity in ["HIGH", "MEDIUM","LOW"]:
+
+                message = (
+                    f"🚨 MINI SIEM ALERT 🚨\n\n"
+                    f"Type: "
+                    f"{alert.get('alert_type')}\n"
+                    f"Severity: "
+                    f"{severity}\n"
+                    f"Description: "
+                    f"{alert.get('description')}"
+                )
+
+                self.notifier.send_alert(
+                    message
+                )
 
         dashboard_data = {
 

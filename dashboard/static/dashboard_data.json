@@ -15,6 +15,6 @@
     "attack_chains": [],
     "ml_analysis": {
         "prediction": "benign",
-        "confidence": 1.76
+        "confidence": 3.83
     }
 }
