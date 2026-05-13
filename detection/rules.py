@@ -25,9 +25,15 @@ class DetectionRules:
             BaselineAnalyzer(events)
         )
 
+    # =========================
+    # BRUTE FORCE DETECTION
+    # =========================
+
     def detect_brute_force(self):
 
-        failed_logins = defaultdict(int)
+        failed_logins = defaultdict(list)
+
+        # COLLECT FAILED LOGINS
 
         for event in self.events:
 
@@ -41,31 +47,77 @@ class DetectionRules:
                     "unknown"
                 )
 
-                failed_logins[ip] += 1
+                username = event.get(
+                    "username",
+                    "unknown"
+                )
 
-        for ip, count in failed_logins.items():
+                # IPv6-safe separator
+                key = f"{ip}|{username}"
 
-            if count >= 3:
+                failed_logins[key].append(
+                    event
+                )
 
-                self.alerts.append({
+        # ANALYZE LOGIN FAILURES
 
-                    "alert_type":
-                        "brute_force_attack",
+        for key, events in failed_logins.items():
 
-                    "severity":
-                        "HIGH",
+            count = len(events)
 
-                    "source_ip":
-                        ip,
+            if count < 3:
+                continue
 
-                    "failed_attempts":
-                        count,
+            ip, username = key.split("|")
 
-                    "description":
-                        f"Multiple failed "
-                        f"login attempts "
-                        f"detected from {ip}"
-                })
+            # DYNAMIC SEVERITY
+
+            if count >= 10:
+
+                severity = "HIGH"
+
+            elif count >= 5:
+
+                severity = "MEDIUM"
+
+            else:
+
+                severity = "LOW"
+
+            latest_event = events[-1]
+
+            self.alerts.append({
+
+                "alert_type":
+                    "brute_force_attack",
+
+                "severity":
+                    severity,
+
+                "description":
+                    f"Repeated failed login "
+                    f"attempts detected "
+                    f"against user {username}",
+
+                "timestamp":
+                    latest_event.get(
+                        "timestamp",
+                        ""
+                    ),
+
+                "source_ip":
+                    ip,
+
+                "username":
+                    username,
+
+                "event_count":
+                    count
+            })
+
+    # =========================
+    # INVALID USER DETECTION
+    # =========================
 
     def detect_invalid_users(self):
 
@@ -84,16 +136,25 @@ class DetectionRules:
                     "severity":
                         "MEDIUM",
 
+                    "description":
+                        "Invalid user login attempt detected",
+
+                    "timestamp":
+                        event.get("timestamp", ""),
+
                     "source_ip":
-                        event.get("source_ip"),
+                        event.get("source_ip", ""),
 
                     "username":
-                        event.get("username"),
+                        event.get("username", ""),
 
-                    "description":
-                        "Invalid user "
-                        "login attempt detected"
+                    "event_count":
+                        1
                 })
+
+    # =========================
+    # SUDO DETECTION
+    # =========================
 
     def detect_suspicious_sudo(self):
 
@@ -112,17 +173,29 @@ class DetectionRules:
                     "severity":
                         "LOW",
 
-                    "username":
-                        event.get("username"),
-
                     "description":
-                        "Sudo command "
-                        "execution detected"
+                        "Sudo command execution detected",
+
+                    "timestamp":
+                        event.get("timestamp", ""),
+
+                    "source_ip":
+                        event.get("source_ip", ""),
+
+                    "username":
+                        event.get("username", ""),
+
+                    "event_count":
+                        1
                 })
+
+    # =========================
+    # AUTH FAILURE DETECTION
+    # =========================
 
     def detect_auth_failures(self):
 
-        failure_count = 0
+        auth_failures = defaultdict(list)
 
         for event in self.events:
 
@@ -131,9 +204,37 @@ class DetectionRules:
                 == "authentication_failure"
             ):
 
-                failure_count += 1
+                ip = event.get(
+                    "source_ip",
+                    "unknown"
+                )
 
-        if failure_count >= 2:
+                auth_failures[ip].append(
+                    event
+                )
+
+        for ip, events in auth_failures.items():
+
+            count = len(events)
+
+            if count < 2:
+                continue
+
+            # DYNAMIC SEVERITY
+
+            if count >= 8:
+
+                severity = "HIGH"
+
+            elif count >= 4:
+
+                severity = "MEDIUM"
+
+            else:
+
+                severity = "LOW"
+
+            latest_event = events[-1]
 
             self.alerts.append({
 
@@ -141,15 +242,33 @@ class DetectionRules:
                     "authentication_failures",
 
                 "severity":
-                    "MEDIUM",
-
-                "count":
-                    failure_count,
+                    severity,
 
                 "description":
-                    "Multiple authentication "
-                    "failures detected"
+                    "Multiple authentication failures detected",
+
+                "timestamp":
+                    latest_event.get(
+                        "timestamp",
+                        ""
+                    ),
+
+                "source_ip":
+                    ip,
+
+                "username":
+                    latest_event.get(
+                        "username",
+                        ""
+                    ),
+
+                "event_count":
+                    count
             })
+
+    # =========================
+    # THREAT INTEL DETECTION
+    # =========================
 
     def detect_malicious_ip(self):
 
@@ -175,13 +294,25 @@ class DetectionRules:
                     "severity":
                         "HIGH",
 
+                    "description":
+                        "Known malicious IP detected",
+
+                    "timestamp":
+                        event.get("timestamp", ""),
+
                     "source_ip":
                         source_ip,
 
-                    "description":
-                        "Known malicious "
-                        "IP detected"
+                    "username":
+                        event.get("username", ""),
+
+                    "event_count":
+                        1
                 })
+
+    # =========================
+    # UEBA / ANOMALY DETECTION
+    # =========================
 
     def detect_behavior_anomalies(self):
 
@@ -190,9 +321,31 @@ class DetectionRules:
             .detect_anomalies()
         )
 
+        for anomaly in anomalies:
+
+            anomaly.setdefault(
+                "timestamp", ""
+            )
+
+            anomaly.setdefault(
+                "source_ip", ""
+            )
+
+            anomaly.setdefault(
+                "username", ""
+            )
+
+            anomaly.setdefault(
+                "event_count", 1
+            )
+
         self.alerts.extend(
             anomalies
         )
+
+    # =========================
+    # RUN ALL RULES
+    # =========================
 
     def run_all_rules(self):
 
