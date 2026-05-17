@@ -1,0 +1,200 @@
+May 10 04:11:07 kali systemd[844]: Closed gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 10 04:11:07 kali systemd[844]: Closed gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+May 10 04:11:07 kali systemd[844]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+May 10 04:11:07 kali systemd[844]: Stopping gpg-agent.socket - GnuPG cryptographic agent and passphrase cache...
+May 10 04:11:07 kali systemd[844]: Closed keyboxd.socket - GnuPG public key management service.
+May 10 04:11:07 kali systemd[844]: Closed pipewire-pulse.socket - PipeWire PulseAudio.
+May 10 04:11:07 kali systemd[844]: Closed pipewire.socket - PipeWire Multimedia System Sockets.
+May 10 04:11:07 kali systemd[844]: Closed speech-dispatcher.socket - Speech Dispatcher Socket.
+May 10 04:11:07 kali systemd[844]: Closed systemd-ask-password.socket - Query the User Interactively for a Password.
+May 10 04:11:07 kali systemd[844]: Closed gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+May 10 04:11:07 kali systemd[844]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+May 10 04:11:07 kali systemd[844]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+May 10 04:11:07 kali systemd[844]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+May 10 04:11:07 kali systemd[844]: Closed ssh-agent.socket - OpenSSH Agent socket.
+May 10 04:11:07 kali systemd[844]: Removed slice app.slice - User Application Slice.
+May 10 04:11:07 kali systemd[844]: Reached target shutdown.target - Shutdown.
+May 10 04:11:07 kali systemd[844]: Finished systemd-exit.service - Exit the Session.
+May 10 04:11:07 kali systemd[844]: Reached target exit.target - Exit the Session.
+May 10 04:11:07 kali (sd-pam)[853]: pam_unix(systemd-user:session): session closed for user gdm-greeter
+May 10 04:11:07 kali systemd-logind[631]: Removed session 1.
+May 10 04:11:07 kali systemd[1]: user@60578.service: Deactivated successfully.
+May 10 04:11:07 kali systemd[1]: Stopped user@60578.service - User Manager for UID 60578.
+May 10 04:11:07 kali systemd[1]: user@60578.service: Consumed 10.794s CPU time over 40.794s wall clock time, 663.3M memory peak, 4K memory swap peak.
+May 10 04:11:07 kali systemd[1]: Stopping user-runtime-dir@60578.service - User Runtime Directory /run/user/60578...
+May 10 04:11:07 kali systemd[1]: run-user-60578.mount: Deactivated successfully.
+May 10 04:11:07 kali systemd[1]: user-runtime-dir@60578.service: Deactivated successfully.
+May 10 04:11:07 kali systemd[1]: Stopped user-runtime-dir@60578.service - User Runtime Directory /run/user/60578.
+May 10 04:11:07 kali systemd[1]: Removed slice user-60578.slice - User Slice of UID 60578.
+May 10 04:11:07 kali systemd[1]: user-60578.slice: Consumed 10.839s CPU time over 40.907s wall clock time, 665.6M memory peak, 4K memory swap peak.
+May 10 04:11:07 kali systemd[1]: Started elasticsearch.service - Elasticsearch.
+May 10 04:11:07 kali systemd[1]: Reached target multi-user.target - Multi-User System.
+May 10 04:11:07 kali systemd[1]: Reached target graphical.target - Graphical Interface.
+May 10 04:11:07 kali systemd[1]: Starting power-profiles-daemon.service - Power Profiles daemon...
+May 10 04:11:07 kali dbus-daemon[623]: [system] Successfully activated service 'org.freedesktop.UPower.PowerProfiles'
+May 10 04:11:07 kali systemd[1]: Started power-profiles-daemon.service - Power Profiles daemon.
+May 10 04:11:07 kali systemd[1]: Startup finished in 2.399s (firmware) + 3.121s (loader) + 2.835s (kernel) + 44.861s (userspace) = 53.218s.
+May 10 04:11:07 kali gnome-shell[2013]: Received property Actions with type aa{sv} does not match expected type as in the expected interface
+May 10 04:11:17 kali sudo[3445]:    harsh : TTY=pts/0 ; PWD=/home/harsh ; USER=root ; COMMAND=/usr/bin/su
+May 10 04:11:17 kali sudo[3445]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=1000)
+May 10 04:11:17 kali su[3492]: (to root) root on pts/1
+May 10 04:11:17 kali su[3492]: pam_unix(su:session): session opened for user root(uid=0) by harsh(uid=0)
+May 10 04:11:17 kali systemd-logind[631]: Existing logind session ID 3 used by new audit session, ignoring.
+May 10 04:11:17 kali systemd[1]: Created slice user-0.slice - User Slice of UID 0.
+May 10 04:11:17 kali systemd[1]: Starting user-runtime-dir@0.service - User Runtime Directory /run/user/0...
+May 10 04:11:17 kali systemd-logind[631]: New session 'c2' of user 'root' with class 'user-early' and type 'tty'.
+May 10 04:11:17 kali systemd[1]: Finished user-runtime-dir@0.service - User Runtime Directory /run/user/0.
+May 10 04:11:17 kali systemd[1]: Starting user@0.service - User Manager for UID 0...
+May 10 04:11:18 kali (systemd)[3496]: pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+May 10 04:11:18 kali systemd-logind[631]: New session '4' of user 'root' with class 'manager-early' and type 'unspecified'.
+May 10 04:11:18 kali systemd[3496]: Queued start job for default target default.target.
+May 10 04:11:18 kali systemd[3496]: Created slice app.slice - User Application Slice.
+May 10 04:11:18 kali systemd[3496]: Created slice session.slice - User Core Session Slice.
+May 10 04:11:18 kali systemd[3496]: Reached target paths.target - Paths.
+May 10 04:11:18 kali systemd[3496]: Reached target timers.target - Timers.
+May 10 04:11:18 kali systemd[3496]: Starting dbus.socket - D-Bus User Message Bus Socket...
+May 10 04:11:18 kali systemd[3496]: Listening on dirmngr.socket - GnuPG network certificate management daemon.
+May 10 04:11:18 kali systemd[3496]: Listening on gnome-keyring-daemon.socket - GNOME Keyring daemon.
+May 10 04:11:18 kali systemd[3496]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 10 04:11:18 kali systemd[3496]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+May 10 04:11:18 kali systemd[3496]: Starting gpg-agent.socket - GnuPG cryptographic agent and passphrase cache...
+May 10 04:11:18 kali systemd[3496]: Listening on keyboxd.socket - GnuPG public key management service.
+May 10 04:11:18 kali systemd[3496]: Listening on pipewire-pulse.socket - PipeWire PulseAudio.
+May 10 04:11:18 kali systemd[3496]: Listening on pipewire.socket - PipeWire Multimedia System Sockets.
+May 10 04:11:18 kali systemd[3496]: Listening on speech-dispatcher.socket - Speech Dispatcher Socket.
+May 10 04:11:18 kali systemd[3496]: Starting ssh-agent.socket - OpenSSH Agent socket...
+May 10 04:11:18 kali systemd[3496]: Listening on systemd-ask-password.socket - Query the User Interactively for a Password.
+May 10 04:11:18 kali systemd[3496]: Listening on dbus.socket - D-Bus User Message Bus Socket.
+May 10 04:11:18 kali systemd[3496]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+May 10 04:11:18 kali systemd[3496]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+May 10 04:11:18 kali systemd[3496]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+May 10 04:11:18 kali systemd[3496]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+May 10 04:11:18 kali systemd[3496]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+May 10 04:11:18 kali systemd[3496]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+May 10 04:11:18 kali systemd[3496]: Reached target sockets.target - Sockets.
+May 10 04:11:18 kali systemd[3496]: Reached target basic.target - Basic System.
+May 10 04:11:18 kali systemd[1]: Started user@0.service - User Manager for UID 0.
+May 10 04:11:18 kali systemd[3496]: Starting dbus.service - D-Bus User Message Bus...
+May 10 04:11:18 kali systemd[1]: Started session-c2.scope - Session c2 of User root.
+May 10 04:11:18 kali systemd[3496]: Started pipewire.service - PipeWire Multimedia Service.
+May 10 04:11:18 kali dbus-daemon[3525]: [session uid=0 pid=3525 pidfd=5] AppArmor D-Bus mediation is enabled
+May 10 04:11:18 kali systemd[3496]: Started dbus.service - D-Bus User Message Bus.
+May 10 04:11:18 kali systemd[3496]: mpris-proxy.service - Bluetooth mpris proxy skipped, unmet condition check ConditionUser=!@system
+May 10 04:11:18 kali systemd[3496]: Started wireplumber.service - Multimedia Service Session Manager.
+May 10 04:11:18 kali systemd[3496]: Started filter-chain.service - PipeWire filter chain daemon.
+May 10 04:11:18 kali systemd[3496]: Started pipewire-pulse.service - PipeWire PulseAudio.
+May 10 04:11:18 kali systemd[3496]: Reached target default.target - Main User Target.
+May 10 04:11:18 kali systemd[3496]: Startup finished in 401ms.
+May 10 04:11:18 kali wireplumber[3528]: wp-device: SPA handle 'api.libcamera.enum.manager' could not be loaded; is it installed?
+May 10 04:11:18 kali wireplumber[3528]: s-monitors-libcamera: PipeWire's libcamera SPA plugin is missing or broken. Some camera types may not be supported.
+May 10 04:11:19 kali dbus-daemon[3525]: [session uid=0 pid=3525 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.3' (uid=0 pid=3528 comm="/usr/bin/wireplumber" label="unconfined")
+May 10 04:11:19 kali systemd[3496]: Starting xdg-permission-store.service - sandboxed app permission store...
+May 10 04:11:19 kali dbus-daemon[3525]: [session uid=0 pid=3525 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+May 10 04:11:19 kali systemd[3496]: Started xdg-permission-store.service - sandboxed app permission store.
+May 10 04:11:21 kali systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+May 10 04:11:22 kali systemd[1]: systemd-localed.service: Deactivated successfully.
+May 10 04:11:31 kali geoclue[1275]: Service not used for 60 seconds. Shutting down..
+May 10 04:11:31 kali systemd[1]: geoclue.service: Deactivated successfully.
+May 10 04:11:32 kali realmd[1427]: quitting realmd service after timeout
+May 10 04:11:32 kali realmd[1427]: stopping service
+May 10 04:11:32 kali systemd[1]: realmd.service: Deactivated successfully.
+May 10 04:12:35 kali gnome-shell[2013]: Old animationInfo removed from actor [0x55efe7b22640 MetaWindowActorWayland]
+May 10 04:12:35 kali gnome-shell[2013]: Error in size change accounting.
+May 10 04:12:40 kali systemd[1801]: Started app-gnome-firefox\x2desr-4164.scope - Application launched by gnome-shell.
+May 10 04:12:41 kali dbus-daemon[623]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.127' (uid=1000 pid=4164 comm="/usr/lib/firefox-esr/firefox-esr" label="unconfined")
+May 10 04:12:41 kali systemd[1]: Starting systemd-timedated.service - Time & Date Service...
+May 10 04:12:41 kali systemd[1]: Started systemd-timedated.service - Time & Date Service.
+May 10 04:12:41 kali dbus-daemon[623]: [system] Successfully activated service 'org.freedesktop.timedate1'
+May 10 04:12:41 kali rtkit-daemon[889]: Successfully made thread 4490 of process 4164 owned by '1000' RT at priority 10.
+May 10 04:12:44 kali gnome-shell[2013]: Error in size change accounting.
+May 10 04:13:11 kali systemd[1]: systemd-timedated.service: Deactivated successfully.
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3512] policy: auto-activating connection 'hy376’s iPhone' (093e9ebf-86a5-46d4-85ec-2a438bbb70db)
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3564] device (wlan0): Activation: starting connection 'hy376’s iPhone' (093e9ebf-86a5-46d4-85ec-2a438bbb70db)
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3566] device (wlan0): state change: disconnected -> prepare (reason 'none', managed-type: 'full')
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3574] manager: NetworkManager state is now CONNECTING
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3726] device (wlan0): set-hw-addr: reset MAC address to 7C:70:DB:80:23:16 (preserve)
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3778] device (wlan0): state change: prepare -> config (reason 'none', managed-type: 'full')
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3783] device (wlan0): Activation: (wifi) access point 'hy376’s iPhone' has security, but secrets are required.
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3784] device (wlan0): state change: config -> need-auth (reason 'none', managed-type: 'full')
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3802] device (wlan0): state change: need-auth -> prepare (reason 'none', managed-type: 'full')
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3806] device (wlan0): state change: prepare -> config (reason 'none', managed-type: 'full')
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3809] device (wlan0): Activation: (wifi) connection 'hy376’s iPhone' has security, and secrets exist.  No new secrets needed.
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3810] Config: added 'ssid' value 'hy376’s iPhone'
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3810] Config: added 'scan_ssid' value '1'
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3810] Config: added 'bgscan' value 'simple:30:-65:300'
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3811] Config: added 'key_mgmt' value 'WPA-PSK WPA-PSK-SHA256 FT-PSK SAE FT-SAE'
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3811] Config: added 'auth_alg' value 'OPEN'
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3811] Config: added 'psk' value '<hidden>'
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3825] device (wlan0): supplicant interface state: disconnected -> inactive
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.3827] device (p2p-dev-wlan0): supplicant management interface state: disconnected -> inactive
+May 10 04:14:28 kali wpa_supplicant[800]: wlan0: SME: Trying to authenticate with 7a:40:34:e6:7c:90 (SSID='hy376\xe2\x80\x99s iPhone' freq=5745 MHz)
+May 10 04:14:28 kali kernel: wlan0: authenticate with 7a:40:34:e6:7c:90 (local address=7c:70:db:80:23:16)
+May 10 04:14:28 kali kernel: wlan0: send auth to 7a:40:34:e6:7c:90 (try 1/3)
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.4101] device (wlan0): supplicant interface state: inactive -> authenticating
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.4101] device (p2p-dev-wlan0): supplicant management interface state: inactive -> authenticating
+May 10 04:14:28 kali wpa_supplicant[800]: wlan0: SME: Trying to authenticate with 7a:40:34:e6:7c:90 (SSID='hy376\xe2\x80\x99s iPhone' freq=5745 MHz)
+May 10 04:14:28 kali kernel: wlan0: authenticate with 7a:40:34:e6:7c:90 (local address=7c:70:db:80:23:16)
+May 10 04:14:28 kali kernel: wlan0: send auth to 7a:40:34:e6:7c:90 (try 1/3)
+May 10 04:14:28 kali wpa_supplicant[800]: wlan0: PMKSA-CACHE-ADDED 7a:40:34:e6:7c:90 0
+May 10 04:14:28 kali wpa_supplicant[800]: wlan0: Trying to associate with 7a:40:34:e6:7c:90 (SSID='hy376\xe2\x80\x99s iPhone' freq=5745 MHz)
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.5047] device (wlan0): supplicant interface state: authenticating -> associating
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.5048] device (p2p-dev-wlan0): supplicant management interface state: authenticating -> associating
+May 10 04:14:28 kali kernel: wlan0: authenticated
+May 10 04:14:28 kali kernel: wlan0: associate with 7a:40:34:e6:7c:90 (try 1/3)
+May 10 04:14:28 kali kernel: wlan0: RX AssocResp from 7a:40:34:e6:7c:90 (capab=0x11 status=0 aid=1)
+May 10 04:14:28 kali kernel: wlan0: associated
+May 10 04:14:28 kali kernel: wlan0: Limiting TX power to 23 (23 - 0) dBm as advertised by 7a:40:34:e6:7c:90
+May 10 04:14:28 kali wpa_supplicant[800]: wlan0: Associated with 7a:40:34:e6:7c:90
+May 10 04:14:28 kali wpa_supplicant[800]: wlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.5284] device (wlan0): supplicant interface state: associating -> associated
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.5285] device (p2p-dev-wlan0): supplicant management interface state: associating -> associated
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.5343] device (wlan0): supplicant interface state: associated -> 4way_handshake
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.5344] device (p2p-dev-wlan0): supplicant management interface state: associated -> 4way_handshake
+May 10 04:14:28 kali wpa_supplicant[800]: wlan0: WPA: Key negotiation completed with 7a:40:34:e6:7c:90 [PTK=CCMP GTK=CCMP]
+May 10 04:14:28 kali wpa_supplicant[800]: wlan0: CTRL-EVENT-CONNECTED - Connection to 7a:40:34:e6:7c:90 completed [id=0 id_str=]
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.6307] device (wlan0): supplicant interface state: 4way_handshake -> completed
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.6308] device (wlan0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network "hy376’s iPhone"
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.6308] device (p2p-dev-wlan0): supplicant management interface state: 4way_handshake -> completed
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.6310] device (wlan0): state change: config -> ip-config (reason 'none', managed-type: 'full')
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.6327] dhcp4 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+May 10 04:14:28 kali NetworkManager[706]: <info>  [1778400868.8447] dhcp4 (wlan0): state changed new lease, address=172.20.10.2, acd pending
+May 10 04:14:29 kali NetworkManager[706]: <info>  [1778400869.0098] dhcp4 (wlan0): state changed new lease, address=172.20.10.2
+May 10 04:14:29 kali NetworkManager[706]: <info>  [1778400869.0129] policy: set 'hy376’s iPhone' (wlan0) as default for IPv4 routing and DNS
+May 10 04:14:29 kali NetworkManager[706]: <info>  [1778400869.0291] device (wlan0): state change: ip-config -> ip-check (reason 'none', managed-type: 'full')
+May 10 04:14:29 kali dbus-daemon[623]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=706 comm="/usr/sbin/NetworkManager --no-daemon" label="unconfined")
+May 10 04:14:29 kali systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+May 10 04:14:29 kali dbus-daemon[623]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+May 10 04:14:29 kali systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+May 10 04:14:29 kali NetworkManager[706]: <info>  [1778400869.0887] device (wlan0): state change: ip-check -> secondaries (reason 'none', managed-type: 'full')
+May 10 04:14:29 kali NetworkManager[706]: <info>  [1778400869.0890] device (wlan0): state change: secondaries -> activated (reason 'none', managed-type: 'full')
+May 10 04:14:29 kali NetworkManager[706]: <info>  [1778400869.0895] manager: NetworkManager state is now CONNECTED_SITE
+May 10 04:14:29 kali NetworkManager[706]: <info>  [1778400869.0907] device (wlan0): Activation: successful, device activated.
+May 10 04:14:29 kali NetworkManager[706]: <info>  [1778400869.0918] manager: NetworkManager state is now CONNECTED_GLOBAL
+May 10 04:14:30 kali NetworkManager[706]: <info>  [1778400870.4407] dhcp6 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+May 10 04:14:30 kali NetworkManager[706]: <info>  [1778400870.4477] policy: set 'hy376’s iPhone' (wlan0) as default for IPv6 routing and DNS
+May 10 04:14:30 kali NetworkManager[706]: <info>  [1778400870.4665] dhcp6 (wlan0): state changed new lease
+May 10 04:14:39 kali systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+May 10 04:14:45 kali sshd-session[7330]: Invalid user fakeuser from ::1 port 52066
+May 10 04:14:47 kali sshd-session[7330]: pam_unix(sshd:auth): check pass; user unknown
+May 10 04:14:47 kali sshd-session[7330]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+May 10 04:14:49 kali sshd-session[7330]: Failed password for invalid user fakeuser from ::1 port 52066 ssh2
+May 10 04:14:52 kali sshd-session[7330]: pam_unix(sshd:auth): check pass; user unknown
+May 10 04:14:54 kali sshd-session[7330]: Failed password for invalid user fakeuser from ::1 port 52066 ssh2
+May 10 04:14:56 kali systemd-timesyncd[379]: Contacted time server [2606:4700:f1::1]:123 (2.debian.pool.ntp.org).
+May 10 04:14:56 kali systemd-timesyncd[379]: Initial clock synchronization to Sun 2026-05-10 04:14:56.470790 EDT.
+May 10 04:14:56 kali sshd-session[7330]: pam_unix(sshd:auth): check pass; user unknown
+May 10 04:14:59 kali sshd-session[7330]: Failed password for invalid user fakeuser from ::1 port 52066 ssh2
+May 10 04:14:59 kali sshd-session[7330]: Connection closed by invalid user fakeuser ::1 port 52066 [preauth]
+May 10 04:14:59 kali sshd-session[7330]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+May 10 04:15:01 kali CRON[7435]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 04:15:01 kali CRON[7437]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 10 04:15:01 kali CRON[7435]: pam_unix(cron:session): session closed for user root
+May 10 04:17:01 kali CRON[8201]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 04:17:01 kali CRON[8203]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+May 10 04:17:01 kali CRON[8201]: pam_unix(cron:session): session closed for user root
+May 10 04:18:50 kali systemd[1]: Starting plocate-updatedb.service - Update the plocate database...
+May 10 04:18:56 kali systemd[1]: plocate-updatedb.service: Deactivated successfully.
+May 10 04:18:56 kali systemd[1]: Finished plocate-updatedb.service - Update the plocate database.
+May 10 04:18:56 kali systemd[1]: plocate-updatedb.service: Consumed 3.887s CPU time over 6.418s wall clock time, 425.5M memory peak.
+May 10 04:19:42 kali gnome-shell[2013]: libinput error: event6  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 10 04:19:42 kali gnome-shell[2013]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details

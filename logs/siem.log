@@ -1,0 +1,236 @@
+2026-05-07 14:05:56,654 - INFO - Collected journal logs: data/raw/auth_20260507_140556.log
+2026-05-07 14:06:25,642 - INFO - Collected journal logs: data/raw/auth_20260507_140625.log
+2026-05-07 14:08:15,036 - INFO - Started real-time journal monitoring
+2026-05-08 08:59:00,969 - INFO - Started real-time journal monitoring
+2026-05-08 09:05:08,382 - INFO - Collected journal logs: data/raw/auth_20260508_090508.log
+2026-05-08 09:13:01,677 - INFO - Collected journal logs: data/raw/auth_20260508_091301.log
+2026-05-08 09:22:24,625 - INFO - Collected journal logs: data/raw/auth_20260508_092224.log
+2026-05-08 09:32:08,425 - INFO - Collected journal logs: data/raw/auth_20260508_093208.log
+2026-05-08 09:38:48,534 - INFO - Collected journal logs: data/raw/auth_20260508_093848.log
+2026-05-09 02:54:56,533 - INFO - Collected journal logs: data/raw/auth_20260509_025456.log
+2026-05-09 02:55:42,572 - INFO - Collected journal logs: data/raw/auth_20260509_025542.log
+2026-05-09 03:43:56,595 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:43:57,001 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:43:57,326 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:44:27,658 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:44:27,986 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:44:28,317 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:44:58,648 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:44:59,015 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:44:59,329 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:46:24,662 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:46:24,972 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:46:25,288 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:46:55,601 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:46:55,911 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:46:56,230 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:47:26,561 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:47:26,971 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:47:27,305 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:47:57,656 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:47:57,974 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:47:58,299 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:48:28,659 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:48:29,100 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:48:29,454 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:48:59,789 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:49:00,113 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:49:00,435 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:49:30,767 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:49:31,093 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:49:31,415 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:50:01,742 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:50:02,066 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:50:02,388 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:50:32,717 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:50:33,038 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:50:33,365 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:51:03,696 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:51:04,015 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:51:04,339 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:51:34,680 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:51:35,000 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:51:35,320 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:52:05,652 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:52:05,972 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:52:06,296 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:52:36,660 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:52:37,059 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:52:37,508 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:53:07,958 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:53:08,299 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:53:08,666 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:53:39,082 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:53:39,514 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:53:39,880 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:54:10,306 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:54:10,650 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:54:10,968 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:54:41,304 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:54:41,623 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:54:41,941 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:55:12,277 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:55:12,598 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:55:12,919 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:55:43,253 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:55:43,577 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:55:43,899 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:56:14,229 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:56:14,548 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:56:14,870 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:56:45,219 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:56:45,636 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:56:46,036 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:57:16,387 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:57:16,706 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:57:17,028 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:57:47,377 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:57:47,734 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:57:48,061 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:58:18,402 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:58:18,744 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:58:19,091 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:58:49,437 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:58:49,758 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:58:50,085 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:59:20,416 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:59:20,847 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:59:21,240 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:59:51,645 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:59:51,970 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 03:59:52,293 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:00:22,642 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:00:22,993 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:00:23,332 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:00:53,686 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:00:54,087 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:00:54,488 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:01:24,845 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:01:25,175 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:01:25,497 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:01:55,816 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:01:56,128 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:01:56,435 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:02:26,795 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:02:27,170 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:02:27,510 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:02:57,993 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:02:58,451 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:02:58,842 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:03:29,476 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:03:29,991 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:03:30,351 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:04:00,808 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:04:01,168 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:04:01,496 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:04:31,848 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:04:32,188 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:04:32,573 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:05:02,952 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:05:03,340 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:05:03,778 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:05:34,168 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:05:34,489 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:05:34,811 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:06:05,156 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:06:05,476 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:06:05,797 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:06:36,189 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:06:36,602 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:06:37,038 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:07:07,431 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:07:07,757 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:07:08,090 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:07:38,432 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:07:38,761 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:07:39,090 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:08:09,445 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:08:09,783 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:08:10,130 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:08:40,489 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:08:40,836 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:08:41,186 - INFO - NumExpr defaulting to 4 threads.
+2026-05-09 04:41:01,294 - INFO - Collected journal logs: data/raw/auth_20260509_044101.log
+2026-05-09 04:54:49,336 - INFO - Collected journal logs: data/raw/auth_20260509_045449.log
+2026-05-09 05:06:13,242 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:400 duration:0.288s]
+2026-05-09 05:08:23,921 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.413s]
+2026-05-09 05:08:23,932 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.010s]
+2026-05-09 05:08:23,944 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.012s]
+2026-05-09 05:08:23,953 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.009s]
+2026-05-09 05:08:23,963 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.010s]
+2026-05-09 05:08:24,025 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.062s]
+2026-05-09 05:40:16,735 - INFO - Collected journal logs: data/raw/auth_20260509_054016.log
+2026-05-09 05:40:32,397 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.024s]
+2026-05-09 05:43:48,448 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.023s]
+2026-05-09 06:37:21,241 - INFO - Collected journal logs: data/raw/auth_20260509_063721.log
+2026-05-09 06:51:13,552 - INFO - Collected journal logs: data/raw/auth_20260509_065113.log
+2026-05-09 06:51:30,063 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.191s]
+2026-05-09 06:51:30,087 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.023s]
+2026-05-09 06:51:30,100 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.013s]
+2026-05-09 07:04:21,219 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.036s]
+2026-05-09 07:04:21,234 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.015s]
+2026-05-09 07:04:21,242 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.008s]
+2026-05-09 07:51:09,720 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.028s]
+2026-05-09 07:51:09,735 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.014s]
+2026-05-09 07:51:09,744 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.009s]
+2026-05-09 07:54:08,819 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.025s]
+2026-05-09 07:54:08,861 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.042s]
+2026-05-09 07:54:08,872 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.011s]
+2026-05-09 07:58:30,549 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.025s]
+2026-05-09 07:58:30,564 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.014s]
+2026-05-09 07:58:30,574 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.010s]
+2026-05-09 08:04:01,127 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.170s]
+2026-05-09 08:04:01,140 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.012s]
+2026-05-09 08:04:01,148 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.008s]
+2026-05-10 04:11:48,805 - INFO - NumExpr defaulting to 4 threads.
+2026-05-10 04:12:23,440 - INFO - NumExpr defaulting to 4 threads.
+2026-05-10 04:13:25,756 - INFO - NumExpr defaulting to 4 threads.
+2026-05-10 04:15:02,992 - INFO - NumExpr defaulting to 4 threads.
+2026-05-10 04:20:18,081 - INFO - Collected journal logs: data/raw/auth_20260510_042018.log
+2026-05-10 04:20:37,345 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.280s]
+2026-05-10 04:20:37,363 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.017s]
+2026-05-10 04:58:28,434 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.250s]
+2026-05-10 04:58:28,453 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.018s]
+2026-05-10 05:04:28,447 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.021s]
+2026-05-10 05:04:28,459 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.012s]
+2026-05-10 05:08:37,497 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.027s]
+2026-05-10 05:08:37,516 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.017s]
+2026-05-10 05:43:49,981 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.028s]
+2026-05-10 05:43:50,002 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.020s]
+2026-05-10 05:49:18,778 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.021s]
+2026-05-10 05:49:18,790 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.012s]
+2026-05-10 05:50:03,515 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.023s]
+2026-05-10 05:53:49,681 - INFO - Collected journal logs: data/raw/auth_20260510_055349.log
+2026-05-10 05:58:00,146 - INFO - Collected journal logs: data/raw/auth_20260510_055800.log
+2026-05-10 06:00:19,612 - INFO - Collected journal logs: data/raw/auth_20260510_060019.log
+2026-05-10 06:00:30,530 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.023s]
+2026-05-10 06:00:30,551 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.020s]
+2026-05-10 06:34:17,648 - INFO - Collected journal logs: data/raw/auth_20260510_063417.log
+2026-05-10 06:34:30,545 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.024s]
+2026-05-10 06:34:30,567 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.021s]
+2026-05-10 08:40:13,275 - INFO - Collected journal logs: data/raw/auth_20260510_084013.log
+2026-05-10 08:40:28,615 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.110s]
+2026-05-10 08:40:28,624 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.008s]
+2026-05-10 08:40:28,632 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.008s]
+2026-05-10 13:30:21,375 - INFO - NumExpr defaulting to 4 threads.
+2026-05-10 13:30:49,006 - INFO - Collected journal logs: data/raw/auth_20260510_133048.log
+2026-05-10 13:32:25,040 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.210s]
+2026-05-10 13:32:25,055 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.014s]
+2026-05-10 14:05:58,586 - INFO - Collected journal logs: data/raw/auth_20260510_140558.log
+2026-05-10 14:06:59,887 - INFO - Collected journal logs: data/raw/auth_20260510_140659.log
+2026-05-10 14:07:15,137 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.035s]
+2026-05-10 14:07:15,160 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.021s]
+2026-05-10 14:19:38,795 - INFO - Collected journal logs: data/raw/auth_20260510_141938.log
+2026-05-10 14:30:15,859 - INFO - Collected journal logs: data/raw/auth_20260510_143015.log
+2026-05-10 14:30:27,853 - INFO - HEAD http://localhost:9200/mini_siem_alerts [status:200 duration:0.047s]
+2026-05-10 14:30:27,882 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.028s]
+2026-05-10 14:30:27,933 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.049s]
+2026-05-10 14:34:13,870 - INFO - Collected journal logs: data/raw/auth_20260510_143413.log
+2026-05-10 14:34:22,786 - INFO - HEAD http://localhost:9200/mini_siem_alerts [status:200 duration:0.018s]
+2026-05-10 14:34:22,810 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.022s]
+2026-05-10 14:34:22,845 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.034s]
+2026-05-10 15:04:32,342 - INFO - Collected journal logs: data/raw/auth_20260510_150432.log
+2026-05-10 15:05:34,520 - INFO - HEAD http://localhost:9200/mini_siem_alerts [status:200 duration:0.233s]
+2026-05-10 15:05:34,594 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.073s]
+2026-05-10 15:05:34,617 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.022s]
+2026-05-10 15:05:34,635 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.017s]

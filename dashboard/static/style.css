@@ -47,6 +47,50 @@ body {
 
 
 /* =========================
+   LIVE ALERT TICKER
+========================= */
+
+.ticker-container {
+
+    margin: 20px;
+
+    background-color: #111827;
+
+    border: 1px solid #1e293b;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    padding: 12px;
+}
+
+.ticker {
+
+    white-space: nowrap;
+
+    display: inline-block;
+
+    color: #38bdf8;
+
+    font-weight: bold;
+
+    animation: tickerMove 18s linear infinite;
+}
+
+@keyframes tickerMove {
+
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* =========================
    CARDS
 ========================= */
 
@@ -97,6 +141,190 @@ body {
     margin-top: 10px;
 
     font-weight: bold;
+}
+
+
+/* =========================
+   CHARTS
+========================= */
+
+.charts {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.chart-box {
+
+    background-color: #111827;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid #1e293b;
+}
+
+.chart-title {
+
+    margin-bottom: 15px;
+
+    color: #38bdf8;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box {
+
+    background-color: #111827;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    margin: 20px;
+
+    border: 1px solid #1e293b;
+}
+
+.search-box h2 {
+
+    margin-bottom: 15px;
+
+    color: #38bdf8;
+}
+
+input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+
+    background: #1e293b;
+
+    color: white;
+}
+
+button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+button:hover {
+
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   INTEL PANELS
+========================= */
+
+.intel-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.intel-panel {
+
+    background-color: #111827;
+
+    border: 1px solid #1e293b;
+
+    border-radius: 12px;
+
+    padding: 20px;
+}
+
+.intel-panel h2 {
+
+    color: #38bdf8;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   MITRE CARDS
+========================= */
+
+.mitre-card {
+
+    background-color: #1e293b;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    border-left: 4px solid #ef4444;
+
+    transition: 0.3s;
+}
+
+.mitre-card:hover {
+
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   THREAT INTEL ITEMS
+========================= */
+
+.intel-item {
+
+    background-color: #1e293b;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    border-left: 4px solid #38bdf8;
+
+    transition: 0.3s;
+}
+
+.intel-item:hover {
+
+    transform: translateX(5px);
 }
 
 
@@ -185,6 +413,130 @@ tr:hover {
 
 
 /* =========================
+   ANALYST BUTTONS
+========================= */
+
+.action-btn {
+
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    margin-right: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.view-btn {
+
+    background-color: #2563eb;
+
+    color: white;
+}
+
+.view-btn:hover {
+
+    background-color: #1d4ed8;
+}
+
+.escalate-btn {
+
+    background-color: #dc2626;
+
+    color: white;
+}
+
+.escalate-btn:hover {
+
+    background-color: #b91c1c;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+
+    display: none;
+
+    position: fixed;
+
+    z-index: 1000;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+
+    background-color: #111827;
+
+    margin: 5% auto;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    width: 70%;
+
+    color: white;
+
+    border: 1px solid #1e293b;
+}
+
+.close-btn {
+
+    float: right;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    color: #ef4444;
+}
+
+.close-btn:hover {
+
+    color: white;
+}
+
+pre {
+
+    white-space: pre-wrap;
+
+    margin-top: 20px;
+
+    color: #38bdf8;
+}
+
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+.section-title {
+
+    margin-bottom: 20px;
+
+    color: #38bdf8;
+}
+
+
+/* =========================
    RESPONSIVE
 ========================= */
 
@@ -193,6 +545,16 @@ tr:hover {
     .cards {
 
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .charts {
+
+        grid-template-columns: 1fr;
+    }
+
+    .intel-grid {
+
+        grid-template-columns: 1fr;
     }
 }
 
@@ -207,4 +569,597 @@ tr:hover {
 
         font-size: 12px;
     }
+
+    .modal-content {
+
+        width: 90%;
+    }
+}
+/* =========================
+   LIVE POPUP
+========================= */
+
+.live-popup {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    width: 320px;
+
+    background-color: #111827;
+
+    border-left: 5px solid #ef4444;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+
+    display: none;
+
+    z-index: 2000;
+
+    animation: popupSlide 0.4s ease;
+}
+
+.live-popup h3 {
+
+    color: #ef4444;
+
+    margin-top: 0;
+
+    margin-bottom: 10px;
+}
+
+.live-popup p {
+
+    color: #e2e8f0;
+
+    margin: 0;
+}
+
+@keyframes popupSlide {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0px);
+    }
+}
+/* =========================
+   LIVE TICKER
+========================= */
+
+.ticker-wrapper {
+
+    background: #111827;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid #1e293b;
+}
+
+.ticker {
+
+    padding: 12px;
+
+    color: #facc15;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+/* =========================
+   CHARTS
+========================= */
+
+.charts-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.chart-card {
+
+    background-color: #111827;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid #1e293b;
+}
+
+.chart-card h2 {
+
+    margin-top: 0;
+
+    color: #38bdf8;
+}
+
+/* =========================
+   HUNT BOX
+========================= */
+
+.hunt-box {
+
+    margin: 20px;
+
+    padding: 20px;
+
+    background-color: #111827;
+
+    border-radius: 12px;
+
+    border: 1px solid #1e293b;
+}
+
+.hunt-box h2 {
+
+    margin-top: 0;
+
+    color: #38bdf8;
+}
+
+.hunt-controls {
+
+    display: flex;
+
+    gap: 15px;
+}
+
+.hunt-controls input {
+
+    flex: 1;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    border: none;
+
+    background-color: #1e293b;
+
+    color: white;
+}
+
+/* =========================
+   MITRE PANEL
+========================= */
+
+.mitre-panel {
+
+    margin: 20px;
+
+    background-color: #111827;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid #1e293b;
+}
+
+.mitre-panel h2 {
+
+    color: #38bdf8;
+}
+
+.mitre-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.mitre-card {
+
+    background-color: #1e293b;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    border-left: 4px solid #38bdf8;
+}
+
+/* =========================
+   THREAT INTEL
+========================= */
+
+.intel-panel {
+
+    margin: 20px;
+
+    background-color: #111827;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid #1e293b;
+}
+
+.intel-panel h2 {
+
+    color: #38bdf8;
+}
+
+.intel-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.intel-card {
+
+    background-color: #1e293b;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    border-left: 4px solid #ef4444;
+}
+
+/* =========================
+   CORRELATION PANEL
+========================= */
+
+.correlation-panel {
+
+    margin: 20px;
+
+    background-color: #111827;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid #1e293b;
+}
+
+.correlation-panel h2 {
+
+    color: #38bdf8;
+}
+
+.correlation-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.correlation-card {
+
+    background-color: #1e293b;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    border-left: 4px solid #f59e0b;
+}
+
+.attack-flow {
+
+    margin-top: 15px;
+
+    color: #cbd5e1;
+
+    line-height: 1.7;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+
+    display: none;
+
+    position: fixed;
+
+    z-index: 999;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.7);
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.modal-content {
+
+    background-color: #111827;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    width: 500px;
+
+    max-width: 90%;
+
+    position: relative;
+}
+
+.close-btn {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    cursor: pointer;
+
+    font-size: 24px;
+}
+
+/* =========================
+   LIVE ALERT POPUP
+========================= */
+
+.popup {
+
+    position: fixed;
+
+    top: 20px;
+
+    right: 20px;
+
+    background-color: #dc2626;
+
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    opacity: 0;
+
+    transition: 0.4s;
+
+    z-index: 9999;
+}
+
+.show-popup {
+
+    opacity: 1;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .charts-container,
+    .mitre-grid,
+    .intel-grid,
+    .correlation-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .hunt-controls {
+
+        flex-direction: column;
+    }
+}
+/* =========================
+   LIVE TICKER FIX
+========================= */
+
+.live-ticker {
+
+    width: 100%;
+
+    padding: 14px 20px;
+
+    margin-bottom: 25px;
+
+    background: linear-gradient(
+        90deg,
+        rgba(15,23,42,0.95),
+        rgba(30,41,59,0.95)
+    );
+
+    border: 1px solid #1e40af;
+
+    border-radius: 12px;
+
+    color: #facc15;
+
+    font-weight: bold;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+
+    box-sizing: border-box;
+}
+
+/* =========================
+   CHART FIX
+========================= */
+
+.chart-container {
+
+    width: 100%;
+
+    height: 420px;
+
+    position: relative;
+}
+
+canvas {
+
+    max-width: 100% !important;
+
+    max-height: 380px !important;
+}
+
+/* =========================
+   CORRELATION FIX
+========================= */
+
+#correlationContainer {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+}
+
+.correlation-card {
+
+    background: #111827;
+
+    border: 1px solid #1e3a8a;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.correlation-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 0 15px rgba(59,130,246,0.3);
+}
+
+/* =========================
+   MITRE FIX
+========================= */
+
+#mitreContainer {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 20px;
+}
+
+.mitre-card {
+
+    background: linear-gradient(
+        135deg,
+        #1e3a8a,
+        #06b6d4
+    );
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    color: white;
+}
+
+/* =========================
+   THREAT INTEL FIX
+========================= */
+
+#intelContainer {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 20px;
+}
+
+.intel-card {
+
+    background: #0f172a;
+
+    border: 1px solid #0ea5e9;
+
+    border-radius: 12px;
+
+    padding: 20px;
+}
+
+/* =========================
+   MODAL FIX
+========================= */
+
+#alertModal {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(0,0,0,0.7);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 999;
+}
+
+#modalBody {
+
+    background: #111827;
+
+    padding: 30px;
+
+    border-radius: 14px;
+
+    width: 400px;
+
+    color: white;
 }

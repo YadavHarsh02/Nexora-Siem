@@ -1,0 +1,200 @@
+May 09 02:42:21 kali systemd[1805]: Starting xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+May 09 02:42:21 kali systemd-timesyncd[379]: Contacted time server [2401:c080:3400:2979:5400:5ff:fe35:2d0d]:123 (2.debian.pool.ntp.org).
+May 09 02:42:21 kali systemd-timesyncd[379]: Initial clock synchronization to Sat 2026-05-09 02:42:21.773269 EDT.
+May 09 02:42:21 kali polkitd[629]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.27, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+May 09 02:42:21 kali systemd[786]: Stopped org.gnome.Shell@wayland.service - GNOME Shell on Wayland.
+May 09 02:42:21 kali systemd[786]: org.gnome.Shell@wayland.service: Consumed 3.013s CPU time over 28.380s wall clock time, 370.8M memory peak.
+May 09 02:42:21 kali systemd[786]: Stopped target gnome-session-manager.target - GNOME Session Manager is ready.
+May 09 02:42:21 kali systemd[786]: Stopping gnome-session-manager@gnome-login.service - GNOME Session Manager (session: gnome-login)...
+May 09 02:42:22 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.desktop.gtk'
+May 09 02:42:22 kali systemd[1805]: Started xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+May 09 02:42:22 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Activating service name='org.gnome.Nautilus' requested by ':1.87' (uid=1000 pid=2779 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 09 02:42:22 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Successfully activated service 'org.freedesktop.portal.Desktop'
+May 09 02:42:22 kali systemd[1805]: Started xdg-desktop-portal.service - Portal service.
+May 09 02:42:22 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Successfully activated service 'org.gnome.Shell.Screencast'
+May 09 02:42:22 kali org.gnome.Nautilus[2884]: Connecting to org.freedesktop.Tracker3.Miner.Files
+May 09 02:42:22 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Successfully activated service 'org.gnome.Nautilus'
+May 09 02:42:22 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Activating service name='org.gnome.NautilusPreviewer' requested by ':1.87' (uid=1000 pid=2779 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 09 02:42:22 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Activating service name='org.gnome.ArchiveManager1' requested by ':1.87' (uid=1000 pid=2779 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 09 02:42:22 kali gnome-shell[2013]: DING: Detected async api for thumbnails
+May 09 02:42:22 kali gnome-shell[2013]: DING: (gjs:2779): Gjs-WARNING **: 02:42:22.730: GLibUnix.signal_add_full has been renamed. Please update your code to use GLibUnix.signal_add instead.
+May 09 02:42:22 kali gnome-shell[2013]: DING: 0 get() ["resource:///org/gnome/gjs/modules/core/_common.js":190:42]
+May 09 02:42:22 kali gnome-shell[2013]: DING: 1 DesktopManager() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/desktopManager.js":274:17]
+May 09 02:42:22 kali gnome-shell[2013]: DING: 2 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":180:26]
+May 09 02:42:22 kali gnome-shell[2013]: DING: 3 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":197:21]
+May 09 02:42:22 kali gnome-shell[2013]: DING: 4 <TOP LEVEL> ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":206:13]
+May 09 02:42:22 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Successfully activated service 'org.gnome.ArchiveManager1'
+May 09 02:42:22 kali gnome-shell[2013]: DING: ** Message: 02:42:22.928: Connecting to org.freedesktop.Tracker3.Miner.Files
+May 09 02:42:22 kali gnome-shell[2013]: DING: GNOME nautilus 49.3
+May 09 02:42:23 kali gnome-shell[2013]: DING: (gjs:2779): Gjs-WARNING **: 02:42:23.003: Gio.DesktopAppInfo has been moved to a separate platform-specific library. Please update your code to use GioUnix.DesktopAppInfo instead.
+May 09 02:42:23 kali gnome-shell[2013]: DING: 0 get() ["resource:///org/gnome/gjs/modules/core/_common.js":190:42]
+May 09 02:42:23 kali gnome-shell[2013]: DING: 1 _updateMetadataFromFileInfo() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/fileItem.js":292:17]
+May 09 02:42:23 kali gnome-shell[2013]: DING: 2 FileItem() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/fileItem.js":56:14]
+May 09 02:42:23 kali gnome-shell[2013]: DING: 3 _doReadAsync/</<() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/desktopManager.js":1482:44]
+May 09 02:42:23 kali gnome-shell[2013]: DING: 4 <TOP LEVEL> ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":206:13]
+May 09 02:42:23 kali gnome-shell[2013]: DING: DBus interface for Nautilus (org.gnome.Nautilus.FileOperations2) is now available.
+May 09 02:42:23 kali gnome-shell[2013]: DING: DBus interface for Nautilus (org.freedesktop.FileManager1) is now available.
+May 09 02:42:23 kali gnome-shell[2013]: DING: DBus interface for Gvfs daemon (org.gtk.vfs.Metadata) is now available.
+May 09 02:42:23 kali gnome-shell[2013]: DING: DBus interface for File-roller (org.gnome.ArchiveManager1) is now available.
+May 09 02:42:23 kali systemd[786]: Stopped gnome-session-manager@gnome-login.service - GNOME Session Manager (session: gnome-login).
+May 09 02:42:23 kali systemd[786]: Stopped target gnome-session-pre.target - Tasks to be run before GNOME Session starts.
+May 09 02:42:23 kali systemd[786]: Stopped target graphical-session-pre.target - Session services which should run early before the graphical session is brought up.
+May 09 02:42:23 kali systemd[786]: Reached target gnome-session-shutdown.target - Shutdown running GNOME Session.
+May 09 02:42:23 kali systemd[786]: Starting gnome-session-restart-dbus.service - Restart DBus after GNOME Session shutdown...
+May 09 02:42:23 kali systemd[786]: Stopped target gnome-session-shutdown.target - Shutdown running GNOME Session.
+May 09 02:42:23 kali systemd[786]: Started gnome-session-restart-dbus.service - Restart DBus after GNOME Session shutdown.
+May 09 02:42:23 kali systemd[786]: Stopping filter-chain.service - PipeWire filter chain daemon...
+May 09 02:42:23 kali systemd[786]: Stopped filter-chain.service - PipeWire filter chain daemon.
+May 09 02:42:23 kali systemd[786]: Stopping wireplumber.service - Multimedia Service Session Manager...
+May 09 02:42:23 kali gnome-shell[2013]: Received notification for window. 0 notifications remaining.
+May 09 02:42:23 kali systemd[786]: Stopped wireplumber.service - Multimedia Service Session Manager.
+May 09 02:42:23 kali systemd[786]: Stopping dbus.service - D-Bus User Message Bus...
+May 09 02:42:23 kali gdm-launch-environment][775]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+May 09 02:42:23 kali systemd[786]: Stopping pipewire.service - PipeWire Multimedia Service...
+May 09 02:42:23 kali systemd[786]: Stopped dbus.service - D-Bus User Message Bus.
+May 09 02:42:23 kali systemd[786]: dbus.service: Consumed 1.614s CPU time over 30.149s wall clock time, 161.2M memory peak.
+May 09 02:42:23 kali systemd[786]: mpris-proxy.service: Main process exited, code=exited, status=1/FAILURE
+May 09 02:42:23 kali systemd[786]: mpris-proxy.service: Failed with result 'exit-code'.
+May 09 02:42:23 kali systemd[786]: Stopped pipewire.service - PipeWire Multimedia Service.
+May 09 02:42:23 kali systemd[1]: session-c1.scope: Deactivated successfully.
+May 09 02:42:23 kali systemd-logind[633]: Session c1 logged out. Waiting for processes to exit.
+May 09 02:42:23 kali systemd-logind[633]: Removed session c1.
+May 09 02:42:23 kali gdm3[768]: Gdm: Child process -822 was already dead.
+May 09 02:42:23 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Successfully activated service 'org.gnome.NautilusPreviewer'
+May 09 02:42:23 kali gnome-shell[2013]: DING: DBus interface for Nautilus-Sushi (org.gnome.NautilusPreviewer) is now available.
+May 09 02:42:24 kali systemd[1805]: Started app-gnome-firefox\x2desr-3059.scope - Application launched by gnome-shell.
+May 09 02:42:26 kali dbus-daemon[624]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.121' (uid=1000 pid=3059 comm="/usr/lib/firefox-esr/firefox-esr" label="unconfined")
+May 09 02:42:26 kali systemd[1]: Starting systemd-timedated.service - Time & Date Service...
+May 09 02:42:26 kali systemd[1]: Started systemd-timedated.service - Time & Date Service.
+May 09 02:42:26 kali dbus-daemon[624]: [system] Successfully activated service 'org.freedesktop.timedate1'
+May 09 02:42:26 kali rtkit-daemon[827]: Successfully made thread 3269 of process 3059 owned by '1000' RT at priority 10.
+May 09 02:42:33 kali systemd[1]: Stopping user@60578.service - User Manager for UID 60578...
+May 09 02:42:33 kali systemd[786]: Activating special unit exit.target...
+May 09 02:42:33 kali systemd[786]: Removed slice app-gnome\x2dsession\x2dmanager.slice - Slice /app/gnome-session-manager.
+May 09 02:42:33 kali systemd[786]: Removed slice background.slice - User Background Tasks Slice.
+May 09 02:42:33 kali systemd[786]: Stopped target default.target - Main User Target.
+May 09 02:42:33 kali systemd[786]: Stopped target sound.target - Sound Card.
+May 09 02:42:33 kali systemd[786]: Stopping gcr-ssh-agent.service - GCR ssh-agent wrapper...
+May 09 02:42:33 kali systemd[786]: Stopping pipewire-pulse.service - PipeWire PulseAudio...
+May 09 02:42:33 kali systemd[786]: Stopping ssh-agent.service - OpenSSH Agent...
+May 09 02:42:33 kali ssh-agent[859]: exiting on signal 15
+May 09 02:42:33 kali systemd[786]: Stopped pipewire-pulse.service - PipeWire PulseAudio.
+May 09 02:42:33 kali systemd[786]: Stopped gcr-ssh-agent.service - GCR ssh-agent wrapper.
+May 09 02:42:33 kali systemd[786]: Stopped ssh-agent.service - OpenSSH Agent.
+May 09 02:42:33 kali systemd[786]: Removed slice session.slice - User Core Session Slice.
+May 09 02:42:33 kali systemd[786]: session.slice: Consumed 9.074s CPU time over 40.507s wall clock time, 606.5M memory peak.
+May 09 02:42:33 kali systemd[786]: Stopped target basic.target - Basic System.
+May 09 02:42:33 kali systemd[786]: Stopped target paths.target - Paths.
+May 09 02:42:33 kali systemd[786]: Stopped target sockets.target - Sockets.
+May 09 02:42:33 kali systemd[786]: Stopped target timers.target - Timers.
+May 09 02:42:33 kali systemd[786]: Closed dbus.socket - D-Bus User Message Bus Socket.
+May 09 02:42:33 kali systemd[786]: Closed dirmngr.socket - GnuPG network certificate management daemon.
+May 09 02:42:33 kali systemd[786]: Closed gnome-keyring-daemon.socket - GNOME Keyring daemon.
+May 09 02:42:33 kali systemd[786]: Closed gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 09 02:42:33 kali systemd[786]: Closed gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+May 09 02:42:33 kali systemd[786]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+May 09 02:42:33 kali systemd[786]: Stopping gpg-agent.socket - GnuPG cryptographic agent and passphrase cache...
+May 09 02:42:33 kali systemd[786]: Closed keyboxd.socket - GnuPG public key management service.
+May 09 02:42:33 kali systemd[786]: Closed pipewire-pulse.socket - PipeWire PulseAudio.
+May 09 02:42:33 kali systemd[786]: Closed pipewire.socket - PipeWire Multimedia System Sockets.
+May 09 02:42:33 kali systemd[786]: Closed speech-dispatcher.socket - Speech Dispatcher Socket.
+May 09 02:42:33 kali systemd[786]: Closed systemd-ask-password.socket - Query the User Interactively for a Password.
+May 09 02:42:33 kali systemd[786]: Closed gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+May 09 02:42:33 kali systemd[786]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+May 09 02:42:33 kali systemd[786]: Closed gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+May 09 02:42:33 kali systemd[786]: Stopping ssh-agent.socket - OpenSSH Agent socket...
+May 09 02:42:33 kali systemd[786]: Closed ssh-agent.socket - OpenSSH Agent socket.
+May 09 02:42:33 kali systemd[786]: Removed slice app.slice - User Application Slice.
+May 09 02:42:33 kali systemd[786]: Reached target shutdown.target - Shutdown.
+May 09 02:42:33 kali systemd[786]: Finished systemd-exit.service - Exit the Session.
+May 09 02:42:33 kali systemd[786]: Reached target exit.target - Exit the Session.
+May 09 02:42:33 kali systemd-logind[633]: Removed session 1.
+May 09 02:42:33 kali systemd[1]: user@60578.service: Deactivated successfully.
+May 09 02:42:33 kali systemd[1]: Stopped user@60578.service - User Manager for UID 60578.
+May 09 02:42:33 kali systemd[1]: user@60578.service: Consumed 10.275s CPU time over 40.785s wall clock time, 664.6M memory peak.
+May 09 02:42:33 kali systemd[1]: Stopping user-runtime-dir@60578.service - User Runtime Directory /run/user/60578...
+May 09 02:42:33 kali systemd[1]: run-user-60578.mount: Deactivated successfully.
+May 09 02:42:33 kali systemd[1]: user-runtime-dir@60578.service: Deactivated successfully.
+May 09 02:42:33 kali systemd[1]: Stopped user-runtime-dir@60578.service - User Runtime Directory /run/user/60578.
+May 09 02:42:33 kali systemd[1]: Removed slice user-60578.slice - User Slice of UID 60578.
+May 09 02:42:33 kali systemd[1]: user-60578.slice: Consumed 10.321s CPU time over 40.864s wall clock time, 666.9M memory peak.
+May 09 02:42:48 kali systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+May 09 02:42:48 kali systemd[1]: systemd-localed.service: Deactivated successfully.
+May 09 02:42:56 kali systemd[1]: systemd-timedated.service: Deactivated successfully.
+May 09 02:42:57 kali geoclue[1429]: Service not used for 60 seconds. Shutting down..
+May 09 02:42:57 kali realmd[1197]: quitting realmd service after timeout
+May 09 02:42:57 kali realmd[1197]: stopping service
+May 09 02:42:57 kali systemd[1]: realmd.service: Deactivated successfully.
+May 09 02:42:57 kali systemd[1]: geoclue.service: Deactivated successfully.
+May 09 02:42:57 kali gnome-shell[2013]: Error in size change accounting.
+May 09 02:43:00 kali systemd[1805]: Started app-gnome-org.gnome.Terminal-3773.scope - Application launched by gnome-shell.
+May 09 02:43:00 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Activating via systemd: service name='org.gnome.Terminal' unit='gnome-terminal-server.service' requested by ':1.99' (uid=1000 pid=3773 comm="/usr/bin/gnome-terminal" label="unconfined")
+May 09 02:43:00 kali systemd[1805]: Created slice app-org.gnome.Terminal.slice - Slice /app/org.gnome.Terminal.
+May 09 02:43:00 kali systemd[1805]: Starting gnome-terminal-server.service - GNOME Terminal Server...
+May 09 02:43:00 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Successfully activated service 'org.gnome.Terminal'
+May 09 02:43:00 kali systemd[1805]: Started gnome-terminal-server.service - GNOME Terminal Server.
+May 09 02:43:00 kali systemd[1805]: Started vte-spawn-511556ce-d1bf-45f8-9ad5-5dfa2773abdf.scope - VTE child process 3923 launched by org.gnome.Terminal process 3805.
+May 09 02:43:03 kali gnome-shell[2013]: Error in size change accounting.
+May 09 02:43:11 kali sudo[4205]:    harsh : TTY=pts/0 ; PWD=/home/harsh ; USER=root ; COMMAND=/usr/bin/su
+May 09 02:43:11 kali sudo[4205]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=1000)
+May 09 02:43:11 kali su[4229]: (to root) root on pts/1
+May 09 02:43:11 kali su[4229]: pam_unix(su:session): session opened for user root(uid=0) by harsh(uid=0)
+May 09 02:43:11 kali systemd-logind[633]: Existing logind session ID 3 used by new audit session, ignoring.
+May 09 02:43:11 kali systemd[1]: Created slice user-0.slice - User Slice of UID 0.
+May 09 02:43:11 kali systemd[1]: Starting user-runtime-dir@0.service - User Runtime Directory /run/user/0...
+May 09 02:43:11 kali systemd-logind[633]: New session 'c2' of user 'root' with class 'user-early' and type 'tty'.
+May 09 02:43:11 kali systemd[1]: Finished user-runtime-dir@0.service - User Runtime Directory /run/user/0.
+May 09 02:43:11 kali systemd[1]: Starting user@0.service - User Manager for UID 0...
+May 09 02:43:11 kali (systemd)[4233]: pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+May 09 02:43:11 kali systemd-logind[633]: New session '4' of user 'root' with class 'manager-early' and type 'unspecified'.
+May 09 02:43:11 kali systemd[4233]: Queued start job for default target default.target.
+May 09 02:43:11 kali systemd[4233]: Created slice app.slice - User Application Slice.
+May 09 02:43:11 kali systemd[4233]: Created slice session.slice - User Core Session Slice.
+May 09 02:43:11 kali systemd[4233]: Reached target paths.target - Paths.
+May 09 02:43:11 kali systemd[4233]: Reached target timers.target - Timers.
+May 09 02:43:11 kali systemd[4233]: Starting dbus.socket - D-Bus User Message Bus Socket...
+May 09 02:43:11 kali systemd[4233]: Listening on dirmngr.socket - GnuPG network certificate management daemon.
+May 09 02:43:11 kali systemd[4233]: Listening on gnome-keyring-daemon.socket - GNOME Keyring daemon.
+May 09 02:43:11 kali systemd[4233]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 09 02:43:11 kali systemd[4233]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+May 09 02:43:11 kali systemd[4233]: Starting gpg-agent.socket - GnuPG cryptographic agent and passphrase cache...
+May 09 02:43:11 kali systemd[4233]: Listening on keyboxd.socket - GnuPG public key management service.
+May 09 02:43:11 kali systemd[4233]: Listening on pipewire-pulse.socket - PipeWire PulseAudio.
+May 09 02:43:11 kali systemd[4233]: Listening on pipewire.socket - PipeWire Multimedia System Sockets.
+May 09 02:43:11 kali systemd[4233]: Listening on speech-dispatcher.socket - Speech Dispatcher Socket.
+May 09 02:43:11 kali systemd[4233]: Starting ssh-agent.socket - OpenSSH Agent socket...
+May 09 02:43:11 kali systemd[4233]: Listening on systemd-ask-password.socket - Query the User Interactively for a Password.
+May 09 02:43:11 kali systemd[4233]: Listening on dbus.socket - D-Bus User Message Bus Socket.
+May 09 02:43:11 kali systemd[4233]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+May 09 02:43:11 kali systemd[4233]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+May 09 02:43:11 kali systemd[4233]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+May 09 02:43:11 kali systemd[4233]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+May 09 02:43:11 kali systemd[4233]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+May 09 02:43:11 kali systemd[4233]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+May 09 02:43:11 kali systemd[4233]: Reached target sockets.target - Sockets.
+May 09 02:43:11 kali systemd[4233]: Reached target basic.target - Basic System.
+May 09 02:43:11 kali systemd[1]: Started user@0.service - User Manager for UID 0.
+May 09 02:43:11 kali systemd[4233]: Starting dbus.service - D-Bus User Message Bus...
+May 09 02:43:11 kali systemd[1]: Started session-c2.scope - Session c2 of User root.
+May 09 02:43:11 kali systemd[4233]: Started pipewire.service - PipeWire Multimedia Service.
+May 09 02:43:11 kali dbus-daemon[4256]: [session uid=0 pid=4256 pidfd=5] AppArmor D-Bus mediation is enabled
+May 09 02:43:11 kali systemd[4233]: Started dbus.service - D-Bus User Message Bus.
+May 09 02:43:11 kali systemd[4233]: mpris-proxy.service - Bluetooth mpris proxy skipped, unmet condition check ConditionUser=!@system
+May 09 02:43:11 kali systemd[4233]: Started wireplumber.service - Multimedia Service Session Manager.
+May 09 02:43:11 kali systemd[4233]: Started filter-chain.service - PipeWire filter chain daemon.
+May 09 02:43:11 kali systemd[4233]: Started pipewire-pulse.service - PipeWire PulseAudio.
+May 09 02:43:11 kali systemd[4233]: Reached target default.target - Main User Target.
+May 09 02:43:11 kali systemd[4233]: Startup finished in 338ms.
+May 09 02:43:12 kali wireplumber[4260]: wp-device: SPA handle 'api.libcamera.enum.manager' could not be loaded; is it installed?
+May 09 02:43:12 kali wireplumber[4260]: s-monitors-libcamera: PipeWire's libcamera SPA plugin is missing or broken. Some camera types may not be supported.
+May 09 02:43:13 kali dbus-daemon[4256]: [session uid=0 pid=4256 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.4' (uid=0 pid=4260 comm="/usr/bin/wireplumber" label="unconfined")
+May 09 02:43:13 kali systemd[4233]: Starting xdg-permission-store.service - sandboxed app permission store...
+May 09 02:43:13 kali dbus-daemon[4256]: [session uid=0 pid=4256 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+May 09 02:43:13 kali systemd[4233]: Started xdg-permission-store.service - sandboxed app permission store.
+May 09 02:45:01 kali CRON[5340]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 02:45:01 kali CRON[5342]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 09 02:45:01 kali CRON[5340]: pam_unix(cron:session): session closed for user root
+May 09 02:52:01 kali systemd[1]: logrotate.service - Rotate log files skipped, unmet condition check ConditionACPower=true
+May 09 02:55:01 kali CRON[12392]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 02:55:01 kali CRON[12395]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 09 02:55:01 kali CRON[12392]: pam_unix(cron:session): session closed for user root

@@ -1,0 +1,200 @@
+May 09 05:32:41 kali kernel: PM: suspend exit
+May 09 05:32:41 kali systemd[1]: user.slice: Unit now thawed.
+May 09 05:32:41 kali systemd[1]: user-1000.slice: Unit now thawed.
+May 09 05:32:41 kali systemd[1]: session-2.scope: Unit now thawed.
+May 09 05:32:41 kali ModemManager[705]: <msg> [sleep-monitor-systemd] system is resuming
+May 09 05:32:41 kali systemd[1]: user@1000.service: Unit now thawed.
+May 09 05:32:41 kali systemd[1]: user-0.slice: Unit now thawed.
+May 09 05:32:41 kali systemd[1]: user@0.service: Unit now thawed.
+May 09 05:32:41 kali systemd[1]: session-c2.scope: Unit now thawed.
+May 09 05:32:41 kali systemd-sleep[97096]: Successfully thawed unit 'user.slice'.
+May 09 05:32:41 kali systemd[1]: systemd-suspend.service: Deactivated successfully.
+May 09 05:32:41 kali systemd[1]: Finished systemd-suspend.service - System Suspend.
+May 09 05:32:41 kali systemd[1]: Stopped target sleep.target - Sleep.
+May 09 05:32:41 kali systemd[1]: Reached target suspend.target - Suspend.
+May 09 05:32:41 kali systemd[1]: Stopped target suspend.target - Suspend.
+May 09 05:32:41 kali systemd-logind[633]: Operation 'suspend' finished.
+May 09 05:32:41 kali NetworkManager[687]: <info>  [1778319161.4990] manager: sleep: wake requested (sleeping: yes  enabled: yes)
+May 09 05:32:41 kali NetworkManager[687]: <info>  [1778319161.4994] device (wlan0): state change: unmanaged -> unavailable (reason 'managed', managed-type: 'external')
+May 09 05:32:41 kali rtkit-daemon[827]: Resuming known real-time threads.
+May 09 05:32:41 kali NetworkManager[687]: <info>  [1778319161.5011] device (p2p-dev-wlan0): state change: unmanaged -> unavailable (reason 'managed', managed-type: 'external')
+May 09 05:32:41 kali rtkit-daemon[827]: Successfully made thread 64860 of process 56490 owned by '1000' RT at priority 10.
+May 09 05:32:41 kali NetworkManager[687]: <warn>  [1778319161.5040] device (p2p-dev-wlan0): error setting IPv4 forwarding to '0': Resource temporarily unavailable
+May 09 05:32:41 kali rtkit-daemon[827]: Successfully made thread 56309 of process 56109 owned by '1000' RT at priority 10.
+May 09 05:32:41 kali NetworkManager[687]: <info>  [1778319161.5042] manager: NetworkManager state is now DISCONNECTED
+May 09 05:32:41 kali rtkit-daemon[827]: Successfully made thread 2024 of process 2013 owned by '1000' high priority at nice level -15.
+May 09 05:32:41 kali rtkit-daemon[827]: Successfully made thread 1854 of process 1837 owned by '1000' RT at priority 20.
+May 09 05:32:41 kali rtkit-daemon[827]: Successfully made thread 1837 of process 1837 owned by '1000' high priority at nice level -11.
+May 09 05:32:41 kali rtkit-daemon[827]: Successfully made thread 1844 of process 1841 owned by '1000' RT at priority 20.
+May 09 05:32:41 kali rtkit-daemon[827]: Successfully made thread 1841 of process 1841 owned by '1000' high priority at nice level -11.
+May 09 05:32:41 kali rtkit-daemon[827]: Successfully made thread 1838 of process 1828 owned by '1000' RT at priority 20.
+May 09 05:32:41 kali rtkit-daemon[827]: Successfully made thread 1828 of process 1828 owned by '1000' high priority at nice level -11.
+May 09 05:32:41 kali rtkit-daemon[827]: Resumed scheduling 9 threads.
+May 09 05:32:41 kali NetworkManager[687]: <info>  [1778319161.5728] device (wlan0): supplicant interface state: internal-starting -> disconnected
+May 09 05:32:41 kali NetworkManager[687]: <info>  [1778319161.5729] device (p2p-dev-wlan0): state change: unavailable -> unmanaged (reason 'unmanaged-link-not-init', managed-type: 'removed')
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.573 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-dba4d603-d7ed-4931-8823-17ad585705d5: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali NetworkManager[687]: <info>  [1778319161.5742] Wi-Fi P2P device controlled by interface wlan0 created
+May 09 05:32:41 kali NetworkManager[687]: <info>  [1778319161.5744] manager: (p2p-dev-wlan0): new 802.11 Wi-Fi P2P device (/org/freedesktop/NetworkManager/Devices/4)
+May 09 05:32:41 kali NetworkManager[687]: <info>  [1778319161.5746] device (p2p-dev-wlan0): state change: unmanaged -> unavailable (reason 'managed', managed-type: 'external')
+May 09 05:32:41 kali NetworkManager[687]: <warn>  [1778319161.5746] device (p2p-dev-wlan0): error setting IPv4 forwarding to '0': Resource temporarily unavailable
+May 09 05:32:41 kali NetworkManager[687]: <info>  [1778319161.5749] device (wlan0): state change: unavailable -> disconnected (reason 'supplicant-available', managed-type: 'full')
+May 09 05:32:41 kali NetworkManager[687]: <info>  [1778319161.5752] device (p2p-dev-wlan0): state change: unavailable -> disconnected (reason 'none', managed-type: 'full')
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.585 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-dba4d603-d7ed-4931-8823-17ad585705d5: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.601 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-082ee5a7-7c25-470a-9643-0c06f0466ea1: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.607 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-082ee5a7-7c25-470a-9643-0c06f0466ea1: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.621 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.629 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.644 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-f908627d-13bf-4a04-b91f-a64e9245323d: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.650 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-f908627d-13bf-4a04-b91f-a64e9245323d: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.662 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-fbf6fcf1-96cf-4e2e-a6a6-1bab8cbe36b1: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.668 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-fbf6fcf1-96cf-4e2e-a6a6-1bab8cbe36b1: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.681 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-8e6a6715-9abc-4043-88ef-9e39c6f63e0f: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.687 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-8e6a6715-9abc-4043-88ef-9e39c6f63e0f: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.705 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-55213584-9a29-4916-badf-0fb7ed682aeb: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.717 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-55213584-9a29-4916-badf-0fb7ed682aeb: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.740 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-dd17041c-09ea-4b17-a271-5b989867ec65: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.748 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-dd17041c-09ea-4b17-a271-5b989867ec65: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.761 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-42b3ce2f-bd9f-485a-96ae-26406230b1ff: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.767 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-42b3ce2f-bd9f-485a-96ae-26406230b1ff: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.779 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-3c4852d6-d47b-4f46-b05e-b5edc1aa440e: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.785 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-3c4852d6-d47b-4f46-b05e-b5edc1aa440e: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.798 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-6861ec7b-d07a-4673-856c-7f22b4d55769: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.804 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-6861ec7b-d07a-4673-856c-7f22b4d55769: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.816 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-8c2f4425-77d6-4755-aca3-891fdbc66a58: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.822 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-8c2f4425-77d6-4755-aca3-891fdbc66a58: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.835 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-309dcde8-ccb1-4062-8f78-600115a34327: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.841 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-309dcde8-ccb1-4062-8f78-600115a34327: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.853 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-5565a099-7fe2-45c1-a22b-d7e9dfea9a2e: failed to setup: failed to connect to MCHI: 00cbe07e8537eec788c9f80b2d9f40e4bf5e16d2 [BootGuard Configuration] has not been opened
+May 09 05:32:41 kali fwupd[20238]: 09:32:41.860 FuEngine             failed to add device /sys/devices/pci0000:00/0000:00:16.0/0000:00:16.0-5565a099-7fe2-45c1-a22b-d7e9dfea9a2e: failed to setup: failed to connect to MKHI: 1d10887a051b3991a3314f760163248231628504 [BootGuard Configuration] has not been opened
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8716] policy: auto-activating connection 'hy376’s iPhone' (093e9ebf-86a5-46d4-85ec-2a438bbb70db)
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8758] device (wlan0): Activation: starting connection 'hy376’s iPhone' (093e9ebf-86a5-46d4-85ec-2a438bbb70db)
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8760] device (wlan0): state change: disconnected -> prepare (reason 'none', managed-type: 'full')
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8764] manager: NetworkManager state is now CONNECTING
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8768] device (wlan0): state change: prepare -> config (reason 'none', managed-type: 'full')
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8775] device (wlan0): Activation: (wifi) access point 'hy376’s iPhone' has security, but secrets are required.
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8775] device (wlan0): state change: config -> need-auth (reason 'none', managed-type: 'full')
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8826] device (wlan0): state change: need-auth -> prepare (reason 'none', managed-type: 'full')
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8835] device (wlan0): state change: prepare -> config (reason 'none', managed-type: 'full')
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8843] device (wlan0): Activation: (wifi) connection 'hy376’s iPhone' has security, and secrets exist.  No new secrets needed.
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8843] Config: added 'ssid' value 'hy376’s iPhone'
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8843] Config: added 'scan_ssid' value '1'
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8844] Config: added 'bgscan' value 'simple:30:-65:300'
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8844] Config: added 'key_mgmt' value 'WPA-PSK WPA-PSK-SHA256 FT-PSK SAE FT-SAE'
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8844] Config: added 'auth_alg' value 'OPEN'
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.8844] Config: added 'psk' value '<hidden>'
+May 09 05:32:42 kali wpa_supplicant[752]: wlan0: SME: Trying to authenticate with c6:3f:bc:8a:9b:7c (SSID='hy376\xe2\x80\x99s iPhone' freq=5745 MHz)
+May 09 05:32:42 kali kernel: wlan0: authenticate with c6:3f:bc:8a:9b:7c (local address=7c:70:db:80:23:16)
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.9025] device (wlan0): supplicant interface state: disconnected -> authenticating
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.9025] device (p2p-dev-wlan0): supplicant management interface state: disconnected -> authenticating
+May 09 05:32:42 kali kernel: wlan0: send auth to c6:3f:bc:8a:9b:7c (try 1/3)
+May 09 05:32:42 kali wpa_supplicant[752]: wlan0: SME: Trying to authenticate with c6:3f:bc:8a:9b:7c (SSID='hy376\xe2\x80\x99s iPhone' freq=5745 MHz)
+May 09 05:32:42 kali wpa_supplicant[752]: wlan0: PMKSA-CACHE-ADDED c6:3f:bc:8a:9b:7c 0
+May 09 05:32:42 kali wpa_supplicant[752]: wlan0: Trying to associate with c6:3f:bc:8a:9b:7c (SSID='hy376\xe2\x80\x99s iPhone' freq=5745 MHz)
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.9875] device (wlan0): supplicant interface state: authenticating -> associating
+May 09 05:32:42 kali NetworkManager[687]: <info>  [1778319162.9875] device (p2p-dev-wlan0): supplicant management interface state: authenticating -> associating
+May 09 05:32:42 kali kernel: wlan0: authenticate with c6:3f:bc:8a:9b:7c (local address=7c:70:db:80:23:16)
+May 09 05:32:42 kali kernel: wlan0: send auth to c6:3f:bc:8a:9b:7c (try 1/3)
+May 09 05:32:42 kali kernel: wlan0: authenticated
+May 09 05:32:42 kali kernel: wlan0: associate with c6:3f:bc:8a:9b:7c (try 1/3)
+May 09 05:32:42 kali kernel: wlan0: RX AssocResp from c6:3f:bc:8a:9b:7c (capab=0x11 status=0 aid=1)
+May 09 05:32:42 kali wpa_supplicant[752]: wlan0: Associated with c6:3f:bc:8a:9b:7c
+May 09 05:32:42 kali wpa_supplicant[752]: wlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+May 09 05:32:43 kali kernel: wlan0: associated
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.0050] device (wlan0): supplicant interface state: associating -> associated
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.0051] device (p2p-dev-wlan0): supplicant management interface state: associating -> associated
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.0222] device (wlan0): supplicant interface state: associated -> 4way_handshake
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.0223] device (p2p-dev-wlan0): supplicant management interface state: associated -> 4way_handshake
+May 09 05:32:43 kali wpa_supplicant[752]: wlan0: WPA: Key negotiation completed with c6:3f:bc:8a:9b:7c [PTK=CCMP GTK=CCMP]
+May 09 05:32:43 kali wpa_supplicant[752]: wlan0: CTRL-EVENT-CONNECTED - Connection to c6:3f:bc:8a:9b:7c completed [id=0 id_str=]
+May 09 05:32:43 kali kernel: wlan0: Limiting TX power to 23 (23 - 0) dBm as advertised by c6:3f:bc:8a:9b:7c
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.0868] device (wlan0): supplicant interface state: 4way_handshake -> completed
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.0869] device (wlan0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network "hy376’s iPhone"
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.0869] device (p2p-dev-wlan0): supplicant management interface state: 4way_handshake -> completed
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.0871] device (wlan0): state change: config -> ip-config (reason 'none', managed-type: 'full')
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.0879] dhcp4 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.1730] dhcp4 (wlan0): state changed new lease, address=172.20.10.2, acd pending
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.3697] dhcp4 (wlan0): state changed new lease, address=172.20.10.2
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.3742] policy: set 'hy376’s iPhone' (wlan0) as default for IPv4 routing and DNS
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.3853] device (wlan0): state change: ip-config -> ip-check (reason 'none', managed-type: 'full')
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.3927] device (wlan0): state change: ip-check -> secondaries (reason 'none', managed-type: 'full')
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.3930] device (wlan0): state change: secondaries -> activated (reason 'none', managed-type: 'full')
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.3935] manager: NetworkManager state is now CONNECTED_SITE
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.3949] device (wlan0): Activation: successful, device activated.
+May 09 05:32:43 kali NetworkManager[687]: <info>  [1778319163.3961] manager: NetworkManager state is now CONNECTED_GLOBAL
+May 09 05:32:44 kali NetworkManager[687]: <info>  [1778319164.7388] dhcp6 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+May 09 05:32:44 kali NetworkManager[687]: <info>  [1778319164.7440] policy: set 'hy376’s iPhone' (wlan0) as default for IPv6 routing and DNS
+May 09 05:32:44 kali NetworkManager[687]: <info>  [1778319164.7571] dhcp6 (wlan0): state changed new lease
+May 09 05:32:45 kali ModemManager[705]: <msg> [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:14.3': not supported by any plugin
+May 09 05:32:50 kali gdm-password][97239]: gkr-pam: unlocked login keyring
+May 09 05:32:50 kali systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+May 09 05:32:50 kali gnome-shell[2013]: loading user theme: /usr/share/themes/Kali-Dark/gnome-shell/gnome-shell.css
+May 09 05:32:51 kali gnome-shell[2013]: Launching DING process
+May 09 05:32:51 kali NetworkManager[687]: <info>  [1778319171.0296] agent-manager: agent[37ee183af501467e,:1.69/org.gnome.Shell.NetworkAgent/1000]: agent registered
+May 09 05:32:51 kali ubuntu-appindicators@ubuntu.com[2013]: Using Brute-force mode for StatusNotifierItem :1.84@/org/blueman/sni
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym ffb3 with keysym ff9b (keycode 59).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym ff9a with keysym ffb9 (keycode 51).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+May 09 05:32:51 kali gnome-shell[2013]: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+May 09 05:32:51 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Activating service name='org.gnome.Nautilus' requested by ':1.105' (uid=1000 pid=97404 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 09 05:32:51 kali org.gnome.Nautilus[97429]: Connecting to org.freedesktop.Tracker3.Miner.Files
+May 09 05:32:51 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Successfully activated service 'org.gnome.Nautilus'
+May 09 05:32:51 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Activating service name='org.gnome.NautilusPreviewer' requested by ':1.105' (uid=1000 pid=97404 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 09 05:32:51 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Activating service name='org.gnome.ArchiveManager1' requested by ':1.105' (uid=1000 pid=97404 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 09 05:32:52 kali gnome-shell[2013]: DING: Detected async api for thumbnails
+May 09 05:32:52 kali gnome-shell[2013]: DING: (gjs:97404): Gjs-WARNING **: 05:32:52.242: GLibUnix.signal_add_full has been renamed. Please update your code to use GLibUnix.signal_add instead.
+May 09 05:32:52 kali gnome-shell[2013]: DING: 0 get() ["resource:///org/gnome/gjs/modules/core/_common.js":190:42]
+May 09 05:32:52 kali gnome-shell[2013]: DING: 1 DesktopManager() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/desktopManager.js":274:17]
+May 09 05:32:52 kali gnome-shell[2013]: DING: 2 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":180:26]
+May 09 05:32:52 kali gnome-shell[2013]: DING: 3 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":197:21]
+May 09 05:32:52 kali gnome-shell[2013]: DING: 4 <TOP LEVEL> ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":206:13]
+May 09 05:32:52 kali gnome-shell[2013]: DING: ** Message: 05:32:52.335: Connecting to org.freedesktop.Tracker3.Miner.Files
+May 09 05:32:52 kali gnome-shell[2013]: DING: (gjs:97404): Gjs-WARNING **: 05:32:52.393: Gio.DesktopAppInfo has been moved to a separate platform-specific library. Please update your code to use GioUnix.DesktopAppInfo instead.
+May 09 05:32:52 kali gnome-shell[2013]: DING: 0 get() ["resource:///org/gnome/gjs/modules/core/_common.js":190:42]
+May 09 05:32:52 kali gnome-shell[2013]: DING: 1 _updateMetadataFromFileInfo() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/fileItem.js":292:17]
+May 09 05:32:52 kali gnome-shell[2013]: DING: 2 FileItem() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/fileItem.js":56:14]
+May 09 05:32:52 kali gnome-shell[2013]: DING: 3 _doReadAsync/</<() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/desktopManager.js":1482:44]
+May 09 05:32:52 kali gnome-shell[2013]: DING: 4 <TOP LEVEL> ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":206:13]
+May 09 05:32:52 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Successfully activated service 'org.gnome.ArchiveManager1'
+May 09 05:32:52 kali gnome-shell[2013]: DING: GNOME nautilus 49.3
+May 09 05:32:52 kali gnome-shell[2013]: DING: DBus interface for Gvfs daemon (org.gtk.vfs.Metadata) is now available.
+May 09 05:32:52 kali gnome-shell[2013]: DING: DBus interface for Nautilus (org.gnome.Nautilus.FileOperations2) is now available.
+May 09 05:32:52 kali gnome-shell[2013]: DING: DBus interface for Nautilus (org.freedesktop.FileManager1) is now available.
+May 09 05:32:52 kali gnome-shell[2013]: DING: DBus interface for File-roller (org.gnome.ArchiveManager1) is now available.
+May 09 05:32:52 kali gnome-shell[2013]: Received notification for window. 0 notifications remaining.
+May 09 05:32:52 kali dbus-daemon[1827]: [session uid=1000 pid=1827 pidfd=5] Successfully activated service 'org.gnome.NautilusPreviewer'
+May 09 05:32:53 kali gnome-shell[2013]: DING: DBus interface for Nautilus-Sushi (org.gnome.NautilusPreviewer) is now available.
+May 09 05:35:01 kali CRON[98815]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 05:35:01 kali CRON[98817]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 09 05:35:01 kali CRON[98815]: pam_unix(cron:session): session closed for user root
+May 09 05:39:01 kali CRON[100931]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 05:39:01 kali CRON[100933]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+May 09 05:39:01 kali CRON[100931]: pam_unix(cron:session): session closed for user root
+May 09 05:39:01 kali systemd[1]: Starting phpsessionclean.service - Clean php session files...
+May 09 05:39:01 kali systemd[1]: phpsessionclean.service: Deactivated successfully.
+May 09 05:39:01 kali systemd[1]: Finished phpsessionclean.service - Clean php session files.
+May 09 05:39:51 kali sshd-session[101401]: Invalid user fakeuser from ::1 port 36662
+May 09 05:39:53 kali sshd-session[101401]: pam_unix(sshd:auth): check pass; user unknown
+May 09 05:39:53 kali sshd-session[101401]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+May 09 05:39:54 kali sshd-session[101401]: Failed password for invalid user fakeuser from ::1 port 36662 ssh2
+May 09 05:39:56 kali sshd-session[101401]: pam_unix(sshd:auth): check pass; user unknown
+May 09 05:39:59 kali sshd-session[101401]: Failed password for invalid user fakeuser from ::1 port 36662 ssh2
+May 09 05:40:01 kali sshd-session[101401]: pam_unix(sshd:auth): check pass; user unknown
+May 09 05:40:03 kali sshd-session[101401]: Failed password for invalid user fakeuser from ::1 port 36662 ssh2
+May 09 05:40:04 kali sshd-session[101401]: Connection closed by invalid user fakeuser ::1 port 36662 [preauth]
+May 09 05:40:04 kali sshd-session[101401]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1

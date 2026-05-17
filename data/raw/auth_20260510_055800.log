@@ -1,0 +1,388 @@
+May 10 04:49:29 kali gdm-password][21141]: gkr-pam: unlocked login keyring
+May 10 04:49:29 kali gnome-shell[2013]: loading user theme: /usr/share/themes/Kali-Dark/gnome-shell/gnome-shell.css
+May 10 04:49:30 kali gnome-shell[2013]: Launching DING process
+May 10 04:49:30 kali NetworkManager[706]: <info>  [1778402970.2122] agent-manager: agent[3d1d1dd5c7d2a8b6,:1.69/org.gnome.Shell.NetworkAgent/1000]: agent registered
+May 10 04:49:30 kali ubuntu-appindicators@ubuntu.com[2013]: Using Brute-force mode for StatusNotifierItem :1.80@/org/blueman/sni
+May 10 04:49:30 kali dbus-daemon[1823]: [session uid=1000 pid=1823 pidfd=5] Activating service name='org.gnome.Nautilus' requested by ':1.103' (uid=1000 pid=21272 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 10 04:49:30 kali org.gnome.Nautilus[21319]: Connecting to org.freedesktop.Tracker3.Miner.Files
+May 10 04:49:30 kali dbus-daemon[1823]: [session uid=1000 pid=1823 pidfd=5] Successfully activated service 'org.gnome.Nautilus'
+May 10 04:49:30 kali dbus-daemon[1823]: [session uid=1000 pid=1823 pidfd=5] Activating service name='org.gnome.NautilusPreviewer' requested by ':1.103' (uid=1000 pid=21272 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 10 04:49:30 kali dbus-daemon[1823]: [session uid=1000 pid=1823 pidfd=5] Activating service name='org.gnome.ArchiveManager1' requested by ':1.103' (uid=1000 pid=21272 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 10 04:49:31 kali gnome-shell[2013]: DING: Detected async api for thumbnails
+May 10 04:49:31 kali ubuntu-appindicators@ubuntu.com[2013]: Could not get menu properties menu proxy: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name :1.80 was not provided by any .service files
+May 10 04:49:31 kali gnome-shell[2013]: DING: (gjs:21272): Gjs-WARNING **: 04:49:30.816: GLibUnix.signal_add_full has been renamed. Please update your code to use GLibUnix.signal_add instead.
+May 10 04:49:31 kali gnome-shell[2013]: DING: 0 get() ["resource:///org/gnome/gjs/modules/core/_common.js":190:42]
+May 10 04:49:31 kali gnome-shell[2013]: DING: 1 DesktopManager() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/desktopManager.js":274:17]
+May 10 04:49:31 kali gnome-shell[2013]: DING: 2 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":180:26]
+May 10 04:49:31 kali gnome-shell[2013]: DING: 3 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":197:21]
+May 10 04:49:31 kali gnome-shell[2013]: DING: 4 <TOP LEVEL> ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":206:13]
+May 10 04:49:31 kali gnome-shell[2013]: DING: ** Message: 04:49:30.890: Connecting to org.freedesktop.Tracker3.Miner.Files
+May 10 04:49:31 kali gnome-shell[2013]: DING: (gjs:21272): Gjs-WARNING **: 04:49:30.925: Gio.DesktopAppInfo has been moved to a separate platform-specific library. Please update your code to use GioUnix.DesktopAppInfo instead.
+May 10 04:49:31 kali gnome-shell[2013]: DING: 0 get() ["resource:///org/gnome/gjs/modules/core/_common.js":190:42]
+May 10 04:49:31 kali gnome-shell[2013]: DING: 1 _updateMetadataFromFileInfo() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/fileItem.js":292:17]
+May 10 04:49:31 kali gnome-shell[2013]: DING: 2 FileItem() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/fileItem.js":56:14]
+May 10 04:49:31 kali gnome-shell[2013]: DING: 3 _doReadAsync/</<() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/desktopManager.js":1482:44]
+May 10 04:49:31 kali gnome-shell[2013]: DING: 4 <TOP LEVEL> ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":206:13]
+May 10 04:49:31 kali gnome-shell[2013]: DING: DBus interface for Gvfs daemon (org.gtk.vfs.Metadata) is now available.
+May 10 04:49:31 kali gnome-shell[2013]: DING: DBus interface for Nautilus (org.freedesktop.FileManager1) is now available.
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym ffb3 with keysym ff9b (keycode 59).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym ffb9 with keysym ff9a (keycode 51).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+May 10 04:49:31 kali gnome-shell[2013]: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+May 10 04:49:31 kali gnome-shell[2013]: Received notification for window. 0 notifications remaining.
+May 10 04:49:31 kali dbus-daemon[1823]: [session uid=1000 pid=1823 pidfd=5] Successfully activated service 'org.gnome.NautilusPreviewer'
+May 10 04:49:31 kali dbus-daemon[1823]: [session uid=1000 pid=1823 pidfd=5] Successfully activated service 'org.gnome.ArchiveManager1'
+May 10 04:49:31 kali gnome-shell[2013]: DING: DBus interface for File-roller (org.gnome.ArchiveManager1) is now available.
+May 10 04:49:31 kali gnome-shell[2013]: DING: DBus interface for Nautilus-Sushi (org.gnome.NautilusPreviewer) is now available.
+May 10 04:49:31 kali gnome-shell[2013]: DING: DBus interface for Nautilus (org.gnome.Nautilus.FileOperations2) is now available.
+May 10 04:49:31 kali gnome-shell[2013]: DING: GNOME nautilus 49.3
+May 10 04:51:19 kali dbus-daemon[623]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.127' (uid=1000 pid=4164 comm="/usr/lib/firefox-esr/firefox-esr" label="unconfined")
+May 10 04:51:19 kali systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+May 10 04:51:20 kali systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+May 10 04:51:20 kali dbus-daemon[623]: [system] Successfully activated service 'org.freedesktop.hostname1'
+May 10 04:51:20 kali dbus-daemon[623]: [system] Activating via systemd: service name='org.freedesktop.Avahi' unit='dbus-org.freedesktop.Avahi.service' requested by ':1.153' (uid=1000 pid=22596 comm="/usr/libexec/gvfsd-dnssd --spawner :1.17 /org/gtk/" label="unconfined")
+May 10 04:51:20 kali dbus-daemon[623]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.Avahi.service': Unit dbus-org.freedesktop.Avahi.service not found.
+May 10 04:51:20 kali gvfsd-wsdd[22637]: Failed to spawn the wsdd daemon: Failed to execute child process “wsdd” (No such file or directory)
+May 10 04:51:20 kali gvfsd-network[22577]: Couldn't create directory monitor on wsdd:///. Error: Automount failed: Failed to spawn the underlying wsdd daemon.
+May 10 04:51:48 kali kernel: perf: interrupt took too long (2504 > 2500), lowering kernel.perf_event_max_sample_rate to 79750
+May 10 04:51:50 kali systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+May 10 04:55:01 kali CRON[25697]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 04:55:01 kali CRON[25699]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 10 04:55:01 kali CRON[25697]: pam_unix(cron:session): session closed for user root
+May 10 04:55:07 kali firefox-esr.desktop[4164]: [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+May 10 05:05:01 kali CRON[31399]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 05:05:01 kali CRON[31401]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 10 05:05:01 kali CRON[31399]: pam_unix(cron:session): session closed for user root
+May 10 05:05:43 kali rtkit-daemon[889]: Successfully made thread 31666 of process 4681 owned by '1000' RT at priority 10.
+May 10 05:09:00 kali systemd[1]: Starting phpsessionclean.service - Clean php session files...
+May 10 05:09:00 kali systemd[1]: phpsessionclean.service: Deactivated successfully.
+May 10 05:09:00 kali systemd[1]: Finished phpsessionclean.service - Clean php session files.
+May 10 05:09:01 kali CRON[33718]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 05:09:01 kali CRON[33720]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+May 10 05:09:01 kali CRON[33718]: pam_unix(cron:session): session closed for user root
+May 10 05:13:50 kali wpa_supplicant[800]: wlan0: WPA: Group rekeying completed with 7a:40:34:e6:7c:90 [GTK=CCMP]
+May 10 05:13:51 kali wpa_supplicant[800]: wlan0: WPA: Group rekeying completed with 7a:40:34:e6:7c:90 [GTK=CCMP]
+May 10 05:14:27 kali NetworkManager[706]: <info>  [1778404467.9786] dhcp4 (wlan0): state changed new lease, address=172.20.10.2
+May 10 05:14:27 kali dbus-daemon[623]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=706 comm="/usr/sbin/NetworkManager --no-daemon" label="unconfined")
+May 10 05:14:27 kali systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+May 10 05:14:28 kali dbus-daemon[623]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+May 10 05:14:28 kali systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+May 10 05:14:38 kali systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+May 10 05:14:54 kali rtkit-daemon[889]: Successfully made thread 36540 of process 5340 owned by '1000' RT at priority 10.
+May 10 05:14:54 kali bluetoothd[622]: Player registered: sender=:1.60 path=/_1_102
+May 10 05:15:01 kali CRON[36599]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 05:15:01 kali CRON[36605]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 10 05:15:01 kali CRON[36599]: pam_unix(cron:session): session closed for user root
+May 10 05:17:01 kali CRON[37513]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 05:17:01 kali CRON[37515]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+May 10 05:17:01 kali CRON[37513]: pam_unix(cron:session): session closed for user root
+May 10 05:17:12 kali kernel: perf: interrupt took too long (3145 > 3130), lowering kernel.perf_event_max_sample_rate to 63500
+May 10 05:24:40 kali gnome-shell[2013]: libinput error: event6  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 10 05:24:40 kali gnome-shell[2013]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 10 05:25:01 kali CRON[40737]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 05:25:01 kali CRON[40739]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 10 05:25:01 kali CRON[40737]: pam_unix(cron:session): session closed for user root
+May 10 05:35:01 kali CRON[44913]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 05:35:01 kali CRON[44915]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 10 05:35:01 kali CRON[44913]: pam_unix(cron:session): session closed for user root
+May 10 05:35:42 kali systemd[1]: Starting fwupd-refresh.service - Refresh fwupd metadata and update motd...
+May 10 05:35:42 kali systemd[1]: fwupd-refresh.service: Deactivated successfully.
+May 10 05:35:42 kali systemd[1]: Finished fwupd-refresh.service - Refresh fwupd metadata and update motd.
+May 10 05:39:01 kali CRON[46398]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 05:39:01 kali CRON[46400]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+May 10 05:39:01 kali CRON[46398]: pam_unix(cron:session): session closed for user root
+May 10 05:39:01 kali systemd[1]: Starting phpsessionclean.service - Clean php session files...
+May 10 05:39:01 kali systemd[1]: phpsessionclean.service: Deactivated successfully.
+May 10 05:39:01 kali systemd[1]: Finished phpsessionclean.service - Clean php session files.
+May 10 05:40:50 kali gsd-power[2125]: g_variant_new_string: assertion 'string != NULL' failed
+May 10 05:42:23 kali gdm-password][46477]: gkr-pam: unlocked login keyring
+May 10 05:42:23 kali gnome-shell[2013]: loading user theme: /usr/share/themes/Kali-Dark/gnome-shell/gnome-shell.css
+May 10 05:42:24 kali gnome-shell[2013]: Launching DING process
+May 10 05:42:24 kali NetworkManager[706]: <info>  [1778406144.5945] agent-manager: agent[3d1d1dd5c7d2a8b6,:1.69/org.gnome.Shell.NetworkAgent/1000]: agent registered
+May 10 05:42:24 kali ubuntu-appindicators@ubuntu.com[2013]: Using Brute-force mode for StatusNotifierItem :1.110@/org/blueman/sni
+May 10 05:42:24 kali dbus-daemon[1823]: [session uid=1000 pid=1823 pidfd=5] Activating service name='org.gnome.Nautilus' requested by ':1.120' (uid=1000 pid=46597 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 10 05:42:25 kali org.gnome.Nautilus[46619]: Connecting to org.freedesktop.Tracker3.Miner.Files
+May 10 05:42:25 kali dbus-daemon[1823]: [session uid=1000 pid=1823 pidfd=5] Successfully activated service 'org.gnome.Nautilus'
+May 10 05:42:25 kali dbus-daemon[1823]: [session uid=1000 pid=1823 pidfd=5] Activating service name='org.gnome.NautilusPreviewer' requested by ':1.120' (uid=1000 pid=46597 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 10 05:42:25 kali dbus-daemon[1823]: [session uid=1000 pid=1823 pidfd=5] Activating service name='org.gnome.ArchiveManager1' requested by ':1.120' (uid=1000 pid=46597 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 10 05:42:25 kali gnome-shell[2013]: DING: Detected async api for thumbnails
+May 10 05:42:25 kali ubuntu-appindicators@ubuntu.com[2013]: Could not get menu properties menu proxy: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name :1.110 was not provided by any .service files
+May 10 05:42:25 kali gnome-shell[2013]: DING: (gjs:46597): Gjs-WARNING **: 05:42:25.155: GLibUnix.signal_add_full has been renamed. Please update your code to use GLibUnix.signal_add instead.
+May 10 05:42:25 kali gnome-shell[2013]: DING: 0 get() ["resource:///org/gnome/gjs/modules/core/_common.js":190:42]
+May 10 05:42:25 kali gnome-shell[2013]: DING: 1 DesktopManager() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/desktopManager.js":274:17]
+May 10 05:42:25 kali gnome-shell[2013]: DING: 2 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":180:26]
+May 10 05:42:25 kali gnome-shell[2013]: DING: 3 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":197:21]
+May 10 05:42:25 kali gnome-shell[2013]: DING: 4 <TOP LEVEL> ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":206:13]
+May 10 05:42:25 kali gnome-shell[2013]: DING: (gjs:46597): Gjs-WARNING **: 05:42:25.250: Gio.DesktopAppInfo has been moved to a separate platform-specific library. Please update your code to use GioUnix.DesktopAppInfo instead.
+May 10 05:42:25 kali gnome-shell[2013]: DING: 0 get() ["resource:///org/gnome/gjs/modules/core/_common.js":190:42]
+May 10 05:42:25 kali gnome-shell[2013]: DING: 1 _updateMetadataFromFileInfo() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/fileItem.js":292:17]
+May 10 05:42:25 kali gnome-shell[2013]: DING: 2 FileItem() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/fileItem.js":56:14]
+May 10 05:42:25 kali gnome-shell[2013]: DING: 3 _doReadAsync/</<() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/desktopManager.js":1482:44]
+May 10 05:42:25 kali gnome-shell[2013]: DING: 4 <TOP LEVEL> ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":206:13]
+May 10 05:42:25 kali gnome-shell[2013]: DING: ** Message: 05:42:25.252: Connecting to org.freedesktop.Tracker3.Miner.Files
+May 10 05:42:25 kali gnome-shell[2013]: DING: DBus interface for Nautilus (org.freedesktop.FileManager1) is now available.
+May 10 05:42:25 kali gnome-shell[2013]: DING: DBus interface for Gvfs daemon (org.gtk.vfs.Metadata) is now available.
+May 10 05:42:25 kali gnome-shell[2013]: Received notification for window. 0 notifications remaining.
+May 10 05:42:26 kali dbus-daemon[1823]: [session uid=1000 pid=1823 pidfd=5] Successfully activated service 'org.gnome.ArchiveManager1'
+May 10 05:42:26 kali dbus-daemon[1823]: [session uid=1000 pid=1823 pidfd=5] Successfully activated service 'org.gnome.NautilusPreviewer'
+May 10 05:42:26 kali gnome-shell[2013]: DING: DBus interface for File-roller (org.gnome.ArchiveManager1) is now available.
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym ffb3 with keysym ff9b (keycode 59).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym ffb9 with keysym ff9a (keycode 51).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+May 10 05:42:26 kali gnome-shell[2013]: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+May 10 05:42:26 kali gnome-shell[2013]: DING: DBus interface for Nautilus-Sushi (org.gnome.NautilusPreviewer) is now available.
+May 10 05:42:26 kali gnome-shell[2013]: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+                                        CancellablePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:20:9
+                                        GSourcePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:196:13
+                                        IdlePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:242:13
+                                        then@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:76:27
+                                        _onRootChildAdded@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:919:12
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        addChild@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:144:14
+                                        _doLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:406:30
+                                        _layoutUpdateUpdateAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:354:18
+                                        async*_beginLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:333:14
+                                        _requestLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:281:14
+                                        initAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:259:14
+                                        async*Client@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:844:22
+                                        _updateMenu@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:311:32
+                                        _showIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:332:14
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _checkIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:488:18
+                                        checkIfReadyChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:670:50
+                                        _onPropertiesChanged/<@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:678:17
+                                        _onPropertiesChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:674:15
+                                        @resource:///org/gnome/shell/ui/init.js:21:20
+May 10 05:42:26 kali gnome-shell[2013]: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+                                        CancellablePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:20:9
+                                        GSourcePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:196:13
+                                        IdlePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:242:13
+                                        then@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:76:27
+                                        _onRootChildAdded@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:919:12
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        addChild@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:144:14
+                                        _doLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:406:30
+                                        _layoutUpdateUpdateAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:354:18
+                                        async*_beginLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:333:14
+                                        _requestLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:281:14
+                                        initAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:259:14
+                                        async*Client@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:844:22
+                                        _updateMenu@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:311:32
+                                        _showIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:332:14
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _checkIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:488:18
+                                        checkIfReadyChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:670:50
+                                        _onPropertiesChanged/<@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:678:17
+                                        _onPropertiesChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:674:15
+                                        @resource:///org/gnome/shell/ui/init.js:21:20
+May 10 05:42:26 kali gnome-shell[2013]: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+                                        CancellablePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:20:9
+                                        GSourcePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:196:13
+                                        IdlePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:242:13
+                                        then@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:76:27
+                                        _onRootChildAdded@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:919:12
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        addChild@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:144:14
+                                        _doLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:406:30
+                                        _layoutUpdateUpdateAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:354:18
+                                        async*_beginLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:333:14
+                                        _requestLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:281:14
+                                        initAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:259:14
+                                        async*Client@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:844:22
+                                        _updateMenu@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:311:32
+                                        _showIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:332:14
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _checkIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:488:18
+                                        checkIfReadyChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:670:50
+                                        _onPropertiesChanged/<@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:678:17
+                                        _onPropertiesChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:674:15
+                                        @resource:///org/gnome/shell/ui/init.js:21:20
+May 10 05:42:26 kali gnome-shell[2013]: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+                                        CancellablePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:20:9
+                                        GSourcePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:196:13
+                                        IdlePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:242:13
+                                        then@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:76:27
+                                        _onRootChildAdded@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:919:12
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        addChild@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:144:14
+                                        _doLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:406:30
+                                        _layoutUpdateUpdateAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:354:18
+                                        async*_beginLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:333:14
+                                        _requestLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:281:14
+                                        initAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:259:14
+                                        async*Client@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:844:22
+                                        _updateMenu@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:311:32
+                                        _showIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:332:14
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _checkIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:488:18
+                                        checkIfReadyChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:670:50
+                                        _onPropertiesChanged/<@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:678:17
+                                        _onPropertiesChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:674:15
+                                        @resource:///org/gnome/shell/ui/init.js:21:20
+May 10 05:42:26 kali gnome-shell[2013]: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+                                        CancellablePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:20:9
+                                        GSourcePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:196:13
+                                        IdlePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:242:13
+                                        then@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:76:27
+                                        _onRootChildAdded@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:919:12
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        addChild@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:144:14
+                                        _doLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:406:30
+                                        _layoutUpdateUpdateAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:354:18
+                                        async*_beginLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:333:14
+                                        _requestLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:281:14
+                                        initAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:259:14
+                                        async*Client@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:844:22
+                                        _updateMenu@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:311:32
+                                        _showIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:332:14
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _checkIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:488:18
+                                        checkIfReadyChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:670:50
+                                        _onPropertiesChanged/<@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:678:17
+                                        _onPropertiesChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:674:15
+                                        @resource:///org/gnome/shell/ui/init.js:21:20
+May 10 05:42:26 kali gnome-shell[2013]: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+                                        CancellablePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:20:9
+                                        GSourcePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:196:13
+                                        IdlePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:242:13
+                                        then@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:76:27
+                                        _onRootChildAdded@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:919:12
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        addChild@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:144:14
+                                        _doLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:406:30
+                                        _layoutUpdateUpdateAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:354:18
+                                        async*_beginLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:333:14
+                                        _requestLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:281:14
+                                        initAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:259:14
+                                        async*Client@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:844:22
+                                        _updateMenu@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:311:32
+                                        _showIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:332:14
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _checkIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:488:18
+                                        checkIfReadyChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:670:50
+                                        _onPropertiesChanged/<@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:678:17
+                                        _onPropertiesChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:674:15
+                                        @resource:///org/gnome/shell/ui/init.js:21:20
+May 10 05:42:26 kali gnome-shell[2013]: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+                                        CancellablePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:20:9
+                                        GSourcePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:196:13
+                                        IdlePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:242:13
+                                        then@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:76:27
+                                        _onRootChildAdded@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:919:12
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        addChild@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:144:14
+                                        _doLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:406:30
+                                        _layoutUpdateUpdateAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:354:18
+                                        async*_beginLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:333:14
+                                        _requestLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:281:14
+                                        initAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:259:14
+                                        async*Client@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:844:22
+                                        _updateMenu@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:311:32
+                                        _showIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:332:14
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _checkIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:488:18
+                                        checkIfReadyChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:670:50
+                                        _onPropertiesChanged/<@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:678:17
+                                        _onPropertiesChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:674:15
+                                        @resource:///org/gnome/shell/ui/init.js:21:20
+May 10 05:42:26 kali gnome-shell[2013]: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+                                        CancellablePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:20:9
+                                        GSourcePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:196:13
+                                        IdlePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:242:13
+                                        then@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:76:27
+                                        _onRootChildAdded@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:919:12
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        addChild@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:144:14
+                                        _doLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:406:30
+                                        _layoutUpdateUpdateAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:354:18
+                                        async*_beginLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:333:14
+                                        _requestLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:281:14
+                                        initAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:259:14
+                                        async*Client@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:844:22
+                                        _updateMenu@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:311:32
+                                        _showIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:332:14
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _checkIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:488:18
+                                        checkIfReadyChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:670:50
+                                        _onPropertiesChanged/<@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:678:17
+                                        _onPropertiesChanged@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:674:15
+                                        @resource:///org/gnome/shell/ui/init.js:21:20
+May 10 05:42:26 kali gnome-shell[2013]: DING: DBus interface for Nautilus (org.gnome.Nautilus.FileOperations2) is now available.
+May 10 05:42:26 kali gnome-shell[2013]: DING: GNOME nautilus 49.3
+May 10 05:42:29 kali gnome-shell[2013]: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: Set global engine failed: Operation was cancelled
+                                        
+                                        (No stack trace)
+May 10 05:42:29 kali gnome-shell[2013]: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: Set global engine failed: Operation was cancelled
+                                        
+                                        (No stack trace)
+May 10 05:44:27 kali NetworkManager[706]: <info>  [1778406267.8247] dhcp4 (wlan0): state changed new lease, address=172.20.10.2
+May 10 05:44:27 kali dbus-daemon[623]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=706 comm="/usr/sbin/NetworkManager --no-daemon" label="unconfined")
+May 10 05:44:27 kali systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+May 10 05:44:27 kali dbus-daemon[623]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+May 10 05:44:27 kali systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+May 10 05:44:37 kali systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+May 10 05:45:01 kali CRON[48210]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 05:45:01 kali CRON[48212]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 10 05:45:01 kali CRON[48210]: pam_unix(cron:session): session closed for user root
+May 10 05:47:45 kali kernel: perf: interrupt took too long (3937 > 3931), lowering kernel.perf_event_max_sample_rate to 50750
+May 10 05:53:08 kali sshd-session[52408]: Invalid user fakeuser from ::1 port 34270
+May 10 05:53:10 kali sshd-session[52408]: pam_unix(sshd:auth): check pass; user unknown
+May 10 05:53:10 kali sshd-session[52408]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+May 10 05:53:12 kali sshd-session[52408]: Failed password for invalid user fakeuser from ::1 port 34270 ssh2
+May 10 05:53:17 kali sshd-session[52408]: pam_unix(sshd:auth): check pass; user unknown
+May 10 05:53:19 kali sshd-session[52408]: Failed password for invalid user fakeuser from ::1 port 34270 ssh2
+May 10 05:53:23 kali sshd-session[52408]: pam_unix(sshd:auth): check pass; user unknown
+May 10 05:53:26 kali sshd-session[52408]: Failed password for invalid user fakeuser from ::1 port 34270 ssh2
+May 10 05:53:28 kali sshd-session[52408]: Connection closed by invalid user fakeuser ::1 port 34270 [preauth]
+May 10 05:53:28 kali sshd-session[52408]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+May 10 05:55:01 kali CRON[53390]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 05:55:01 kali CRON[53392]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 10 05:55:01 kali CRON[53390]: pam_unix(cron:session): session closed for user root

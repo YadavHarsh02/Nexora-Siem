@@ -1,0 +1,200 @@
+May 09 03:45:01 kali CRON[42762]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 09 03:45:01 kali CRON[42760]: pam_unix(cron:session): session closed for user root
+May 09 03:45:06 kali su[41717]: pam_unix(su:session): session closed for user root
+May 09 03:45:06 kali systemd[1]: session-c3.scope: Deactivated successfully.
+May 09 03:45:06 kali sudo[41694]: pam_unix(sudo:session): session closed for user root
+May 09 03:45:06 kali systemd[1]: session-c3.scope: Consumed 3.277s CPU time over 1min 20.953s wall clock time, 87.3M memory peak.
+May 09 03:45:06 kali systemd-logind[633]: Session c3 logged out. Waiting for processes to exit.
+May 09 03:45:06 kali systemd-logind[633]: Removed session c3.
+May 09 03:46:00 kali systemd[1805]: Started vte-spawn-91218382-4736-40e4-b4e3-b4e56f9ea293.scope - VTE child process 43609 launched by org.gnome.Terminal process 3805.
+May 09 03:46:06 kali sudo[43759]:    harsh : TTY=pts/2 ; PWD=/home/harsh ; USER=root ; COMMAND=/usr/bin/su
+May 09 03:46:06 kali sudo[43759]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=1000)
+May 09 03:46:06 kali systemd-logind[633]: Existing logind session ID 3 used by new audit session, ignoring.
+May 09 03:46:06 kali su[43776]: (to root) root on pts/3
+May 09 03:46:06 kali su[43776]: pam_unix(su:session): session opened for user root(uid=0) by harsh(uid=0)
+May 09 03:46:06 kali systemd-logind[633]: New session 'c4' of user 'root' with class 'user-early' and type 'tty'.
+May 09 03:46:06 kali systemd[1]: Started session-c4.scope - Session c4 of User root.
+May 09 03:48:28 kali gnome-shell[2013]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 09 03:48:28 kali gnome-shell[2013]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 09 03:53:10 kali kernel: perf: interrupt took too long (3946 > 3927), lowering kernel.perf_event_max_sample_rate to 50500
+May 09 03:55:01 kali CRON[48760]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 03:55:01 kali CRON[48762]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 09 03:55:01 kali CRON[48760]: pam_unix(cron:session): session closed for user root
+May 09 04:05:01 kali CRON[53038]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 04:05:01 kali CRON[53040]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 09 04:05:01 kali CRON[53038]: pam_unix(cron:session): session closed for user root
+May 09 04:08:35 kali gnome-shell[2013]: meta_wayland_surface_role_notify_subsurface_state_changed: assertion 'klass->notify_subsurface_state_changed' failed
+May 09 04:08:37 kali gnome-shell[2013]: meta_wayland_surface_role_notify_subsurface_state_changed: assertion 'klass->notify_subsurface_state_changed' failed
+May 09 04:08:50 kali gnome-shell[2013]: Error in size change accounting.
+May 09 04:08:51 kali systemd[1805]: app-gnome-firefox\x2desr-3059.scope: Consumed 39min 2.993s CPU time over 1h 26min 26.169s wall clock time, 6.1G memory peak, 1.1G memory swap peak.
+May 09 04:08:54 kali su[43776]: pam_unix(su:session): session closed for user root
+May 09 04:08:54 kali sudo[43759]: pam_unix(sudo:session): session closed for user root
+May 09 04:08:54 kali systemd[1]: session-c4.scope: Deactivated successfully.
+May 09 04:08:54 kali systemd[1]: session-c4.scope: Consumed 46.564s CPU time over 22min 47.396s wall clock time, 80.3M memory peak, 4.1M memory swap peak.
+May 09 04:08:54 kali systemd-logind[633]: Session c4 logged out. Waiting for processes to exit.
+May 09 04:08:54 kali systemd-logind[633]: Removed session c4.
+May 09 04:08:57 kali systemd[1805]: Started app-gnome-firefox\x2desr-56109.scope - Application launched by gnome-shell.
+May 09 04:08:58 kali dbus-daemon[624]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.159' (uid=1000 pid=56109 comm="/usr/lib/firefox-esr/firefox-esr" label="unconfined")
+May 09 04:08:58 kali systemd[1]: Starting systemd-timedated.service - Time & Date Service...
+May 09 04:08:58 kali systemd[1]: Started systemd-timedated.service - Time & Date Service.
+May 09 04:08:58 kali dbus-daemon[624]: [system] Successfully activated service 'org.freedesktop.timedate1'
+May 09 04:08:58 kali rtkit-daemon[827]: Successfully made thread 56309 of process 56109 owned by '1000' RT at priority 10.
+May 09 04:09:01 kali CRON[56556]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 04:09:01 kali CRON[56558]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+May 09 04:09:01 kali CRON[56556]: pam_unix(cron:session): session closed for user root
+May 09 04:09:01 kali systemd[1]: Starting phpsessionclean.service - Clean php session files...
+May 09 04:09:01 kali systemd[1]: phpsessionclean.service: Deactivated successfully.
+May 09 04:09:01 kali systemd[1]: Finished phpsessionclean.service - Clean php session files.
+May 09 04:09:02 kali gnome-shell[2013]: Error in size change accounting.
+May 09 04:09:28 kali systemd[1]: systemd-timedated.service: Deactivated successfully.
+May 09 04:12:08 kali NetworkManager[687]: <info>  [1778314328.9452] dhcp4 (wlan0): state changed new lease, address=172.20.10.2
+May 09 04:12:08 kali dbus-daemon[624]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=687 comm="/usr/sbin/NetworkManager --no-daemon" label="unconfined")
+May 09 04:12:08 kali systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+May 09 04:12:08 kali dbus-daemon[624]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+May 09 04:12:08 kali systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+May 09 04:12:19 kali systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+May 09 04:15:01 kali CRON[60386]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 04:15:01 kali CRON[60388]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 09 04:15:01 kali CRON[60386]: pam_unix(cron:session): session closed for user root
+May 09 04:15:57 kali systemd[1]: Starting fwupd-refresh.service - Refresh fwupd metadata and update motd...
+May 09 04:15:57 kali systemd[1]: fwupd-refresh.service: Deactivated successfully.
+May 09 04:15:57 kali systemd[1]: Finished fwupd-refresh.service - Refresh fwupd metadata and update motd.
+May 09 04:17:01 kali CRON[61240]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 04:17:01 kali CRON[61242]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+May 09 04:17:01 kali CRON[61240]: pam_unix(cron:session): session closed for user root
+May 09 04:21:36 kali rtkit-daemon[827]: Successfully made thread 64860 of process 56490 owned by '1000' RT at priority 10.
+May 09 04:25:01 kali CRON[66418]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 04:25:01 kali CRON[66420]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 09 04:25:01 kali CRON[66418]: pam_unix(cron:session): session closed for user root
+May 09 04:35:01 kali CRON[71832]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 04:35:01 kali CRON[71834]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 09 04:35:01 kali CRON[71832]: pam_unix(cron:session): session closed for user root
+May 09 04:39:01 kali CRON[74436]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 04:39:01 kali CRON[74438]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+May 09 04:39:01 kali CRON[74436]: pam_unix(cron:session): session closed for user root
+May 09 04:39:01 kali systemd[1]: Starting phpsessionclean.service - Clean php session files...
+May 09 04:39:01 kali systemd[1]: phpsessionclean.service: Deactivated successfully.
+May 09 04:39:01 kali systemd[1]: Finished phpsessionclean.service - Clean php session files.
+May 09 04:40:03 kali sudo[74940]:     root : TTY=pts/1 ; PWD=/root/projects/mini-siem ; USER=root ; COMMAND=/usr/bin/apt install openssh-server -y
+May 09 04:40:03 kali sudo[74940]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=0)
+May 09 04:40:08 kali systemd[1]: Started run-p75123-i75124.service - [systemd-run] systemd-stdio-bridge --user --quiet.
+May 09 04:40:08 kali (systemd-stdio-bridge)[75124]: pam_unix(login:session): session opened for user root(uid=0) by root(uid=0)
+May 09 04:40:08 kali systemd-logind[633]: New session '24' of user 'root' with class 'background-light' and type 'unspecified'.
+May 09 04:40:08 kali systemd[1]: Started session-24.scope - Session 24 of User root.
+May 09 04:40:08 kali systemd[4233]: Reload requested from client PID 75124 ('systemd-stdio-b')...
+May 09 04:40:08 kali systemd[4233]: Reloading...
+May 09 04:40:08 kali systemd[4233]: Reloading finished in 137 ms.
+May 09 04:40:08 kali (sd-pam)[75126]: pam_unix(login:session): session closed for user root
+May 09 04:40:08 kali systemd[1]: run-p75123-i75124.service: Deactivated successfully.
+May 09 04:40:08 kali systemd-logind[633]: Session 24 logged out. Waiting for processes to exit.
+May 09 04:40:08 kali systemd[1]: session-24.scope: Deactivated successfully.
+May 09 04:40:08 kali systemd-logind[633]: Removed session 24.
+May 09 04:40:08 kali systemd[1]: Started run-p75137-i75138.service - [systemd-run] systemd-stdio-bridge --user --quiet.
+May 09 04:40:08 kali (systemd-stdio-bridge)[75139]: pam_unix(login:session): session opened for user harsh(uid=1000) by harsh(uid=0)
+May 09 04:40:08 kali systemd[1]: Started session-25.scope - Session 25 of User harsh.
+May 09 04:40:08 kali systemd[1805]: Reload requested from client PID 75139 ('systemd-stdio-b')...
+May 09 04:40:08 kali systemd[1805]: Reloading...
+May 09 04:40:08 kali systemd[1805]: Reloading finished in 172 ms.
+May 09 04:40:09 kali systemd[1]: run-p75137-i75138.service: Deactivated successfully.
+May 09 04:40:09 kali (sd-pam)[75141]: pam_unix(login:session): session closed for user harsh
+May 09 04:40:09 kali systemd[1]: session-25.scope: Deactivated successfully.
+May 09 04:40:09 kali systemd[1]: Reload requested from client PID 75247 ('systemctl') (unit session-c2.scope)...
+May 09 04:40:09 kali systemd[1]: Reloading...
+May 09 04:40:09 kali systemd-sslh-generator: Configuration directory '/etc/sslh/' does not exist! No units generated.
+May 09 04:40:09 kali systemd-sysv-generator[75387]: SysV service '/etc/init.d/stunnel4' lacks a native systemd unit file, automatically generating a unit file for compatibility.
+May 09 04:40:09 kali systemd-sysv-generator[75387]: Please update package to include a native systemd unit file.
+May 09 04:40:09 kali systemd-sysv-generator[75387]: ! This compatibility logic is deprecated, expect removal soon. !
+May 09 04:40:09 kali systemd[1]: Reloading finished in 268 ms.
+May 09 04:40:09 kali systemd[1]: Starting man-db.service - Daily man-db regeneration...
+May 09 04:40:09 kali systemd[1]: Reload requested from client PID 75402 ('systemctl') (unit session-c2.scope)...
+May 09 04:40:09 kali systemd[1]: Reloading...
+May 09 04:40:09 kali systemd-sslh-generator: Configuration directory '/etc/sslh/' does not exist! No units generated.
+May 09 04:40:09 kali systemd-sysv-generator[75544]: SysV service '/etc/init.d/stunnel4' lacks a native systemd unit file, automatically generating a unit file for compatibility.
+May 09 04:40:09 kali systemd-sysv-generator[75544]: Please update package to include a native systemd unit file.
+May 09 04:40:09 kali systemd-sysv-generator[75544]: ! This compatibility logic is deprecated, expect removal soon. !
+May 09 04:40:10 kali systemd[1]: Reloading finished in 257 ms.
+May 09 04:40:10 kali systemd[1]: Starting apt-daily.service - Daily apt download activities...
+May 09 04:40:10 kali systemd[1]: apt-daily.service: Deactivated successfully.
+May 09 04:40:10 kali systemd[1]: Finished apt-daily.service - Daily apt download activities.
+May 09 04:40:10 kali systemd[1]: Reload requested from client PID 75583 ('systemctl') (unit session-c2.scope)...
+May 09 04:40:10 kali systemd[1]: Reloading...
+May 09 04:40:10 kali systemd-sslh-generator: Configuration directory '/etc/sslh/' does not exist! No units generated.
+May 09 04:40:10 kali systemd-sysv-generator[75725]: SysV service '/etc/init.d/stunnel4' lacks a native systemd unit file, automatically generating a unit file for compatibility.
+May 09 04:40:10 kali systemd-sysv-generator[75725]: Please update package to include a native systemd unit file.
+May 09 04:40:10 kali systemd-sysv-generator[75725]: ! This compatibility logic is deprecated, expect removal soon. !
+May 09 04:40:10 kali systemd[1]: Reloading finished in 263 ms.
+May 09 04:40:10 kali systemd[1]: Reload requested from client PID 75735 ('systemctl') (unit session-c2.scope)...
+May 09 04:40:10 kali systemd[1]: Reloading...
+May 09 04:40:10 kali systemd-sslh-generator: Configuration directory '/etc/sslh/' does not exist! No units generated.
+May 09 04:40:10 kali (generato[75856]: /usr/lib/systemd/system-generators/systemd-sslh-generator terminated by signal ABRT.
+May 09 04:40:10 kali systemd[1]: Reloading finished in 281 ms.
+May 09 04:40:11 kali systemd[1]: man-db.service: Deactivated successfully.
+May 09 04:40:11 kali systemd[1]: Finished man-db.service - Daily man-db regeneration.
+May 09 04:40:11 kali systemd[1]: man-db.service: Consumed 1.344s CPU time over 1.927s wall clock time, 63.3M memory peak.
+May 09 04:40:12 kali sudo[74940]: pam_unix(sudo:session): session closed for user root
+May 09 04:40:15 kali sudo[75996]:     root : TTY=pts/1 ; PWD=/root/projects/mini-siem ; USER=root ; COMMAND=/usr/bin/systemctl enable ssh
+May 09 04:40:15 kali sudo[75996]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=0)
+May 09 04:40:15 kali systemd[1]: Reload requested from client PID 76003 ('systemctl') (unit session-c2.scope)...
+May 09 04:40:15 kali systemd[1]: Reloading...
+May 09 04:40:15 kali systemd-sslh-generator: Configuration directory '/etc/sslh/' does not exist! No units generated.
+May 09 04:40:15 kali systemd-sysv-generator[76143]: SysV service '/etc/init.d/stunnel4' lacks a native systemd unit file, automatically generating a unit file for compatibility.
+May 09 04:40:15 kali systemd-sysv-generator[76143]: Please update package to include a native systemd unit file.
+May 09 04:40:15 kali systemd-sysv-generator[76143]: ! This compatibility logic is deprecated, expect removal soon. !
+May 09 04:40:15 kali systemd[1]: Reloading finished in 217 ms.
+May 09 04:40:15 kali systemd[1]: Reload requested from client PID 76148 ('systemctl') (unit session-c2.scope)...
+May 09 04:40:15 kali systemd[1]: Reloading...
+May 09 04:40:15 kali systemd-sslh-generator: Configuration directory '/etc/sslh/' does not exist! No units generated.
+May 09 04:40:15 kali systemd-sysv-generator[76286]: SysV service '/etc/init.d/stunnel4' lacks a native systemd unit file, automatically generating a unit file for compatibility.
+May 09 04:40:15 kali systemd-sysv-generator[76286]: Please update package to include a native systemd unit file.
+May 09 04:40:15 kali systemd-sysv-generator[76286]: ! This compatibility logic is deprecated, expect removal soon. !
+May 09 04:40:15 kali systemd[1]: Reloading finished in 223 ms.
+May 09 04:40:15 kali systemd[1]: Reload requested from client PID 75999 ('systemctl') (unit session-c2.scope)...
+May 09 04:40:15 kali systemd[1]: Reloading...
+May 09 04:40:15 kali systemd-sslh-generator: Configuration directory '/etc/sslh/' does not exist! No units generated.
+May 09 04:40:15 kali systemd-sysv-generator[76432]: SysV service '/etc/init.d/stunnel4' lacks a native systemd unit file, automatically generating a unit file for compatibility.
+May 09 04:40:15 kali systemd-sysv-generator[76432]: Please update package to include a native systemd unit file.
+May 09 04:40:15 kali systemd-sysv-generator[76432]: ! This compatibility logic is deprecated, expect removal soon. !
+May 09 04:40:15 kali (generato[76411]: /usr/lib/systemd/system-generators/systemd-sslh-generator terminated by signal ABRT.
+May 09 04:40:16 kali systemd[1]: Reloading finished in 241 ms.
+May 09 04:40:16 kali sudo[75996]: pam_unix(sudo:session): session closed for user root
+May 09 04:40:16 kali sudo[76441]:     root : TTY=pts/1 ; PWD=/root/projects/mini-siem ; USER=root ; COMMAND=/usr/bin/systemctl start ssh
+May 09 04:40:16 kali sudo[76441]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=0)
+May 09 04:40:16 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+May 09 04:40:16 kali sshd[76448]: Server listening on 0.0.0.0 port 22.
+May 09 04:40:16 kali sshd[76448]: Server listening on :: port 22.
+May 09 04:40:16 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+May 09 04:40:16 kali sudo[76441]: pam_unix(sudo:session): session closed for user root
+May 09 04:40:23 kali sudo[76576]:     root : TTY=pts/1 ; PWD=/root/projects/mini-siem ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+May 09 04:40:23 kali sudo[76576]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=0)
+May 09 04:40:23 kali sudo[76576]: pam_unix(sudo:session): session closed for user root
+May 09 04:40:30 kali sshd-session[76797]: Invalid user fakeuser from ::1 port 54338
+May 09 04:40:34 kali sshd-session[76797]: pam_unix(sshd:auth): check pass; user unknown
+May 09 04:40:34 kali sshd-session[76797]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+May 09 04:40:36 kali sshd-session[76797]: Failed password for invalid user fakeuser from ::1 port 54338 ssh2
+May 09 04:40:39 kali sshd-session[76797]: pam_unix(sshd:auth): check pass; user unknown
+May 09 04:40:41 kali sshd-session[76797]: Failed password for invalid user fakeuser from ::1 port 54338 ssh2
+May 09 04:40:43 kali sshd-session[76797]: pam_unix(sshd:auth): check pass; user unknown
+May 09 04:40:45 kali sshd-session[76797]: Failed password for invalid user fakeuser from ::1 port 54338 ssh2
+May 09 04:40:46 kali sshd-session[76797]: Connection closed by invalid user fakeuser ::1 port 54338 [preauth]
+May 09 04:40:46 kali sshd-session[76797]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+May 09 04:41:57 kali wpa_supplicant[752]: wlan0: WPA: Group rekeying completed with c6:3f:bc:8a:9b:7c [GTK=CCMP]
+May 09 04:42:08 kali NetworkManager[687]: <info>  [1778316128.9414] dhcp4 (wlan0): state changed new lease, address=172.20.10.2
+May 09 04:42:08 kali dbus-daemon[624]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=687 comm="/usr/sbin/NetworkManager --no-daemon" label="unconfined")
+May 09 04:42:08 kali systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+May 09 04:42:08 kali dbus-daemon[624]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+May 09 04:42:08 kali systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+May 09 04:42:18 kali systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+May 09 04:44:38 kali kernel: perf: interrupt took too long (4940 > 4932), lowering kernel.perf_event_max_sample_rate to 40250
+May 09 04:45:01 kali CRON[78807]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 04:45:01 kali CRON[78809]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 09 04:45:01 kali CRON[78807]: pam_unix(cron:session): session closed for user root
+May 09 04:54:22 kali sshd-session[83436]: Invalid user fakeuser from ::1 port 37182
+May 09 04:54:24 kali sshd-session[83436]: pam_unix(sshd:auth): check pass; user unknown
+May 09 04:54:24 kali sshd-session[83436]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+May 09 04:54:26 kali sshd-session[83436]: Failed password for invalid user fakeuser from ::1 port 37182 ssh2
+May 09 04:54:29 kali sshd-session[83436]: pam_unix(sshd:auth): check pass; user unknown
+May 09 04:54:31 kali sshd-session[83436]: Failed password for invalid user fakeuser from ::1 port 37182 ssh2
+May 09 04:54:35 kali sshd-session[83436]: pam_unix(sshd:auth): check pass; user unknown
+May 09 04:54:36 kali sshd-session[83436]: Failed password for invalid user fakeuser from ::1 port 37182 ssh2
+May 09 04:54:36 kali sshd-session[83436]: Connection closed by invalid user fakeuser ::1 port 37182 [preauth]
+May 09 04:54:36 kali sshd-session[83436]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1

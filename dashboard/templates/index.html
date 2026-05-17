@@ -3,180 +3,33 @@
 
 <head>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
 
-    <title>Mini SIEM Dashboard</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Nexora SIEM</title>
 
-    <style>
+    <!-- CSS -->
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
-
-        body{
-            background:#0f172a;
-            color:white;
-            padding:20px;
-        }
-
-        h1{
-            margin-bottom:25px;
-        }
-
-        .topbar{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            margin-bottom:20px;
-        }
-
-        .status{
-            color:#4ade80;
-            font-weight:bold;
-        }
-
-        .cards{
-            display:grid;
-            grid-template-columns:repeat(4,1fr);
-            gap:20px;
-            margin-bottom:30px;
-        }
-
-        .card{
-            background:#111827;
-            padding:20px;
-            border-radius:12px;
-            border:1px solid #1e293b;
-            text-align:center;
-        }
-
-        .card h2{
-            color:#38bdf8;
-            margin-bottom:10px;
-            font-size:20px;
-        }
-
-        .card p{
-            font-size:28px;
-            font-weight:bold;
-        }
-
-        .charts{
-            display:grid;
-            grid-template-columns:1fr 1fr;
-            gap:20px;
-            margin-bottom:30px;
-        }
-
-        .chart-box{
-            background:#111827;
-            padding:20px;
-            border-radius:12px;
-            border:1px solid #1e293b;
-        }
-
-        .chart-title{
-            margin-bottom:15px;
-            color:#38bdf8;
-            font-size:18px;
-        }
-
-        .search-box{
-            background:#111827;
-            padding:20px;
-            border-radius:12px;
-            margin-bottom:30px;
-            border:1px solid #1e293b;
-        }
-
-        .search-box h2{
-            margin-bottom:15px;
-            color:#38bdf8;
-        }
-
-        input{
-            width:100%;
-            padding:12px;
-            border:none;
-            border-radius:8px;
-            margin-bottom:15px;
-            background:#1e293b;
-            color:white;
-        }
-
-        button{
-            padding:12px 20px;
-            border:none;
-            border-radius:8px;
-            background:#2563eb;
-            color:white;
-            cursor:pointer;
-            font-weight:bold;
-        }
-
-        button:hover{
-            background:#1d4ed8;
-        }
-
-        table{
-            width:100%;
-            border-collapse:collapse;
-            background:#111827;
-            border-radius:12px;
-            overflow:hidden;
-        }
-
-        th{
-            background:#1e293b;
-            padding:14px;
-            text-align:left;
-            color:#38bdf8;
-        }
-
-        td{
-            padding:12px;
-            border-bottom:1px solid #1e293b;
-        }
-
-        tr:hover{
-            background:#172033;
-        }
-
-        .section-title{
-            margin-bottom:15px;
-            font-size:22px;
-        }
-
-        .high{
-            color:#ef4444;
-            font-weight:bold;
-        }
-
-        .medium{
-            color:#facc15;
-            font-weight:bold;
-        }
-
-        .low{
-            color:#4ade80;
-            font-weight:bold;
-        }
-
-    </style>
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
 
 </head>
 
 <body>
 
-    <div class="topbar">
+    <!-- =========================
+         HEADER
+    ========================= -->
 
-        <h1>Mini SIEM Dashboard</h1>
+    <div class="header">
+
+        <h1>Nexora SIEM</h1>
 
         <div class="status">
             SOC STATUS: ACTIVE
@@ -184,51 +37,92 @@
 
     </div>
 
-    <!-- STATS -->
+    <!-- =========================
+         LIVE TICKER
+    ========================= -->
 
-    <div class="cards">
+    <div class="ticker-wrapper">
 
-        <div class="card">
-            <h2>Total Alerts</h2>
-            <p id="totalAlerts">0</p>
-        </div>
+        <div
+            class="ticker"
+            id="liveTicker"
+        >
 
-        <div class="card">
-            <h2>High Severity</h2>
-            <p id="highAlerts">0</p>
-        </div>
+            Waiting for alerts...
 
-        <div class="card">
-            <h2>Medium Severity</h2>
-            <p id="mediumAlerts">0</p>
-        </div>
-
-        <div class="card">
-            <h2>SOC Health</h2>
-            <p>Healthy</p>
         </div>
 
     </div>
 
-    <!-- CHARTS -->
+    <!-- =========================
+         STATS
+    ========================= -->
 
-    <div class="charts">
+    <div class="cards">
 
-        <div class="chart-box">
+        <div class="card">
 
-            <div class="chart-title">
+            <h2>Total Alerts</h2>
+
+            <p id="totalAlerts">
+                0
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>High Severity</h2>
+
+            <p id="highAlerts">
+                0
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Medium Severity</h2>
+
+            <p id="mediumAlerts">
+                0
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Low Severity</h2>
+
+            <p id="lowAlerts">
+                0
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         CHARTS
+    ========================= -->
+
+    <div class="charts-container">
+
+        <div class="chart-card">
+
+            <h2>
                 Severity Distribution
-            </div>
+            </h2>
 
             <canvas id="severityChart"></canvas>
 
         </div>
 
-        <div class="chart-box">
+        <div class="chart-card">
 
-            <div class="chart-title">
+            <h2>
                 Alert Type Distribution
-            </div>
+            </h2>
 
             <canvas id="typeChart"></canvas>
 
@@ -236,242 +130,192 @@
 
     </div>
 
-    <!-- SEARCH -->
+    <!-- =========================
+         THREAT HUNT
+    ========================= -->
 
-    <div class="search-box">
+    <div class="hunt-box">
 
-        <h2>Threat Hunt Search</h2>
+        <h2>
+            Threat Hunt Console
+        </h2>
 
-        <input
-            type="text"
-            id="huntInput"
-            placeholder="Search username, IP, severity, alert type..."
-        />
+        <div class="hunt-controls">
 
-        <button onclick="huntSearch()">
-            Search
-        </button>
+            <input
+                type="text"
+                id="huntInput"
+                placeholder="Search IP / user / severity / alert type"
+            >
+
+            <button onclick="huntSearch()">
+                Hunt
+            </button>
+
+        </div>
 
     </div>
 
-    <!-- RESULTS -->
+    <!-- =========================
+         MITRE PANEL
+    ========================= -->
 
-    <h2 class="section-title">Recent Alerts</h2>
+    <div class="mitre-panel">
 
-    <table>
+        <h2>
+            MITRE ATT&CK Mapping
+        </h2>
 
-        <thead>
+        <div
+            class="mitre-grid"
+            id="mitreContainer"
+        >
 
-            <tr>
-                <th>Timestamp</th>
-                <th>Alert Type</th>
-                <th>Severity</th>
-                <th>IP</th>
-                <th>User</th>
-            </tr>
+        </div>
 
-        </thead>
+    </div>
 
-        <tbody id="alertsTable">
+    <!-- =========================
+         THREAT INTEL
+    ========================= -->
 
-        </tbody>
+    <div class="intel-panel">
 
-    </table>
+        <h2>
+            Threat Intelligence
+        </h2>
 
-    <script>
+        <div
+            class="intel-grid"
+            id="intelContainer"
+        >
 
-        let severityChart;
-        let typeChart;
+        </div>
 
-        async function loadDashboard() {
+    </div>
 
-            const response = await fetch(
-                "http://127.0.0.1:8000/alerts/recent"
-            );
+    <!-- =========================
+         CORRELATION PANEL
+    ========================= -->
 
-            const data = await response.json();
+    <div class="correlation-panel">
 
-            const alerts = data.alerts || [];
+        <h2>
+            Correlated Attack Chains
+        </h2>
 
-            document.getElementById(
-                "totalAlerts"
-            ).innerText = alerts.length;
+        <div
+            class="correlation-grid"
+            id="correlationContainer"
+        >
 
-            let high = 0;
-            let medium = 0;
-            let low = 0;
+        </div>
 
-            const typeCounts = {};
+    </div>
 
-            const table = document.getElementById(
-                "alertsTable"
-            );
+    <!-- =========================
+         ALERT TABLE
+    ========================= -->
 
-            table.innerHTML = "";
+    <div class="table-container">
 
-            alerts.forEach(alert => {
+        <h2>
+            Recent Alerts
+        </h2>
 
-                const severity =
-                    (alert.severity || "").toUpperCase();
+        <table>
 
-                if(severity === "HIGH"){
-                    high++;
-                }
-                else if(severity === "MEDIUM"){
-                    medium++;
-                }
-                else{
-                    low++;
-                }
+            <thead>
 
-                const type =
-                    alert.alert_type || "unknown";
+                <tr>
 
-                typeCounts[type] =
-                    (typeCounts[type] || 0) + 1;
+                    <th>Timestamp</th>
 
-                const row = `
-                    <tr>
-                        <td>${alert.timestamp || "-"}</td>
-                        <td>${type}</td>
-                        <td class="${severity.toLowerCase()}">
-                            ${severity}
-                        </td>
-                        <td>${alert.source_ip || "-"}</td>
-                        <td>${alert.username || "-"}</td>
-                    </tr>
-                `;
+                    <th>Alert Type</th>
 
-                table.innerHTML += row;
+                    <th>Severity</th>
 
-            });
+                    <th>Source IP</th>
 
-            document.getElementById(
-                "highAlerts"
-            ).innerText = high;
+                    <th>User</th>
 
-            document.getElementById(
-                "mediumAlerts"
-            ).innerText = medium;
+                    <th>Action</th>
 
-            // =========================
-            // SEVERITY CHART
-            // =========================
+                </tr>
 
-            if(severityChart){
-                severityChart.destroy();
-            }
+            </thead>
 
-            severityChart = new Chart(
-                document.getElementById("severityChart"),
-                {
-                    type: "doughnut",
+            <tbody id="alertsTable">
 
-                    data: {
+            </tbody>
 
-                        labels: [
-                            "HIGH",
-                            "MEDIUM",
-                            "LOW"
-                        ],
+        </table>
 
-                        datasets: [{
-                            data: [
-                                high,
-                                medium,
-                                low
-                            ]
-                        }]
-                    }
-                }
-            );
+    </div>
 
-            // =========================
-            // ALERT TYPE CHART
-            // =========================
+    <!-- =========================
+         MODAL
+    ========================= -->
 
-            if(typeChart){
-                typeChart.destroy();
-            }
+    <div
+        class="modal"
+        id="alertModal"
+    >
 
-            typeChart = new Chart(
-                document.getElementById("typeChart"),
-                {
-                    type: "bar",
+        <div class="modal-content">
 
-                    data: {
+            <span
+                class="close-btn"
+                onclick="closeModal()"
+            >
+                &times;
+            </span>
 
-                        labels: Object.keys(typeCounts),
+            <div id="modalBody">
 
-                        datasets: [{
-                            label: "Alerts",
-                            data: Object.values(typeCounts)
-                        }]
-                    }
-                }
-            );
+            </div>
 
-        }
+        </div>
 
-        // =========================
-        // THREAT HUNT SEARCH
-        // =========================
+    </div>
 
-        async function huntSearch(){
+    <!-- =========================
+         POPUP ALERT
+    ========================= -->
 
-            const query = document.getElementById(
-                "huntInput"
-            ).value;
+    <div
+        class="popup"
+        id="alertPopup"
+    >
 
-            if(!query){
-                return;
-            }
+    </div>
 
-            const response = await fetch(
-                `http://127.0.0.1:8000/hunt/query?q=${query}`
-            );
+    <!-- =========================
+         ALERT SOUND
+    ========================= -->
 
-            const data = await response.json();
+    <audio id="alertSound">
 
-            const table = document.getElementById(
-                "alertsTable"
-            );
+        <source
+            src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+            type="audio/ogg"
+        >
 
-            table.innerHTML = "";
+    </audio>
 
-            const results = data.results || [];
+    <!-- =========================
+         CHART JS
+    ========================= -->
 
-            results.forEach(alert => {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-                const severity =
-                    (alert.severity || "").toUpperCase();
+    <!-- =========================
+         DASHBOARD JS
+    ========================= -->
 
-                const row = `
-                    <tr>
-                        <td>${alert.timestamp || "-"}</td>
-                        <td>${alert.alert_type || "-"}</td>
-                        <td class="${severity.toLowerCase()}">
-                            ${severity}
-                        </td>
-                        <td>${alert.source_ip || "-"}</td>
-                        <td>${alert.username || "-"}</td>
-                    </tr>
-                `;
-
-                table.innerHTML += row;
-
-            });
-
-        }
-
-        loadDashboard();
-
-        setInterval(
-            loadDashboard,
-            10000
-        );
-
-    </script>
+    <script
+        src="{{ url_for('static', filename='dashboard.js') }}"
+    ></script>
 
 </body>
 

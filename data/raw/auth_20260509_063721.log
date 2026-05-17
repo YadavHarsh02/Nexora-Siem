@@ -1,0 +1,200 @@
+May 09 06:05:23 kali kernel: [  pid  ]   uid  tgid total_vm      rss rss_anon rss_file rss_shmem pgtables_bytes swapents oom_score_adj name
+May 09 06:05:23 kali kernel: [    365]     0   365    14778      134      132        0         2   135168      332          -250 systemd-journal
+May 09 06:05:23 kali kernel: [    379]   989   379    22587       57       45       12         0    81920      246             0 systemd-timesyn
+May 09 06:05:23 kali kernel: [    381]     0   381     3998       31       31        0         0    69632      224             0 systemd-userdbd
+May 09 06:05:23 kali kernel: [    382]     0   382     9728       87       53       34         0   102400     1106         -1000 systemd-udevd
+May 09 06:05:23 kali kernel: [    532]     0   532     2097       10       10        0         0    53248      785             0 haveged
+May 09 06:05:23 kali kernel: [    622]     0   622    77402      179      122       57         0   110592      108             0 accounts-daemon
+May 09 06:05:23 kali kernel: [    623]     0   623     3217      124       38       86         0    69632      152             0 bluetoothd
+May 09 06:05:23 kali kernel: [    624]   987   624     2957     1146     1129       17         0    65536       84          -900 dbus-daemon
+May 09 06:05:23 kali kernel: [    629]   973   629    95881      272      259       13         0   110592      614             0 polkitd
+May 09 06:05:23 kali kernel: [    630]     0   630     2479      115       29       86         0    57344      235             0 smartd
+May 09 06:05:23 kali kernel: [    633]     0   633     4601      162      124       38         0    77824      237             0 systemd-logind
+May 09 06:05:23 kali kernel: [    660]     0   660     1719       17        7       10         0    57344       37             0 cron
+May 09 06:05:23 kali kernel: [    687]     0   687    84347      291      275       16         0   167936      561             0 NetworkManager
+May 09 06:05:23 kali kernel: [    705]     0   705    79434      121       69       52         0   110592      424             0 ModemManager
+May 09 06:05:23 kali kernel: [    752]     0   752     4598       88       88        0         0    77824      384             0 wpa_supplicant
+May 09 06:05:23 kali kernel: [    754]     0   754    20111       47       28       19         0    61440       48             0 nessus-service
+May 09 06:05:23 kali kernel: [    759]     0   759   147179    17320    17313        7         0  1015808    67214             0 nessusd
+May 09 06:05:23 kali kernel: [    768]     0   768    96245      103       49       54         0   122880      243             0 gdm3
+May 09 06:05:23 kali kernel: [    784]   988   784     4249       65       58        7         0    77824      217          -900 systemd-oomd
+May 09 06:05:23 kali kernel: [    827]   972   827     5382       35       35        0         0    57344       19             0 rtkit-daemon
+May 09 06:05:23 kali kernel: [    975]   971   975    79430       59        0       59         0   126976     1403             0 colord
+May 09 06:05:23 kali kernel: [   1018]     0  1018    79849      260      224       36         0   126976      434             0 upowerd
+May 09 06:05:23 kali kernel: [   1091]   970  1091   138074      158      158        0         0   143360      281             0 pcscd
+May 09 06:05:23 kali kernel: [   1540]     0  1540    77336      145       80       65         0    98304      133             0 power-profiles-
+May 09 06:05:23 kali kernel: [   1733]     0  1733    96325      145       80       65         0   126976      196             0 gdm-session-wor
+May 09 06:05:23 kali kernel: [   1805]  1000  1805     5967      482      399       83         0    81920      528           100 systemd
+May 09 06:05:23 kali kernel: [   1807]  1000  1807     5660       65        1       64         0    81920      452           100 (sd-pam)
+May 09 06:05:23 kali kernel: [   1827]  1000  1827     2457      490      447       43         0    57344       94           200 dbus-daemon
+May 09 06:05:23 kali kernel: [   1828]  1000  1828    26397      218      195        0        23   106496     1010           200 pipewire
+May 09 06:05:23 kali kernel: [   1830]  1000  1830    45863      169      110       59         0   114688      146           200 gnome-keyring-d
+May 09 06:05:23 kali kernel: [   1835]  1000  1835     1809      108       38       70         0    61440       37           200 mpris-proxy
+May 09 06:05:23 kali kernel: [   1837]  1000  1837   120368      146       48       97         1   151552     1208           200 wireplumber
+May 09 06:05:23 kali kernel: [   1839]  1000  1839    21184       43       20       23         0    73728      126           200 pipewire
+May 09 06:05:23 kali kernel: [   1841]  1000  1841    43965      601      499       61        41   106496      357           200 pipewire-pulse
+May 09 06:05:23 kali kernel: [   1866]  1000  1866    42069       71        4       67         0    90112      122             0 gdm-wayland-ses
+May 09 06:05:23 kali kernel: [   1871]  1000  1871    41300      119       36       83         0    77824       88             0 gnome-session-i
+May 09 06:05:23 kali kernel: [   1978]  1000  1978    24431       74       13       61         0    86016      164           200 gcr-ssh-agent
+May 09 06:05:23 kali kernel: [   1979]  1000  1979    21822      114       55       59         0    81920       39           200 gnome-session-c
+May 09 06:05:23 kali kernel: [   1980]  1000  1980     2639      102       48       54         0    61440      216           200 ssh-agent
+May 09 06:05:23 kali kernel: [   1992]  1000  1992    78282      147       80       67         0   110592      148           200 gvfsd
+May 09 06:05:23 kali kernel: [   1998]  1000  1998    81197       71        5       66         0   114688      189           200 gvfsd-fuse
+May 09 06:05:23 kali kernel: [   2002]  1000  2002   153430      147       79       67         1   159744      296           200 gnome-session-s
+May 09 06:05:23 kali kernel: [   2013]  1000  2013  1268061    25441    24308        0      1133  1830912    27471           100 gnome-shell
+May 09 06:05:23 kali kernel: [   2041]  1000  2041    95309       89       59       29         1   102400      115           200 at-spi-bus-laun
+May 09 06:05:23 kali kernel: [   2048]  1000  2048     2060      150       53       97         0    57344       61           200 dbus-daemon
+May 09 06:05:23 kali kernel: [   2050]  1000  2050    42203      100       40       60         0    81920      127           200 at-spi2-registr
+May 09 06:05:23 kali kernel: [   2054]  1000  2054    77195      141       56       85         0   110592      105           200 xdg-permission-
+May 09 06:05:23 kali kernel: [   2059]  1000  2059    41358      166       87       79         0    81920       84           200 dconf-service
+May 09 06:05:23 kali kernel: [   2074]  1000  2074   165977      232      166       66         0   221184      850           200 gnome-shell-cal
+May 09 06:05:23 kali kernel: [   2082]  1000  2082   277207      169      121       48         0   438272     4033           200 evolution-sourc
+May 09 06:05:23 kali kernel: [   2092]  1000  2092   665827     1070      960      110         0   282624      596           200 gjs
+May 09 06:05:23 kali kernel: [   2096]  1000  2096    96417      732      664       68         0   126976      330           200 ibus-daemon
+May 09 06:05:23 kali kernel: [   2115]  1000  2115    63543      161       57      103         1   122880      228           200 gsd-a11y-settin
+May 09 06:05:23 kali kernel: [   2116]  1000  2116    63027      120       97       22         1   114688      185           200 gsd-color
+May 09 06:05:23 kali kernel: [   2117]  1000  2117    65190      107       51       55         1   135168      292           200 gsd-datetime
+May 09 06:05:23 kali kernel: [   2120]  1000  2120    97895      237      206       30         1   126976      258           200 gsd-housekeepin
+May 09 06:05:23 kali kernel: [   2123]  1000  2123    95795      124       48       76         0   118784      164           200 gsd-keyboard
+May 09 06:05:23 kali kernel: [   2128]  1000  2128   140124      113       69       44         0   184320      413           200 gsd-media-keys
+May 09 06:05:23 kali kernel: [   2131]  1000  2131   137728      296      233       62         1   155648      350           200 gsd-power
+May 09 06:05:23 kali kernel: [   2132]  1000  2132   264670     1074     1045        0        29   479232     4443           200 evolution-alarm
+May 09 06:05:23 kali kernel: [   2138]  1000  2138    82020      117       44       73         0   147456      384           200 gsd-print-notif
+May 09 06:05:23 kali kernel: [   2140]  1000  2140   114243      149      104       45         0   122880      114           200 gsd-rfkill
+May 09 06:05:23 kali kernel: [   2141]  1000  2141    42471      115       30       85         0    98304      112           200 gsd-screensaver
+May 09 06:05:23 kali kernel: [   2143]  1000  2143    78126      138       72       66         0   102400      263           200 gsd-disk-utilit
+May 09 06:05:23 kali kernel: [   2148]  1000  2148   171092      340      340        0         0   311296     6418           200 blueman-applet
+May 09 06:05:23 kali kernel: [   2170]  1000  2170   116937      213      177       35         1   147456      233           200 gsd-sharing
+May 09 06:05:23 kali kernel: [   2191]  1000  2191    98923      130      105       24         1   143360      416           200 gsd-smartcard
+May 09 06:05:23 kali kernel: [   2192]     0  2192   136026      324      304       20         0   159744      394             0 udisksd
+May 09 06:05:23 kali kernel: [   2193]  1000  2193    63781      185      110       74         1   126976      213           200 gsd-sound
+May 09 06:05:23 kali kernel: [   2202]  1000  2202    97617      160      107       52         1   122880      153           200 gsd-usb-protect
+May 09 06:05:23 kali kernel: [   2212]  1000  2212    42315       45        0       45         0    90112      130           200 ibus-memconf
+May 09 06:05:23 kali kernel: [   2215]  1000  2215   123948      444      379       64         1   200704     3098           200 ibus-extension-
+May 09 06:05:23 kali kernel: [   2217]  1000  2217   102053       82        0       82         0   151552      379           200 gsd-printer
+May 09 06:05:23 kali kernel: [   2241]  1000  2241    77152      152       59       93         0   118784       96           200 ibus-portal
+May 09 06:05:23 kali kernel: [   2261]  1000  2261    97634      129       80       48         1   131072      207           200 gsd-wwan
+May 09 06:05:23 kali kernel: [   2288]  1000  2288   194634      318      317        0         1   221184      726           200 xdg-desktop-por
+May 09 06:05:23 kali kernel: [   2292]  1000  2292   121206      159       94       65         0   299008     1266           200 goa-daemon
+May 09 06:05:23 kali kernel: [   2309]  1000  2309   139055      153       82       71         0   151552       85           200 xdg-document-po
+May 09 06:05:23 kali kernel: [   2315]  1000  2315   665578      535      477       58         0   262144     1067           200 gjs
+May 09 06:05:23 kali kernel: [   2327]  1000  2327    97025      138       59       79         0   131072      216           200 goa-identity-se
+May 09 06:05:23 kali kernel: [   2328]  1000  2328   219286     1578     1573        4         1   241664     1403           200 localsearch-3
+May 09 06:05:23 kali kernel: [   2361]  1000  2361      648       96        2       94         0    45056       26           200 fusermount3
+May 09 06:05:23 kali kernel: [   2364]  1000  2364   326204      265      201       64         0   294912      752           200 evolution-calen
+May 09 06:05:23 kali kernel: [   2372]  1000  2372   135828      433      346       87         0   299008     2588           200 xdg-desktop-por
+May 09 06:05:23 kali kernel: [   2387]  1000  2387   190881      225      195       29         1   286720      861           200 evolution-addre
+May 09 06:05:23 kali kernel: [   2390]  1000  2390    97703      125      108       16         1   135168      298           200 gvfs-udisks2-vo
+May 09 06:05:23 kali kernel: [   2402]  1000  2402    97498       34       18       16         0   131072      290           200 gvfs-afc-volume
+May 09 06:05:23 kali kernel: [   2414]  1000  2414    76988      124       71       53         0   110592      102           200 gvfs-mtp-volume
+May 09 06:05:23 kali kernel: [   2419]  1000  2419    76976       81       21       60         0   110592      134           200 gvfs-goa-volume
+May 09 06:05:23 kali kernel: [   2424]  1000  2424    77230       75       31       44         0   110592      173           200 gvfs-gphoto2-vo
+May 09 06:05:23 kali kernel: [   2438]  1000  2438    42346      196      134       62         0    90112      110           200 ibus-engine-sim
+May 09 06:05:23 kali kernel: [   2490]  1000  2490   126924      435      364       70         1   200704     1600           200 Thunar
+May 09 06:05:23 kali kernel: [   2505]  1000  2505    96796      146       70       76         0   126976      218           200 gvfsd-recent
+May 09 06:05:23 kali kernel: [   2506]  1000  2506   133635      145       69       76         0   147456      270           200 gvfsd-trash
+May 09 06:05:23 kali kernel: [   2603]  1000  2603    42250      116       98       18         0    90112       78           200 gvfsd-metadata
+May 09 06:05:23 kali kernel: [   2604]  1000  2604   114551      130       77       52         1   188416      674           200 obexd
+May 09 06:05:23 kali kernel: [   2606]  1000  2606   130836      126       86        8        32   262144     5760           200 blueman-tray
+May 09 06:05:23 kali kernel: [   2861]  1000  2861   122317      646      611       34         1   188416     1276           200 xdg-desktop-por
+May 09 06:05:23 kali kernel: [   3805]  1000  3805   332180     4401     3268       20      1113   389120     2235           200 gnome-terminal-
+May 09 06:05:23 kali kernel: [   3923]  1000  3923     2588       50       11       39         0    61440      481           200 zsh
+May 09 06:05:23 kali kernel: [   4205]  1000  4205     5019       76       21       55         0    77824      272           200 sudo
+May 09 06:05:23 kali kernel: [   4228]  1000  4228     5019       37        8       29         0    65536      283           200 sudo
+May 09 06:05:23 kali kernel: [   4229]     0  4229     2710       58        1       57         0    57344       94           200 su
+May 09 06:05:23 kali kernel: [   4233]     0  4233     5779      285      222       63         0    90112      487           100 systemd
+May 09 06:05:23 kali kernel: [   4235]     0  4235     5575       43        1       42         0    73728      435           100 (sd-pam)
+May 09 06:05:23 kali kernel: [   4256]     0  4256     2067      104       32       72         0    61440       64           100 dbus-daemon
+May 09 06:05:23 kali kernel: [   4257]     0  4257     6920      114       48       66         0    86016      880           100 pipewire
+May 09 06:05:23 kali kernel: [   4258]     0  4258     2640      462      398       64         0    61440      268           200 zsh
+May 09 06:05:23 kali kernel: [   4260]     0  4260    81859      162       75       87         0   126976     1104           100 wireplumber
+May 09 06:05:23 kali kernel: [   4261]     0  4261     2718       71       26       45         0    61440      104           100 pipewire
+May 09 06:05:23 kali kernel: [   4262]     0  4262     6270       91       38       53         0    86016      197           100 pipewire-pulse
+May 09 06:05:23 kali kernel: [   4287]     0  4287    77195       78       36       42         0   102400       92           100 xdg-permission-
+May 09 06:05:23 kali kernel: [  20238]     0 20238   126761      241      191       50         0   270336     1837             0 fwupd
+May 09 06:05:23 kali kernel: [  76448]     0 76448     2945       98       50       48         0    69632      270         -1000 sshd
+May 09 06:05:23 kali kernel: [  85698]   119 85698   637704      160      153        7         0   434176    22724             0 java
+May 09 06:05:23 kali kernel: [  85777]   119 85777  1950128    41860    41856        1         3  9203712  1029425             0 java
+May 09 06:05:23 kali kernel: [  85819]   119 85819    27142       85        0       85         0    98304      187             0 controller
+May 09 06:05:23 kali kernel: [  97404]  1000 97404   849640     2020     1924        0        96   450560     1971           100 gjs
+May 09 06:05:23 kali kernel: [ 110681]     0 110681     4173      275      256       19         0    69632        0             0 systemd-userwor
+May 09 06:05:23 kali kernel: [ 110797]  1000 110797  2933461    14205    13806        0       399  2543616    38488           100 firefox-esr
+May 09 06:05:23 kali kernel: [ 110833]  1000 110833     5253       87       10       77         0    61440       96           100 crashhelper
+May 09 06:05:23 kali kernel: [ 110968]  1000 110968    60094      164       64       33        67   413696     2336           100 Socket Process
+May 09 06:05:23 kali kernel: [ 110998]  1000 110998   622784     3312     2945       42       325   802816     5856           167 Privileged Cont
+May 09 06:05:23 kali kernel: [ 111004]  1000 111004    64665      164       96        1        67   401408     2304           100 RDD Process
+May 09 06:05:23 kali kernel: [ 111108]  1000 111108   674389    21561    21244       40       277  1462272    11680           100 WebExtensions
+May 09 06:05:23 kali kernel: [ 111159]  1000 111159    64921      163       96        0        67   409600     2272           100 Utility Process
+May 09 06:05:23 kali kernel: [ 111170]  1000 111170  4375666  1618265  1617846        9       410 18616320     9440           100 Isolated Web Co
+May 09 06:05:23 kali kernel: [ 111176]  1000 111176   610812      306       96       49       161   540672     3214           233 Web Content
+May 09 06:05:23 kali kernel: [ 111184]  1000 111184   610812      252       96        0       156   548864     3214           233 Web Content
+May 09 06:05:23 kali kernel: [ 111272]  1000 111272   630433     1181      772        0       409   712704     5120           167 file:// Content
+May 09 06:05:23 kali kernel: [ 111349]  1000 111349   609427     3504     3287       10       207   536576        0           233 Web Content
+May 09 06:05:23 kali kernel: [ 111601]     0 111601     4138      196      192        4         0    73728       32             0 systemd-userwor
+May 09 06:05:23 kali kernel: [ 111602]     0 111602     4138      287      224       63         0    73728        0             0 systemd-userwor
+May 09 06:05:23 kali kernel: [ 111604]  1000 111604      672       43        0       43         0    45056        0           100 sh
+May 09 06:05:23 kali kernel: [ 111605]  1000 111605      672       38        0       38         0    45056        0           100 sh
+May 09 06:05:23 kali kernel: [ 111606]  1000 111606     1505        0        0        0         0    53248        0           100 ip
+May 09 06:05:23 kali kernel: [ 111607]  1000 111607     1399       21        0       21         0    57344        0           100 cut
+May 09 06:05:23 kali kernel: [ 111608]  1000 111608     1399       56        0       56         0    53248        0           100 head
+May 09 06:05:23 kali kernel: [ 111610]     0 111610     1824       18        0       18         0    57344       32             0 cron
+May 09 06:05:23 kali kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome-firefox\x2desr-110797.scope,task=Isolated Web Co,pid=111170,uid=1000
+May 09 06:05:23 kali kernel: Out of memory: Killed process 111170 (Isolated Web Co) total-vm:17502664kB, anon-rss:6471384kB, file-rss:36kB, shmem-rss:1640kB, UID:1000 pgtables:18180kB oom_score_adj:100
+May 09 06:06:59 kali systemd-timesyncd[379]: Timed out waiting for reply from [64:ff9b::aceb:12ed]:123 (0.debian.pool.ntp.org).
+May 09 06:07:00 kali systemd-timesyncd[379]: Contacted time server [64:ff9b::c02e:d73c]:123 (0.debian.pool.ntp.org).
+May 09 06:09:01 kali CRON[112955]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 06:09:01 kali CRON[112957]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+May 09 06:09:01 kali CRON[112955]: pam_unix(cron:session): session closed for user root
+May 09 06:09:01 kali systemd[1]: Starting phpsessionclean.service - Clean php session files...
+May 09 06:09:01 kali systemd[1]: phpsessionclean.service: Deactivated successfully.
+May 09 06:09:01 kali systemd[1]: Finished phpsessionclean.service - Clean php session files.
+May 09 06:12:41 kali systemd[1805]: Started app-gnome-firefox\x2desr-114330.scope - Application launched by gnome-shell.
+May 09 06:12:42 kali dbus-daemon[624]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.231' (uid=1000 pid=114330 comm="/usr/lib/firefox-esr/firefox-esr" label="unconfined")
+May 09 06:12:42 kali systemd[1]: Starting systemd-timedated.service - Time & Date Service...
+May 09 06:12:42 kali systemd[1]: Started systemd-timedated.service - Time & Date Service.
+May 09 06:12:42 kali dbus-daemon[624]: [system] Successfully activated service 'org.freedesktop.timedate1'
+May 09 06:12:42 kali rtkit-daemon[827]: Successfully made thread 114597 of process 114330 owned by '1000' RT at priority 10.
+May 09 06:12:46 kali systemd[1805]: app-gnome-firefox\x2desr-114330.scope: Consumed 6.037s CPU time over 5.508s wall clock time, 920.2M memory peak.
+May 09 06:12:48 kali systemd[1805]: Started app-gnome-firefox\x2desr-114905.scope - Application launched by gnome-shell.
+May 09 06:12:49 kali rtkit-daemon[827]: Successfully made thread 115148 of process 114905 owned by '1000' RT at priority 10.
+May 09 06:13:18 kali systemd[1]: systemd-timedated.service: Deactivated successfully.
+May 09 06:14:00 kali gnome-shell[2013]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 09 06:14:00 kali gnome-shell[2013]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 09 06:14:41 kali gnome-shell[2013]: Error in size change accounting.
+May 09 06:15:01 kali CRON[116524]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 06:15:01 kali CRON[116526]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 09 06:15:01 kali CRON[116524]: pam_unix(cron:session): session closed for user root
+May 09 06:16:47 kali gnome-shell[2013]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 09 06:16:47 kali gnome-shell[2013]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 09 06:17:01 kali CRON[117452]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 06:17:01 kali CRON[117454]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+May 09 06:17:01 kali CRON[117452]: pam_unix(cron:session): session closed for user root
+May 09 06:24:01 kali sudo[120656]:     root : TTY=pts/1 ; PWD=/root/projects/mini-siem ; USER=root ; COMMAND=/usr/bin/systemctl start elasticsearch
+May 09 06:24:01 kali sudo[120656]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=0)
+May 09 06:24:01 kali sudo[120656]: pam_unix(sudo:session): session closed for user root
+May 09 06:24:40 kali sudo[120907]:     root : TTY=pts/1 ; PWD=/root/projects/mini-siem ; USER=root ; COMMAND=/usr/bin/systemctl status elasticsearch
+May 09 06:24:40 kali sudo[120907]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=0)
+May 09 06:24:43 kali sudo[120907]: pam_unix(sudo:session): session closed for user root
+May 09 06:25:01 kali CRON[121062]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 06:25:01 kali CRON[121063]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 06:25:01 kali CRON[121066]: (root) CMD (test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.daily; })
+May 09 06:25:01 kali CRON[121067]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 09 06:25:01 kali CRON[121063]: pam_unix(cron:session): session closed for user root
+May 09 06:25:01 kali CRON[121062]: pam_unix(cron:session): session closed for user root
+May 09 06:32:43 kali NetworkManager[687]: <info>  [1778322763.7552] dhcp4 (wlan0): state changed new lease, address=172.20.10.2
+May 09 06:32:43 kali dbus-daemon[624]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=687 comm="/usr/sbin/NetworkManager --no-daemon" label="unconfined")
+May 09 06:32:43 kali systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+May 09 06:32:43 kali dbus-daemon[624]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+May 09 06:32:43 kali systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+May 09 06:32:53 kali systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+May 09 06:33:22 kali kernel: pcieport 0000:00:1d.6: AER: Multiple Correctable error message received from 0000:00:1d.6
+May 09 06:33:22 kali kernel: pcieport 0000:00:1d.6: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+May 09 06:33:22 kali kernel: pcieport 0000:00:1d.6:   device [8086:34b6] error status/mask=00000001/00002000
+May 09 06:33:22 kali kernel: pcieport 0000:00:1d.6:    [ 0] RxErr                  (First)
+May 09 06:33:22 kali kernel: pcieport 0000:00:1d.6: AER:   Error of this Agent is reported first
+May 09 06:33:22 kali kernel: nvme 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+May 09 06:33:22 kali kernel: nvme 0000:02:00.0:   device [8086:0975] error status/mask=00000001/00002000
+May 09 06:33:22 kali kernel: nvme 0000:02:00.0:    [ 0] RxErr                  (First)
+May 09 06:35:01 kali CRON[125187]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 09 06:35:01 kali CRON[125189]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 09 06:35:01 kali CRON[125187]: pam_unix(cron:session): session closed for user root

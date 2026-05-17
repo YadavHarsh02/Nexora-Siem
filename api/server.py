@@ -1,17 +1,21 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
+from fastapi import WebSocket
 from database.db import ElasticsearchConnector
 
-# HUNT API
+# =========================
+# API ROUTERS
+# =========================
+
 from api.hunt_api import router as hunt_router
+from api.correlation_api import router as correlation_router
 
 app = FastAPI(title="Mini SIEM API")
 
 db = ElasticsearchConnector()
 
 # =========================
-# CORS (FOR FRONTEND)
+# CORS
 # =========================
 
 app.add_middleware(
@@ -27,6 +31,7 @@ app.add_middleware(
 # =========================
 
 app.include_router(hunt_router)
+app.include_router(correlation_router)
 
 # =========================
 # ROOT
@@ -66,12 +71,19 @@ def recent_alerts():
             "error": "No response from Elasticsearch"
         }
 
-    hits = response.get("hits", {}).get("hits", [])
+    hits = response.get(
+        "hits",
+        {}
+    ).get(
+        "hits",
+        []
+    )
 
     return {
         "count": len(hits),
         "alerts": [
-            h["_source"] for h in hits
+            h["_source"]
+            for h in hits
         ]
     }
 
@@ -101,12 +113,19 @@ def alerts_by_ip(ip: str):
             "alerts": []
         }
 
-    hits = response.get("hits", {}).get("hits", [])
+    hits = response.get(
+        "hits",
+        {}
+    ).get(
+        "hits",
+        []
+    )
 
     return {
         "count": len(hits),
         "alerts": [
-            h["_source"] for h in hits
+            h["_source"]
+            for h in hits
         ]
     }
 
@@ -136,12 +155,19 @@ def alerts_by_user(username: str):
             "alerts": []
         }
 
-    hits = response.get("hits", {}).get("hits", [])
+    hits = response.get(
+        "hits",
+        {}
+    ).get(
+        "hits",
+        []
+    )
 
     return {
         "count": len(hits),
         "alerts": [
-            h["_source"] for h in hits
+            h["_source"]
+            for h in hits
         ]
     }
 
@@ -171,12 +197,19 @@ def alerts_by_type(alert_type: str):
             "alerts": []
         }
 
-    hits = response.get("hits", {}).get("hits", [])
+    hits = response.get(
+        "hits",
+        {}
+    ).get(
+        "hits",
+        []
+    )
 
     return {
         "count": len(hits),
         "alerts": [
-            h["_source"] for h in hits
+            h["_source"]
+            for h in hits
         ]
     }
 
@@ -206,12 +239,19 @@ def alerts_by_severity(severity: str):
             "alerts": []
         }
 
-    hits = response.get("hits", {}).get("hits", [])
+    hits = response.get(
+        "hits",
+        {}
+    ).get(
+        "hits",
+        []
+    )
 
     return {
         "count": len(hits),
         "alerts": [
-            h["_source"] for h in hits
+            h["_source"]
+            for h in hits
         ]
     }
 
@@ -226,3 +266,59 @@ def health():
         "status": "healthy",
         "service": "Mini SIEM Backend"
     }
+
+# =========================
+# WEBSOCKET CONNECTIONS
+# =========================
+
+active_connections = []
+
+
+# =========================
+# WEBSOCKET ENDPOINT
+# =========================
+
+@app.websocket("/ws/live-alerts")
+async def websocket_endpoint(websocket: WebSocket):
+
+    await websocket.accept()
+
+    active_connections.append(websocket)
+
+    print("[INFO] WebSocket client connected")
+
+    try:
+
+        while True:
+
+            # keep socket alive
+            await websocket.receive_text()
+
+    except Exception:
+
+        print("[INFO] WebSocket disconnected")
+
+        active_connections.remove(websocket)
+
+
+# =========================
+# BROADCAST ALERTS
+# =========================
+
+async def broadcast_alert(alert_data):
+
+    disconnected = []
+
+    for connection in active_connections:
+
+        try:
+
+            await connection.send_json(alert_data)
+
+        except Exception:
+
+            disconnected.append(connection)
+
+    for dead in disconnected:
+
+        active_connections.remove(dead)

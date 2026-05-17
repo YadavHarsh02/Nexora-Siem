@@ -1,0 +1,340 @@
+May 10 13:55:50 kali kernel: ACPI: PM: Restoring platform NVS memory
+May 10 13:55:50 kali kernel: Enabling non-boot CPUs ...
+May 10 13:55:50 kali kernel: smpboot: Booting Node 0 Processor 1 APIC 0x2
+May 10 13:55:50 kali kernel: CPU1 is up
+May 10 13:55:50 kali kernel: smpboot: Booting Node 0 Processor 2 APIC 0x1
+May 10 13:55:50 kali kernel: CPU2 is up
+May 10 13:55:50 kali kernel: smpboot: Booting Node 0 Processor 3 APIC 0x3
+May 10 13:55:50 kali kernel: CPU3 is up
+May 10 13:55:50 kali kernel: ACPI: PM: Waking up from system sleep state S3
+May 10 13:55:50 kali kernel: ACPI: EC: interrupt unblocked
+May 10 13:55:50 kali kernel: ACPI: EC: event unblocked
+May 10 13:55:50 kali kernel: nvme nvme1: 4/0/0 default/read/poll queues
+May 10 13:55:50 kali kernel: nvme nvme0: 4/0/0 default/read/poll queues
+May 10 13:55:50 kali kernel: usb 1-5: reset high-speed USB device number 3 using xhci_hcd
+May 10 13:55:50 kali kernel: ata1: SATA link down (SStatus 4 SControl 300)
+May 10 13:55:50 kali kernel: OOM killer enabled.
+May 10 13:55:50 kali kernel: Restarting tasks: Starting
+May 10 13:55:50 kali kernel: mei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_ops [i915])
+May 10 13:55:50 kali kernel: Restarting tasks: Done
+May 10 13:55:50 kali kernel: efivarfs: resyncing variable state
+May 10 13:55:50 kali kernel: efivarfs: finished resyncing variable state
+May 10 13:55:50 kali kernel: random: crng reseeded on system resumption
+May 10 13:55:50 kali kernel: PM: suspend exit
+May 10 13:55:50 kali systemd-sleep[16814]: System returned from sleep operation 'suspend'.
+May 10 13:55:50 kali systemd[1]: user@0.service: Unit now thawed.
+May 10 13:55:50 kali systemd[1]: session-c2.scope: Unit now thawed.
+May 10 13:55:50 kali systemd[1]: user-0.slice: Unit now thawed.
+May 10 13:55:50 kali systemd[1]: user@1000.service: Unit now thawed.
+May 10 13:55:50 kali systemd[1]: session-2.scope: Unit now thawed.
+May 10 13:55:50 kali systemd[1]: user-1000.slice: Unit now thawed.
+May 10 13:55:50 kali systemd[1]: user.slice: Unit now thawed.
+May 10 13:55:50 kali systemd-sleep[16814]: Successfully thawed unit 'user.slice'.
+May 10 13:55:50 kali systemd[1]: systemd-suspend.service: Deactivated successfully.
+May 10 13:55:50 kali systemd[1]: Finished systemd-suspend.service - System Suspend.
+May 10 13:55:50 kali systemd[1]: Stopped target sleep.target - Sleep.
+May 10 13:55:50 kali systemd[1]: Reached target suspend.target - Suspend.
+May 10 13:55:50 kali systemd[1]: Stopped target suspend.target - Suspend.
+May 10 13:55:50 kali systemd-logind[626]: Operation 'suspend' finished.
+May 10 13:55:50 kali ModemManager[694]: <msg> [sleep-monitor-systemd] system is resuming
+May 10 13:55:50 kali NetworkManager[677]: <info>  [1778435750.5610] manager: sleep: wake requested (sleeping: yes  enabled: yes)
+May 10 13:55:50 kali rtkit-daemon[829]: Resuming known real-time threads.
+May 10 13:55:50 kali NetworkManager[677]: <info>  [1778435750.5611] device (wlan0): state change: unmanaged -> unavailable (reason 'managed', managed-type: 'external')
+May 10 13:55:50 kali rtkit-daemon[829]: Successfully made thread 5962 of process 5687 owned by '1000' RT at priority 10.
+May 10 13:55:50 kali NetworkManager[677]: <info>  [1778435750.5638] device (p2p-dev-wlan0): state change: unmanaged -> unavailable (reason 'managed', managed-type: 'external')
+May 10 13:55:50 kali rtkit-daemon[829]: Successfully made thread 1991 of process 1979 owned by '1000' high priority at nice level -15.
+May 10 13:55:50 kali NetworkManager[677]: <warn>  [1778435750.5639] device (p2p-dev-wlan0): error setting IPv4 forwarding to '0': Resource temporarily unavailable
+May 10 13:55:50 kali rtkit-daemon[829]: Successfully made thread 1802 of process 1789 owned by '1000' RT at priority 20.
+May 10 13:55:50 kali NetworkManager[677]: <info>  [1778435750.5644] manager: NetworkManager state is now DISCONNECTED
+May 10 13:55:50 kali rtkit-daemon[829]: Successfully made thread 1789 of process 1789 owned by '1000' high priority at nice level -11.
+May 10 13:55:50 kali rtkit-daemon[829]: Successfully made thread 1801 of process 1785 owned by '1000' RT at priority 20.
+May 10 13:55:50 kali rtkit-daemon[829]: Successfully made thread 1785 of process 1785 owned by '1000' high priority at nice level -11.
+May 10 13:55:50 kali rtkit-daemon[829]: Successfully made thread 1787 of process 1775 owned by '1000' RT at priority 20.
+May 10 13:55:50 kali rtkit-daemon[829]: Successfully made thread 1775 of process 1775 owned by '1000' high priority at nice level -11.
+May 10 13:55:50 kali rtkit-daemon[829]: Resumed scheduling 8 threads.
+May 10 13:55:50 kali NetworkManager[677]: <info>  [1778435750.6430] device (wlan0): supplicant interface state: internal-starting -> disconnected
+May 10 13:55:50 kali NetworkManager[677]: <info>  [1778435750.6431] device (p2p-dev-wlan0): state change: unavailable -> unmanaged (reason 'unmanaged-link-not-init', managed-type: 'removed')
+May 10 13:55:50 kali NetworkManager[677]: <info>  [1778435750.6435] Wi-Fi P2P device controlled by interface wlan0 created
+May 10 13:55:50 kali NetworkManager[677]: <info>  [1778435750.6439] manager: (p2p-dev-wlan0): new 802.11 Wi-Fi P2P device (/org/freedesktop/NetworkManager/Devices/4)
+May 10 13:55:50 kali NetworkManager[677]: <info>  [1778435750.6441] device (p2p-dev-wlan0): state change: unmanaged -> unavailable (reason 'managed', managed-type: 'external')
+May 10 13:55:50 kali NetworkManager[677]: <warn>  [1778435750.6441] device (p2p-dev-wlan0): error setting IPv4 forwarding to '0': Resource temporarily unavailable
+May 10 13:55:50 kali NetworkManager[677]: <info>  [1778435750.6446] device (wlan0): state change: unavailable -> disconnected (reason 'supplicant-available', managed-type: 'full')
+May 10 13:55:50 kali NetworkManager[677]: <info>  [1778435750.6451] device (p2p-dev-wlan0): state change: unavailable -> disconnected (reason 'none', managed-type: 'full')
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9407] policy: auto-activating connection 'hy376’s iPhone' (093e9ebf-86a5-46d4-85ec-2a438bbb70db)
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9415] device (wlan0): Activation: starting connection 'hy376’s iPhone' (093e9ebf-86a5-46d4-85ec-2a438bbb70db)
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9417] device (wlan0): state change: disconnected -> prepare (reason 'none', managed-type: 'full')
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9421] manager: NetworkManager state is now CONNECTING
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9425] device (wlan0): state change: prepare -> config (reason 'none', managed-type: 'full')
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9430] device (wlan0): Activation: (wifi) access point 'hy376’s iPhone' has security, but secrets are required.
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9431] device (wlan0): state change: config -> need-auth (reason 'none', managed-type: 'full')
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9452] device (wlan0): state change: need-auth -> prepare (reason 'none', managed-type: 'full')
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9458] device (wlan0): state change: prepare -> config (reason 'none', managed-type: 'full')
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9462] device (wlan0): Activation: (wifi) connection 'hy376’s iPhone' has security, and secrets exist.  No new secrets needed.
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9462] Config: added 'ssid' value 'hy376’s iPhone'
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9463] Config: added 'scan_ssid' value '1'
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9463] Config: added 'bgscan' value 'simple:30:-65:300'
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9463] Config: added 'key_mgmt' value 'WPA-PSK WPA-PSK-SHA256 FT-PSK SAE FT-SAE'
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9463] Config: added 'auth_alg' value 'OPEN'
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9464] Config: added 'psk' value '<hidden>'
+May 10 13:55:51 kali wpa_supplicant[740]: wlan0: SME: Trying to authenticate with 02:95:12:72:f1:4d (SSID='hy376\xe2\x80\x99s iPhone' freq=5745 MHz)
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9787] device (wlan0): supplicant interface state: disconnected -> authenticating
+May 10 13:55:51 kali NetworkManager[677]: <info>  [1778435751.9788] device (p2p-dev-wlan0): supplicant management interface state: disconnected -> authenticating
+May 10 13:55:51 kali kernel: wlan0: authenticate with 02:95:12:72:f1:4d (local address=7c:70:db:80:23:16)
+May 10 13:55:51 kali kernel: wlan0: send auth to 02:95:12:72:f1:4d (try 1/3)
+May 10 13:55:52 kali wpa_supplicant[740]: wlan0: SME: Trying to authenticate with 02:95:12:72:f1:4d (SSID='hy376\xe2\x80\x99s iPhone' freq=5745 MHz)
+May 10 13:55:52 kali wpa_supplicant[740]: wlan0: PMKSA-CACHE-ADDED 02:95:12:72:f1:4d 0
+May 10 13:55:52 kali wpa_supplicant[740]: wlan0: Trying to associate with 02:95:12:72:f1:4d (SSID='hy376\xe2\x80\x99s iPhone' freq=5745 MHz)
+May 10 13:55:52 kali kernel: wlan0: authenticate with 02:95:12:72:f1:4d (local address=7c:70:db:80:23:16)
+May 10 13:55:52 kali kernel: wlan0: send auth to 02:95:12:72:f1:4d (try 1/3)
+May 10 13:55:52 kali kernel: wlan0: authenticated
+May 10 13:55:52 kali kernel: wlan0: associate with 02:95:12:72:f1:4d (try 1/3)
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.0645] device (wlan0): supplicant interface state: authenticating -> associating
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.0646] device (p2p-dev-wlan0): supplicant management interface state: authenticating -> associating
+May 10 13:55:52 kali kernel: wlan0: RX AssocResp from 02:95:12:72:f1:4d (capab=0x11 status=0 aid=1)
+May 10 13:55:52 kali wpa_supplicant[740]: wlan0: Associated with 02:95:12:72:f1:4d
+May 10 13:55:52 kali wpa_supplicant[740]: wlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+May 10 13:55:52 kali kernel: wlan0: associated
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.0795] device (wlan0): supplicant interface state: associating -> associated
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.0795] device (p2p-dev-wlan0): supplicant management interface state: associating -> associated
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.0917] device (wlan0): supplicant interface state: associated -> 4way_handshake
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.0918] device (p2p-dev-wlan0): supplicant management interface state: associated -> 4way_handshake
+May 10 13:55:52 kali kernel: wlan0: Limiting TX power to 23 (23 - 0) dBm as advertised by 02:95:12:72:f1:4d
+May 10 13:55:52 kali wpa_supplicant[740]: wlan0: WPA: Key negotiation completed with 02:95:12:72:f1:4d [PTK=CCMP GTK=CCMP]
+May 10 13:55:52 kali wpa_supplicant[740]: wlan0: CTRL-EVENT-CONNECTED - Connection to 02:95:12:72:f1:4d completed [id=0 id_str=]
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.1527] device (wlan0): supplicant interface state: 4way_handshake -> completed
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.1528] device (wlan0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network "hy376’s iPhone"
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.1528] device (p2p-dev-wlan0): supplicant management interface state: 4way_handshake -> completed
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.1530] device (wlan0): state change: config -> ip-config (reason 'none', managed-type: 'full')
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.1541] dhcp4 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.1771] dhcp4 (wlan0): state changed new lease, address=172.20.10.2, acd pending
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.3565] dhcp4 (wlan0): state changed new lease, address=172.20.10.2
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.3599] policy: set 'hy376’s iPhone' (wlan0) as default for IPv4 routing and DNS
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.3753] device (wlan0): state change: ip-config -> ip-check (reason 'none', managed-type: 'full')
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.3809] device (wlan0): state change: ip-check -> secondaries (reason 'none', managed-type: 'full')
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.3812] device (wlan0): state change: secondaries -> activated (reason 'none', managed-type: 'full')
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.3818] manager: NetworkManager state is now CONNECTED_SITE
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.3832] device (wlan0): Activation: successful, device activated.
+May 10 13:55:52 kali NetworkManager[677]: <info>  [1778435752.3842] manager: NetworkManager state is now CONNECTED_GLOBAL
+May 10 13:55:54 kali ModemManager[694]: <msg> [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:14.3': not supported by any plugin
+May 10 13:55:54 kali gdm-password][16956]: gkr-pam: unlocked login keyring
+May 10 13:55:54 kali NetworkManager[677]: <info>  [1778435754.6677] dhcp6 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+May 10 13:55:54 kali NetworkManager[677]: <info>  [1778435754.6698] policy: set 'hy376’s iPhone' (wlan0) as default for IPv6 routing and DNS
+May 10 13:55:54 kali NetworkManager[677]: <info>  [1778435754.6874] dhcp6 (wlan0): state changed new lease
+May 10 13:55:55 kali gnome-shell[1979]: loading user theme: /usr/share/themes/Kali-Dark/gnome-shell/gnome-shell.css
+May 10 13:55:55 kali gnome-shell[1979]: Launching DING process
+May 10 13:55:55 kali NetworkManager[677]: <info>  [1778435755.9944] agent-manager: agent[6104e19e671e810e,:1.68/org.gnome.Shell.NetworkAgent/1000]: agent registered
+May 10 13:55:56 kali ubuntu-appindicators@ubuntu.com[1979]: Using Brute-force mode for StatusNotifierItem :1.84@/org/blueman/sni
+May 10 13:55:56 kali gnome-shell[1979]: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: Set global engine failed: Operation was cancelled
+                                        
+                                        (No stack trace)
+May 10 13:55:56 kali dbus-daemon[1772]: [session uid=1000 pid=1772 pidfd=5] Activating service name='org.gnome.Nautilus' requested by ':1.106' (uid=1000 pid=17089 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 10 13:55:56 kali org.gnome.Nautilus[17111]: Connecting to org.freedesktop.Tracker3.Miner.Files
+May 10 13:55:56 kali dbus-daemon[1772]: [session uid=1000 pid=1772 pidfd=5] Successfully activated service 'org.gnome.Nautilus'
+May 10 13:55:56 kali dbus-daemon[1772]: [session uid=1000 pid=1772 pidfd=5] Activating service name='org.gnome.NautilusPreviewer' requested by ':1.106' (uid=1000 pid=17089 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 10 13:55:56 kali dbus-daemon[1772]: [session uid=1000 pid=1772 pidfd=5] Activating service name='org.gnome.ArchiveManager1' requested by ':1.106' (uid=1000 pid=17089 comm="gjs /usr/share/gnome-shell/extensions/ding@rasters" label="unconfined")
+May 10 13:55:57 kali gnome-shell[1979]: DING: Detected async api for thumbnails
+May 10 13:55:57 kali ubuntu-appindicators@ubuntu.com[1979]: Could not get menu properties menu proxy: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name :1.84 was not provided by any .service files
+May 10 13:55:57 kali gnome-shell[1979]: DING: (gjs:17089): Gjs-WARNING **: 13:55:56.608: GLibUnix.signal_add_full has been renamed. Please update your code to use GLibUnix.signal_add instead.
+May 10 13:55:57 kali gnome-shell[1979]: DING: 0 get() ["resource:///org/gnome/gjs/modules/core/_common.js":190:42]
+May 10 13:55:57 kali gnome-shell[1979]: DING: 1 DesktopManager() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/desktopManager.js":274:17]
+May 10 13:55:57 kali gnome-shell[1979]: DING: 2 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":180:26]
+May 10 13:55:57 kali gnome-shell[1979]: DING: 3 anonymous() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":197:21]
+May 10 13:55:57 kali gnome-shell[1979]: DING: 4 <TOP LEVEL> ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":206:13]
+May 10 13:55:57 kali gnome-shell[1979]: DING: (gjs:17089): Gjs-WARNING **: 13:55:56.700: Gio.DesktopAppInfo has been moved to a separate platform-specific library. Please update your code to use GioUnix.DesktopAppInfo instead.
+May 10 13:55:57 kali gnome-shell[1979]: DING: 0 get() ["resource:///org/gnome/gjs/modules/core/_common.js":190:42]
+May 10 13:55:57 kali gnome-shell[1979]: DING: 1 _updateMetadataFromFileInfo() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/fileItem.js":292:17]
+May 10 13:55:57 kali gnome-shell[1979]: DING: 2 FileItem() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/fileItem.js":56:14]
+May 10 13:55:57 kali gnome-shell[1979]: DING: 3 _doReadAsync/</<() ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/desktopManager.js":1482:44]
+May 10 13:55:57 kali gnome-shell[1979]: DING: 4 <TOP LEVEL> ["/usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js":206:13]
+May 10 13:55:57 kali gnome-shell[1979]: DING: ** Message: 13:55:56.708: Connecting to org.freedesktop.Tracker3.Miner.Files
+May 10 13:55:57 kali gnome-shell[1979]: DING: DBus interface for Nautilus (org.freedesktop.FileManager1) is now available.
+May 10 13:55:57 kali gnome-shell[1979]: DING: DBus interface for Gvfs daemon (org.gtk.vfs.Metadata) is now available.
+May 10 13:55:57 kali gnome-shell[1979]: Received notification for window. 0 notifications remaining.
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym ffb3 with keysym ff9b (keycode 59).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym ffb9 with keysym ff9a (keycode 51).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+May 10 13:55:57 kali gnome-shell[1979]: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+May 10 13:55:57 kali dbus-daemon[1772]: [session uid=1000 pid=1772 pidfd=5] Successfully activated service 'org.gnome.NautilusPreviewer'
+May 10 13:55:57 kali gnome-shell[1979]: DING: DBus interface for Nautilus-Sushi (org.gnome.NautilusPreviewer) is now available.
+May 10 13:55:57 kali dbus-daemon[1772]: [session uid=1000 pid=1772 pidfd=5] Successfully activated service 'org.gnome.ArchiveManager1'
+May 10 13:55:57 kali gnome-shell[1979]: DING: DBus interface for File-roller (org.gnome.ArchiveManager1) is now available.
+May 10 13:55:57 kali gnome-shell[1979]: DING: DBus interface for Nautilus (org.gnome.Nautilus.FileOperations2) is now available.
+May 10 13:55:57 kali gnome-shell[1979]: DING: GNOME nautilus 49.3
+May 10 13:55:57 kali systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+May 10 13:55:57 kali gnome-shell[1979]: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+                                        CancellablePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:20:9
+                                        GSourcePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:196:13
+                                        IdlePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:242:13
+                                        then@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:76:27
+                                        _onRootChildAdded@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:919:12
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        addChild@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:144:14
+                                        _doLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:406:30
+                                        _layoutUpdateUpdateAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:354:18
+                                        async*_beginLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:333:14
+                                        _requestLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:281:14
+                                        initAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:259:14
+                                        async*Client@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:844:22
+                                        _updateMenu@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:311:32
+                                        _showIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:332:14
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _checkIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:488:18
+                                        _setupProxy@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:434:18
+                                        async*AppIndicator@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:419:14
+                                        _registerItem@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:95:31
+                                        introspectName@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:167:26
+                                        async*_seekStatusNotifierItems/<@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:171:81
+                                        _seekStatusNotifierItems@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:171:58
+                                        async*StatusNotifierWatcher@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:65:14
+                                        _maybeEnableAfterNameAvailable@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/extension.js:86:39
+                                        enable@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/extension.js:56:14
+                                        _callExtensionEnable@resource:///org/gnome/shell/ui/extensionSystem.js:266:38
+                                        _enableAllExtensions@resource:///org/gnome/shell/ui/extensionSystem.js:757:24
+                                        async*_sessionUpdated@resource:///org/gnome/shell/ui/extensionSystem.js:786:20
+                                        async*ExtensionManager/<@resource:///org/gnome/shell/ui/extensionSystem.js:48:18
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _sync@resource:///org/gnome/shell/ui/sessionMode.js:205:14
+                                        popMode@resource:///org/gnome/shell/ui/sessionMode.js:176:14
+                                        _continueDeactivate@resource:///org/gnome/shell/ui/screenShield.js:556:30
+                                        deactivate/<@resource:///org/gnome/shell/ui/screenShield.js:547:44
+                                        finish@resource:///org/gnome/shell/gdm/authPrompt.js:713:13
+                                        finish@resource:///org/gnome/shell/ui/unlockDialog.js:928:26
+                                        deactivate@resource:///org/gnome/shell/ui/screenShield.js:547:26
+                                        _getLoginSession/<@resource:///org/gnome/shell/ui/screenShield.js:150:24
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _convertToNativeSignal@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:153:19
+                                        @resource:///org/gnome/shell/ui/init.js:21:20
+May 10 13:55:57 kali gnome-shell[1979]: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+                                        CancellablePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:20:9
+                                        GSourcePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:196:13
+                                        IdlePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:242:13
+                                        then@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:76:27
+                                        _onRootChildAdded@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:919:12
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        addChild@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:144:14
+                                        _doLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:406:30
+                                        _layoutUpdateUpdateAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:354:18
+                                        async*_beginLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:333:14
+                                        _requestLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:281:14
+                                        initAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:259:14
+                                        async*Client@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:844:22
+                                        _updateMenu@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:311:32
+                                        _showIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:332:14
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _checkIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:488:18
+                                        _setupProxy@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:434:18
+                                        async*AppIndicator@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:419:14
+                                        _registerItem@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:95:31
+                                        introspectName@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:167:26
+                                        async*_seekStatusNotifierItems/<@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:171:81
+                                        _seekStatusNotifierItems@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:171:58
+                                        async*StatusNotifierWatcher@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:65:14
+                                        _maybeEnableAfterNameAvailable@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/extension.js:86:39
+                                        enable@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/extension.js:56:14
+                                        _callExtensionEnable@resource:///org/gnome/shell/ui/extensionSystem.js:266:38
+                                        _enableAllExtensions@resource:///org/gnome/shell/ui/extensionSystem.js:757:24
+                                        async*_sessionUpdated@resource:///org/gnome/shell/ui/extensionSystem.js:786:20
+                                        async*ExtensionManager/<@resource:///org/gnome/shell/ui/extensionSystem.js:48:18
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _sync@resource:///org/gnome/shell/ui/sessionMode.js:205:14
+                                        popMode@resource:///org/gnome/shell/ui/sessionMode.js:176:14
+                                        _continueDeactivate@resource:///org/gnome/shell/ui/screenShield.js:556:30
+                                        deactivate/<@resource:///org/gnome/shell/ui/screenShield.js:547:44
+                                        finish@resource:///org/gnome/shell/gdm/authPrompt.js:713:13
+                                        finish@resource:///org/gnome/shell/ui/unlockDialog.js:928:26
+                                        deactivate@resource:///org/gnome/shell/ui/screenShield.js:547:26
+                                        _getLoginSession/<@resource:///org/gnome/shell/ui/screenShield.js:150:24
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _convertToNativeSignal@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:153:19
+                                        @resource:///org/gnome/shell/ui/init.js:21:20
+May 10 13:55:57 kali gnome-shell[1979]: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+                                        CancellablePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:20:9
+                                        GSourcePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:196:13
+                                        IdlePromise@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:242:13
+                                        then@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/promiseUtils.js:76:27
+                                        _onRootChildAdded@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:919:12
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        addChild@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:144:14
+                                        _doLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:406:30
+                                        _layoutUpdateUpdateAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:354:18
+                                        async*_beginLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:333:14
+                                        _requestLayoutUpdate@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:281:14
+                                        initAsync@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:259:14
+                                        async*Client@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/dbusMenu.js:844:22
+                                        _updateMenu@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:311:32
+                                        _showIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/indicatorStatusIcon.js:332:14
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _checkIfReady@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:488:18
+                                        _setupProxy@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:434:18
+                                        async*AppIndicator@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/appIndicator.js:419:14
+                                        _registerItem@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:95:31
+                                        introspectName@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:167:26
+                                        async*_seekStatusNotifierItems/<@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:171:81
+                                        _seekStatusNotifierItems@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:171:58
+                                        async*StatusNotifierWatcher@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/statusNotifierWatcher.js:65:14
+                                        _maybeEnableAfterNameAvailable@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/extension.js:86:39
+                                        enable@file:///usr/share/gnome-shell/extensions/ubuntu-appindicators@ubuntu.com/extension.js:56:14
+                                        _callExtensionEnable@resource:///org/gnome/shell/ui/extensionSystem.js:266:38
+                                        _enableAllExtensions@resource:///org/gnome/shell/ui/extensionSystem.js:757:24
+                                        async*_sessionUpdated@resource:///org/gnome/shell/ui/extensionSystem.js:786:20
+                                        async*ExtensionManager/<@resource:///org/gnome/shell/ui/extensionSystem.js:48:18
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _sync@resource:///org/gnome/shell/ui/sessionMode.js:205:14
+                                        popMode@resource:///org/gnome/shell/ui/sessionMode.js:176:14
+                                        _continueDeactivate@resource:///org/gnome/shell/ui/screenShield.js:556:30
+                                        deactivate/<@resource:///org/gnome/shell/ui/screenShield.js:547:44
+                                        finish@resource:///org/gnome/shell/gdm/authPrompt.js:713:13
+                                        finish@resource:///org/gnome/shell/ui/unlockDialog.js:928:26
+                                        deactivate@resource:///org/gnome/shell/ui/screenShield.js:547:26
+                                        _getLoginSession/<@resource:///org/gnome/shell/ui/screenShield.js:150:24
+                                        _callHandlers@resource:///org/gnome/gjs/modules/core/_signals.js:130:42
+                                        _emit@resource:///org/gnome/gjs/modules/core/_signals.js:119:10
+                                        _convertToNativeSignal@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:153:19
+                                        @resource:///org/gnome/shell/ui/init.js:21:20
+May 10 13:56:35 kali CRON[17559]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 13:56:35 kali CRON[17561]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 10 13:56:35 kali CRON[17559]: pam_unix(cron:session): session closed for user root
+May 10 13:59:28 kali systemd[1]: Starting fwupd-refresh.service - Refresh fwupd metadata and update motd...
+May 10 13:59:28 kali dbus-daemon[620]: [system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service' requested by ':1.148' (uid=977 pid=18793 comm="/usr/bin/fwupdmgr refresh" label="unconfined")
+May 10 13:59:28 kali systemd[1]: Starting modprobe@sd_mod.service - Load Kernel Module sd_mod...
+May 10 13:59:28 kali systemd[1]: modprobe@sd_mod.service: Deactivated successfully.
+May 10 13:59:28 kali systemd[1]: Finished modprobe@sd_mod.service - Load Kernel Module sd_mod.
+May 10 13:59:28 kali systemd[1]: Starting fwupd.service - Firmware update daemon...
+May 10 13:59:28 kali systemd[1]: run-media-root-SYSTEM.mount: Deactivated successfully.
+May 10 13:59:28 kali udisksd[2165]: Cleaning up mount point /run/media/root/SYSTEM (device 259:1 is not mounted)
+May 10 13:59:28 kali udisksd[2165]: Cleaning up mount point /run/media/root/SYSTEM (device 259:1 is not mounted)
+May 10 13:59:29 kali fwupd[18803]: 17:59:29.666 FuMain               fwupd 2.1.1 ready for requests (locale en_US.UTF-8)
+May 10 13:59:29 kali dbus-daemon[620]: [system] Successfully activated service 'org.freedesktop.fwupd'
+May 10 13:59:29 kali systemd[1]: Started fwupd.service - Firmware update daemon.
+May 10 13:59:29 kali systemd[1]: fwupd-refresh.service: Deactivated successfully.
+May 10 13:59:29 kali systemd[1]: Finished fwupd-refresh.service - Refresh fwupd metadata and update motd.
+May 10 14:05:01 kali CRON[21939]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 10 14:05:01 kali CRON[21941]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 10 14:05:01 kali CRON[21939]: pam_unix(cron:session): session closed for user root

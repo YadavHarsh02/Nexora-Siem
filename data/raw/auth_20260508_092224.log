@@ -1,0 +1,200 @@
+May 08 08:57:41 kali sudo[3945]:    harsh : TTY=pts/0 ; PWD=/home/harsh ; USER=root ; COMMAND=/usr/bin/su
+May 08 08:57:41 kali sudo[3945]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=1000)
+May 08 08:57:41 kali su[3968]: (to root) root on pts/1
+May 08 08:57:41 kali su[3968]: pam_unix(su:session): session opened for user root(uid=0) by harsh(uid=0)
+May 08 08:57:41 kali systemd-logind[556]: Existing logind session ID 3 used by new audit session, ignoring.
+May 08 08:57:41 kali systemd[1]: Created slice user-0.slice - User Slice of UID 0.
+May 08 08:57:41 kali systemd[1]: Starting user-runtime-dir@0.service - User Runtime Directory /run/user/0...
+May 08 08:57:41 kali systemd-logind[556]: New session 'c2' of user 'root' with class 'user-early' and type 'tty'.
+May 08 08:57:41 kali systemd[1]: Finished user-runtime-dir@0.service - User Runtime Directory /run/user/0.
+May 08 08:57:41 kali systemd[1]: Starting user@0.service - User Manager for UID 0...
+May 08 08:57:41 kali (systemd)[3972]: pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+May 08 08:57:41 kali systemd-logind[556]: New session '4' of user 'root' with class 'manager-early' and type 'unspecified'.
+May 08 08:57:41 kali systemd[3972]: Queued start job for default target default.target.
+May 08 08:57:41 kali systemd[3972]: Created slice app.slice - User Application Slice.
+May 08 08:57:41 kali systemd[3972]: Created slice session.slice - User Core Session Slice.
+May 08 08:57:41 kali systemd[3972]: Reached target paths.target - Paths.
+May 08 08:57:41 kali systemd[3972]: Reached target timers.target - Timers.
+May 08 08:57:41 kali systemd[3972]: Starting dbus.socket - D-Bus User Message Bus Socket...
+May 08 08:57:41 kali systemd[3972]: Listening on dirmngr.socket - GnuPG network certificate management daemon.
+May 08 08:57:41 kali systemd[3972]: Listening on gnome-keyring-daemon.socket - GNOME Keyring daemon.
+May 08 08:57:41 kali systemd[3972]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 08 08:57:41 kali systemd[3972]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+May 08 08:57:41 kali systemd[3972]: Starting gpg-agent.socket - GnuPG cryptographic agent and passphrase cache...
+May 08 08:57:41 kali systemd[3972]: Listening on keyboxd.socket - GnuPG public key management service.
+May 08 08:57:41 kali systemd[3972]: Listening on pipewire-pulse.socket - PipeWire PulseAudio.
+May 08 08:57:41 kali systemd[3972]: Listening on pipewire.socket - PipeWire Multimedia System Sockets.
+May 08 08:57:41 kali systemd[3972]: Listening on speech-dispatcher.socket - Speech Dispatcher Socket.
+May 08 08:57:41 kali systemd[3972]: Starting ssh-agent.socket - OpenSSH Agent socket...
+May 08 08:57:41 kali systemd[3972]: Listening on systemd-ask-password.socket - Query the User Interactively for a Password.
+May 08 08:57:41 kali systemd[3972]: Listening on dbus.socket - D-Bus User Message Bus Socket.
+May 08 08:57:41 kali systemd[3972]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+May 08 08:57:41 kali systemd[3972]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+May 08 08:57:41 kali systemd[3972]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+May 08 08:57:41 kali systemd[3972]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+May 08 08:57:41 kali systemd[3972]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+May 08 08:57:41 kali systemd[3972]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+May 08 08:57:41 kali systemd[3972]: Reached target sockets.target - Sockets.
+May 08 08:57:41 kali systemd[3972]: Reached target basic.target - Basic System.
+May 08 08:57:41 kali systemd[1]: Started user@0.service - User Manager for UID 0.
+May 08 08:57:41 kali systemd[1]: Started session-c2.scope - Session c2 of User root.
+May 08 08:57:41 kali systemd[3972]: Starting dbus.service - D-Bus User Message Bus...
+May 08 08:57:41 kali systemd[3972]: Started pipewire.service - PipeWire Multimedia Service.
+May 08 08:57:41 kali dbus-daemon[3995]: [session uid=0 pid=3995 pidfd=5] AppArmor D-Bus mediation is enabled
+May 08 08:57:41 kali systemd[3972]: Started dbus.service - D-Bus User Message Bus.
+May 08 08:57:41 kali systemd[3972]: mpris-proxy.service - Bluetooth mpris proxy skipped, unmet condition check ConditionUser=!@system
+May 08 08:57:41 kali systemd[3972]: Started wireplumber.service - Multimedia Service Session Manager.
+May 08 08:57:41 kali systemd[3972]: Started filter-chain.service - PipeWire filter chain daemon.
+May 08 08:57:41 kali systemd[3972]: Started pipewire-pulse.service - PipeWire PulseAudio.
+May 08 08:57:41 kali systemd[3972]: Reached target default.target - Main User Target.
+May 08 08:57:41 kali systemd[3972]: Startup finished in 438ms.
+May 08 08:57:42 kali wireplumber[3999]: wp-device: SPA handle 'api.libcamera.enum.manager' could not be loaded; is it installed?
+May 08 08:57:42 kali wireplumber[3999]: s-monitors-libcamera: PipeWire's libcamera SPA plugin is missing or broken. Some camera types may not be supported.
+May 08 08:57:43 kali dbus-daemon[3995]: [session uid=0 pid=3995 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.4' (uid=0 pid=3999 comm="/usr/bin/wireplumber" label="unconfined")
+May 08 08:57:43 kali systemd[3972]: Starting xdg-permission-store.service - sandboxed app permission store...
+May 08 08:57:43 kali dbus-daemon[3995]: [session uid=0 pid=3995 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+May 08 08:57:43 kali systemd[3972]: Started xdg-permission-store.service - sandboxed app permission store.
+May 08 08:57:53 kali systemd[1]: systemd-timedated.service: Deactivated successfully.
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7072] policy: auto-activating connection 'hy376’s iPhone' (093e9ebf-86a5-46d4-85ec-2a438bbb70db)
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7081] device (wlan0): Activation: starting connection 'hy376’s iPhone' (093e9ebf-86a5-46d4-85ec-2a438bbb70db)
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7083] device (wlan0): state change: disconnected -> prepare (reason 'none', managed-type: 'full')
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7087] manager: NetworkManager state is now CONNECTING
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7484] device (wlan0): set-hw-addr: reset MAC address to 7C:70:DB:80:23:16 (preserve)
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7535] device (wlan0): state change: prepare -> config (reason 'none', managed-type: 'full')
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7544] device (wlan0): Activation: (wifi) access point 'hy376’s iPhone' has security, but secrets are required.
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7547] device (wlan0): state change: config -> need-auth (reason 'none', managed-type: 'full')
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7565] device (wlan0): state change: need-auth -> prepare (reason 'none', managed-type: 'full')
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7569] device (wlan0): state change: prepare -> config (reason 'none', managed-type: 'full')
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7573] device (wlan0): Activation: (wifi) connection 'hy376’s iPhone' has security, and secrets exist.  No new secrets needed.
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7574] Config: added 'ssid' value 'hy376’s iPhone'
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7574] Config: added 'scan_ssid' value '1'
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7574] Config: added 'bgscan' value 'simple:30:-65:300'
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7574] Config: added 'key_mgmt' value 'WPA-PSK WPA-PSK-SHA256 FT-PSK SAE FT-SAE'
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7575] Config: added 'auth_alg' value 'OPEN'
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7575] Config: added 'psk' value '<hidden>'
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7797] device (wlan0): supplicant interface state: disconnected -> inactive
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7800] device (p2p-dev-wlan0): supplicant management interface state: disconnected -> inactive
+May 08 08:59:46 kali wpa_supplicant[754]: wlan0: SME: Trying to authenticate with a6:7d:ea:75:1d:43 (SSID='hy376\xe2\x80\x99s iPhone' freq=5745 MHz)
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7969] device (wlan0): supplicant interface state: inactive -> authenticating
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.7970] device (p2p-dev-wlan0): supplicant management interface state: inactive -> authenticating
+May 08 08:59:46 kali kernel: wlan0: authenticate with a6:7d:ea:75:1d:43 (local address=7c:70:db:80:23:16)
+May 08 08:59:46 kali kernel: wlan0: send auth to a6:7d:ea:75:1d:43 (try 1/3)
+May 08 08:59:46 kali wpa_supplicant[754]: wlan0: SME: Trying to authenticate with a6:7d:ea:75:1d:43 (SSID='hy376\xe2\x80\x99s iPhone' freq=5745 MHz)
+May 08 08:59:46 kali wpa_supplicant[754]: wlan0: PMKSA-CACHE-ADDED a6:7d:ea:75:1d:43 0
+May 08 08:59:46 kali wpa_supplicant[754]: wlan0: Trying to associate with a6:7d:ea:75:1d:43 (SSID='hy376\xe2\x80\x99s iPhone' freq=5745 MHz)
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.8801] device (wlan0): supplicant interface state: authenticating -> associating
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.8802] device (p2p-dev-wlan0): supplicant management interface state: authenticating -> associating
+May 08 08:59:46 kali kernel: wlan0: authenticate with a6:7d:ea:75:1d:43 (local address=7c:70:db:80:23:16)
+May 08 08:59:46 kali kernel: wlan0: send auth to a6:7d:ea:75:1d:43 (try 1/3)
+May 08 08:59:46 kali kernel: wlan0: authenticated
+May 08 08:59:46 kali kernel: wlan0: associate with a6:7d:ea:75:1d:43 (try 1/3)
+May 08 08:59:46 kali kernel: wlan0: RX AssocResp from a6:7d:ea:75:1d:43 (capab=0x11 status=0 aid=1)
+May 08 08:59:46 kali wpa_supplicant[754]: wlan0: Associated with a6:7d:ea:75:1d:43
+May 08 08:59:46 kali wpa_supplicant[754]: wlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+May 08 08:59:46 kali kernel: wlan0: associated
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.8977] device (wlan0): supplicant interface state: associating -> associated
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.8978] device (p2p-dev-wlan0): supplicant management interface state: associating -> associated
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.9095] device (wlan0): supplicant interface state: associated -> 4way_handshake
+May 08 08:59:46 kali NetworkManager[658]: <info>  [1778245186.9096] device (p2p-dev-wlan0): supplicant management interface state: associated -> 4way_handshake
+May 08 08:59:46 kali kernel: wlan0: Limiting TX power to 23 (23 - 0) dBm as advertised by a6:7d:ea:75:1d:43
+May 08 08:59:47 kali wpa_supplicant[754]: wlan0: WPA: Key negotiation completed with a6:7d:ea:75:1d:43 [PTK=CCMP GTK=CCMP]
+May 08 08:59:47 kali wpa_supplicant[754]: wlan0: CTRL-EVENT-CONNECTED - Connection to a6:7d:ea:75:1d:43 completed [id=0 id_str=]
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.0148] device (wlan0): supplicant interface state: 4way_handshake -> completed
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.0148] device (wlan0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network "hy376’s iPhone"
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.0148] device (p2p-dev-wlan0): supplicant management interface state: 4way_handshake -> completed
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.0150] device (wlan0): state change: config -> ip-config (reason 'none', managed-type: 'full')
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.0165] dhcp4 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.4015] dhcp4 (wlan0): state changed new lease, address=172.20.10.2, acd pending
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.5699] dhcp4 (wlan0): state changed new lease, address=172.20.10.2
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.5726] policy: set 'hy376’s iPhone' (wlan0) as default for IPv4 routing and DNS
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.5855] device (wlan0): state change: ip-config -> ip-check (reason 'none', managed-type: 'full')
+May 08 08:59:47 kali dbus-daemon[542]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=658 comm="/usr/sbin/NetworkManager --no-daemon" label="unconfined")
+May 08 08:59:47 kali systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+May 08 08:59:47 kali dbus-daemon[542]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+May 08 08:59:47 kali systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.6388] device (wlan0): state change: ip-check -> secondaries (reason 'none', managed-type: 'full')
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.6391] device (wlan0): state change: secondaries -> activated (reason 'none', managed-type: 'full')
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.6396] manager: NetworkManager state is now CONNECTED_SITE
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.6408] device (wlan0): Activation: successful, device activated.
+May 08 08:59:47 kali NetworkManager[658]: <info>  [1778245187.6419] manager: NetworkManager state is now CONNECTED_GLOBAL
+May 08 08:59:48 kali NetworkManager[658]: <info>  [1778245188.7392] dhcp6 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+May 08 08:59:48 kali NetworkManager[658]: <info>  [1778245188.7468] policy: set 'hy376’s iPhone' (wlan0) as default for IPv6 routing and DNS
+May 08 08:59:48 kali NetworkManager[658]: <info>  [1778245188.7610] dhcp6 (wlan0): state changed new lease
+May 08 08:59:57 kali systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+May 08 09:00:01 kali systemd-timesyncd[379]: Contacted time server [2402:1f00:8300:821::123]:123 (2.debian.pool.ntp.org).
+May 08 09:00:01 kali systemd-timesyncd[379]: Initial clock synchronization to Fri 2026-05-08 09:00:01.232567 EDT.
+May 08 09:01:07 kali kernel: pcieport 0000:00:1d.6: AER: Multiple Correctable error message received from 0000:00:1d.6
+May 08 09:01:07 kali kernel: pcieport 0000:00:1d.6: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+May 08 09:01:07 kali kernel: pcieport 0000:00:1d.6:   device [8086:34b6] error status/mask=00000001/00002000
+May 08 09:01:07 kali kernel: pcieport 0000:00:1d.6:    [ 0] RxErr                  (First)
+May 08 09:01:07 kali kernel: pcieport 0000:00:1d.6: AER:   Error of this Agent is reported first
+May 08 09:01:07 kali kernel: nvme 0000:02:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+May 08 09:01:07 kali kernel: nvme 0000:02:00.0:   device [8086:0975] error status/mask=00000001/00002000
+May 08 09:01:07 kali kernel: nvme 0000:02:00.0:    [ 0] RxErr                  (First)
+May 08 09:05:01 kali CRON[8001]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 08 09:05:01 kali CRON[8003]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 08 09:05:01 kali CRON[8001]: pam_unix(cron:session): session closed for user root
+May 08 09:06:25 kali systemd[1]: Starting NetworkManager-wait-online.service - Network Manager Wait Online...
+May 08 09:06:25 kali systemd[1]: Finished NetworkManager-wait-online.service - Network Manager Wait Online.
+May 08 09:06:25 kali systemd[1]: Reached target network-online.target - Network is Online.
+May 08 09:06:25 kali systemd[1]: Starting fwupd-refresh.service - Refresh fwupd metadata and update motd...
+May 08 09:06:25 kali dbus-daemon[542]: [system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service' requested by ':1.142' (uid=977 pid=9046 comm="/usr/bin/fwupdmgr refresh" label="unconfined")
+May 08 09:06:25 kali systemd[1]: Starting modprobe@sd_mod.service - Load Kernel Module sd_mod...
+May 08 09:06:25 kali systemd[1]: modprobe@sd_mod.service: Deactivated successfully.
+May 08 09:06:25 kali systemd[1]: Finished modprobe@sd_mod.service - Load Kernel Module sd_mod.
+May 08 09:06:25 kali systemd[1]: Starting fwupd.service - Firmware update daemon...
+May 08 09:06:26 kali systemd[1]: run-media-root-SYSTEM.mount: Deactivated successfully.
+May 08 09:06:26 kali udisksd[2085]: Cleaning up mount point /run/media/root/SYSTEM (device 259:1 is not mounted)
+May 08 09:06:26 kali udisksd[2085]: Cleaning up mount point /run/media/root/SYSTEM (device 259:1 is not mounted)
+May 08 09:06:27 kali fwupd[9059]: 13:06:27.405 FuMain               fwupd 2.1.1 ready for requests (locale en_US.UTF-8)
+May 08 09:06:27 kali dbus-daemon[542]: [system] Successfully activated service 'org.freedesktop.fwupd'
+May 08 09:06:27 kali systemd[1]: Started fwupd.service - Firmware update daemon.
+May 08 09:06:27 kali systemd[1]: fwupd-refresh.service: Deactivated successfully.
+May 08 09:06:27 kali systemd[1]: Finished fwupd-refresh.service - Refresh fwupd metadata and update motd.
+May 08 09:09:01 kali CRON[10601]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 08 09:09:01 kali CRON[10603]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+May 08 09:09:01 kali CRON[10601]: pam_unix(cron:session): session closed for user root
+May 08 09:09:04 kali systemd[1]: Starting phpsessionclean.service - Clean php session files...
+May 08 09:09:04 kali systemd[1]: phpsessionclean.service: Deactivated successfully.
+May 08 09:09:04 kali systemd[1]: Finished phpsessionclean.service - Clean php session files.
+May 08 09:11:28 kali systemd[1]: Starting systemd-tmpfiles-clean.service - Cleanup of Temporary Directories...
+May 08 09:11:28 kali systemd-tmpfiles[12119]: /usr/lib/tmpfiles.d/legacy.conf:14: Duplicate line for path "/run/lock", ignoring.
+May 08 09:11:28 kali systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+May 08 09:11:28 kali systemd[1]: Finished systemd-tmpfiles-clean.service - Cleanup of Temporary Directories.
+May 08 09:11:38 kali sudo[12307]:     root : TTY=pts/1 ; PWD=/root/projects/mini-siem ; USER=root ; COMMAND=/usr/bin/systemctl start ssh
+May 08 09:11:38 kali sudo[12307]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=0)
+May 08 09:11:38 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+May 08 09:11:38 kali sshd[12320]: Server listening on 0.0.0.0 port 22.
+May 08 09:11:38 kali sshd[12320]: Server listening on :: port 22.
+May 08 09:11:38 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+May 08 09:11:38 kali sudo[12307]: pam_unix(sudo:session): session closed for user root
+May 08 09:11:43 kali sudo[12494]:     root : TTY=pts/1 ; PWD=/root/projects/mini-siem ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+May 08 09:11:43 kali sudo[12494]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=0)
+May 08 09:11:43 kali sudo[12494]: pam_unix(sudo:session): session closed for user root
+May 08 09:12:07 kali sshd-session[12702]: Invalid user fakeuser from ::1 port 43638
+May 08 09:12:13 kali sshd-session[12702]: pam_unix(sshd:auth): check pass; user unknown
+May 08 09:12:13 kali sshd-session[12702]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+May 08 09:12:15 kali sshd-session[12702]: Failed password for invalid user fakeuser from ::1 port 43638 ssh2
+May 08 09:12:42 kali sshd-session[12702]: pam_unix(sshd:auth): check pass; user unknown
+May 08 09:12:44 kali sshd-session[12702]: Failed password for invalid user fakeuser from ::1 port 43638 ssh2
+May 08 09:12:48 kali sshd-session[12702]: Connection closed by invalid user fakeuser ::1 port 43638 [preauth]
+May 08 09:12:48 kali sshd-session[12702]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+May 08 09:15:01 kali CRON[14218]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 08 09:15:01 kali CRON[14220]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 08 09:15:01 kali CRON[14218]: pam_unix(cron:session): session closed for user root
+May 08 09:17:01 kali CRON[15283]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 08 09:17:01 kali CRON[15285]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+May 08 09:17:01 kali CRON[15283]: pam_unix(cron:session): session closed for user root
+May 08 09:21:43 kali sshd-session[17958]: Invalid user fakeuser from ::1 port 33304
+May 08 09:21:46 kali sshd-session[17958]: pam_unix(sshd:auth): check pass; user unknown
+May 08 09:21:46 kali sshd-session[17958]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+May 08 09:21:48 kali sshd-session[17958]: Failed password for invalid user fakeuser from ::1 port 33304 ssh2
+May 08 09:21:51 kali sshd-session[17958]: pam_unix(sshd:auth): check pass; user unknown
+May 08 09:21:52 kali sshd-session[17958]: Failed password for invalid user fakeuser from ::1 port 33304 ssh2
+May 08 09:21:56 kali sshd-session[17958]: pam_unix(sshd:auth): check pass; user unknown
+May 08 09:21:58 kali sshd-session[17958]: Failed password for invalid user fakeuser from ::1 port 33304 ssh2
+May 08 09:21:59 kali sshd-session[17958]: Connection closed by invalid user fakeuser ::1 port 33304 [preauth]
+May 08 09:21:59 kali sshd-session[17958]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+May 08 09:22:11 kali sudo[18276]:     root : TTY=pts/1 ; PWD=/root/projects/mini-siem ; USER=root ; COMMAND=/usr/bin/ls
+May 08 09:22:11 kali sudo[18276]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=0)
+May 08 09:22:11 kali sudo[18276]: pam_unix(sudo:session): session closed for user root
