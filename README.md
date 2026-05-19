@@ -2,7 +2,7 @@
 
 Nexora SIEM is an AI-powered Security Information and Event Management (SIEM) platform built for educational, research, and defensive cybersecurity purposes.
 
-It provides centralized log monitoring, alert correlation, behavioral analytics, and real-time threat visibility through a modern dashboard interface.
+It provides centralized log monitoring, alert correlation, behavioral analytics, and real-time threat visibility.
 
 For lab, educational, and authorized environments only.
 
