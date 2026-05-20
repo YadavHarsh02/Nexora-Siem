@@ -1,14 +1,17 @@
 import requests
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 class TelegramNotifier:
 
     def __init__(self):
 
         # NEW VALID TOKEN
-        self.bot_token = "8618495049:AAHw7RXC-wdv9DEbVhMTV3E52fXPtI_hjGk"
+        self.bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
 
-        self.chat_id = "5969036385"
+        self.chat_id = os.getenv ("TELEGRAM_CHAT_ID")
 
     def send_alert(self, message):
 
