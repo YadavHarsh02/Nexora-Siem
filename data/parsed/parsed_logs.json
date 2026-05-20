@@ -1,32 +1,8 @@
 [
     {
         "event_type": "sudo_command",
-        "timestamp": "May 10 15:02:11",
+        "timestamp": "May 19 23:04:18",
         "username": "harsh",
         "source_ip": "unknown"
-    },
-    {
-        "event_type": "invalid_user",
-        "timestamp": "May 10 15:02:40",
-        "username": "fakeuser",
-        "source_ip": "::1"
-    },
-    {
-        "event_type": "failed_login",
-        "timestamp": "May 10 15:02:45",
-        "username": "fakeuser",
-        "source_ip": "::1"
-    },
-    {
-        "event_type": "failed_login",
-        "timestamp": "May 10 15:02:52",
-        "username": "fakeuser",
-        "source_ip": "::1"
-    },
-    {
-        "event_type": "failed_login",
-        "timestamp": "May 10 15:02:57",
-        "username": "fakeuser",
-        "source_ip": "::1"
     }
 ]

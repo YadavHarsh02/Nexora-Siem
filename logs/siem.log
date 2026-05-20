@@ -234,3 +234,6 @@
 2026-05-10 15:05:34,594 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.073s]
 2026-05-10 15:05:34,617 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.022s]
 2026-05-10 15:05:34,635 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.017s]
+2026-05-19 23:05:17,740 - INFO - Collected journal logs: data/raw/auth_20260519_230517.log
+2026-05-19 23:05:30,790 - INFO - HEAD http://localhost:9200/mini_siem_alerts [status:200 duration:0.164s]
+2026-05-19 23:05:30,882 - INFO - POST http://localhost:9200/mini_siem_alerts/_doc [status:201 duration:0.092s]
