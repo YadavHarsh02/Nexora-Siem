@@ -1,0 +1,200 @@
+May 21 12:37:30 kali NetworkManager[684]: <info>  [1779381450.0849] dhcp4 (wlan0): state changed new lease, address=172.20.10.2, acd pending
+May 21 12:37:30 kali NetworkManager[684]: <info>  [1779381450.2336] dhcp4 (wlan0): state changed new lease, address=172.20.10.2
+May 21 12:37:30 kali NetworkManager[684]: <info>  [1779381450.2364] policy: set 'hy376’s iPhone' (wlan0) as default for IPv4 routing and DNS
+May 21 12:37:30 kali NetworkManager[684]: <info>  [1779381450.2996] device (wlan0): state change: ip-config -> ip-check (reason 'none', managed-type: 'full')
+May 21 12:37:30 kali dbus-daemon[621]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=684 comm="/usr/sbin/NetworkManager --no-daemon" label="unconfined")
+May 21 12:37:30 kali systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+May 21 12:37:30 kali dbus-daemon[621]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+May 21 12:37:30 kali systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+May 21 12:37:30 kali NetworkManager[684]: <info>  [1779381450.3740] device (wlan0): state change: ip-check -> secondaries (reason 'none', managed-type: 'full')
+May 21 12:37:30 kali NetworkManager[684]: <info>  [1779381450.3743] device (wlan0): state change: secondaries -> activated (reason 'none', managed-type: 'full')
+May 21 12:37:30 kali NetworkManager[684]: <info>  [1779381450.3749] manager: NetworkManager state is now CONNECTED_SITE
+May 21 12:37:30 kali NetworkManager[684]: <info>  [1779381450.3763] device (wlan0): Activation: successful, device activated.
+May 21 12:37:30 kali NetworkManager[684]: <info>  [1779381450.3772] manager: NetworkManager state is now CONNECTED_GLOBAL
+May 21 12:37:31 kali NetworkManager[684]: <info>  [1779381451.8645] dhcp6 (wlan0): activation: beginning transaction (timeout in 45 seconds)
+May 21 12:37:31 kali NetworkManager[684]: <info>  [1779381451.8674] policy: set 'hy376’s iPhone' (wlan0) as default for IPv6 routing and DNS
+May 21 12:37:31 kali NetworkManager[684]: <info>  [1779381451.8909] dhcp6 (wlan0): state changed new lease
+May 21 12:37:36 kali systemd-timesyncd[377]: Contacted time server [2402:1f00:8300:821::123]:123 (2.debian.pool.ntp.org).
+May 21 12:37:36 kali systemd-timesyncd[377]: Initial clock synchronization to Thu 2026-05-21 12:37:35.808431 EDT.
+May 21 12:37:39 kali gnome-shell[2294]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 21 12:37:39 kali gnome-shell[2294]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 21 12:37:40 kali systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+May 21 12:39:01 kali CRON[5588]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 21 12:39:01 kali CRON[5590]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+May 21 12:39:01 kali CRON[5588]: pam_unix(cron:session): session closed for user root
+May 21 12:39:08 kali systemd[1]: Starting phpsessionclean.service - Clean php session files...
+May 21 12:39:08 kali systemd[1]: phpsessionclean.service: Deactivated successfully.
+May 21 12:39:08 kali systemd[1]: Finished phpsessionclean.service - Clean php session files.
+May 21 12:41:50 kali gnome-shell[2294]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 21 12:41:50 kali gnome-shell[2294]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 21 12:44:33 kali rtkit-daemon[853]: Successfully made thread 7844 of process 3542 owned by '1000' RT at priority 10.
+May 21 12:45:01 kali CRON[8049]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 21 12:45:01 kali CRON[8051]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 21 12:45:01 kali CRON[8049]: pam_unix(cron:session): session closed for user root
+May 21 12:45:34 kali gnome-shell[2294]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 21 12:45:34 kali gnome-shell[2294]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 21 12:47:18 kali gnome-shell[2294]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 21 12:47:18 kali gnome-shell[2294]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 21 12:48:52 kali gnome-shell[2294]: meta_wayland_surface_role_notify_subsurface_state_changed: assertion 'klass->notify_subsurface_state_changed' failed
+May 21 12:48:53 kali gnome-shell[2294]: meta_wayland_surface_role_notify_subsurface_state_changed: assertion 'klass->notify_subsurface_state_changed' failed
+May 21 12:49:23 kali systemd[1]: Starting plocate-updatedb.service - Update the plocate database...
+May 21 12:49:30 kali systemd[1]: plocate-updatedb.service: Deactivated successfully.
+May 21 12:49:30 kali systemd[1]: Finished plocate-updatedb.service - Update the plocate database.
+May 21 12:49:30 kali systemd[1]: plocate-updatedb.service: Consumed 3.587s CPU time over 6.811s wall clock time, 484.4M memory peak.
+May 21 12:50:56 kali systemd[1]: man-db.service - Daily man-db regeneration skipped, unmet condition check ConditionACPower=true
+May 21 12:50:59 kali rtkit-daemon[853]: Successfully made thread 10902 of process 9543 owned by '1000' RT at priority 10.
+May 21 12:50:59 kali firefox-esr.desktop[9543]: [Child 9543, MediaDecoderStateMachine #1] WARNING: Decoder=7f6d30c9f400 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file dom/media/MediaDecoderStateMachine.cpp:371
+May 21 12:50:59 kali firefox-esr.desktop[9543]: [Child 9543, MediaDecoderStateMachine #1] WARNING: Decoder=7f6d30c9f400 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006): file dom/media/MediaDecoderStateMachineBase.cpp:168
+May 21 12:51:01 kali systemd[2078]: Started speech-dispatcher.service - Common interface to speech synthesizers.
+May 21 12:51:01 kali systemd[1]: Starting systemd-tmpfiles-clean.service - Cleanup of Temporary Directories...
+May 21 12:51:01 kali systemd-tmpfiles[10943]: /usr/lib/tmpfiles.d/elasticsearch.conf:1: Line references path below legacy directory /var/run/, updating /var/run/elasticsearch → /run/elasticsearch; please update the tmpfiles.d/ drop-in file accordingly.
+May 21 12:51:01 kali systemd-tmpfiles[10943]: /usr/lib/tmpfiles.d/legacy.conf:14: Duplicate line for path "/run/lock", ignoring.
+May 21 12:51:01 kali speech-dispatcher[10939]: [Thu May 21 12:51:01 2026 : 79322] speechd: Speech Dispatcher 0.12.1 starting
+May 21 12:51:01 kali systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+May 21 12:51:01 kali systemd[1]: Finished systemd-tmpfiles-clean.service - Cleanup of Temporary Directories.
+May 21 12:51:57 kali gnome-shell[2294]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 21 12:51:57 kali gnome-shell[2294]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 21 12:55:01 kali CRON[12595]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 21 12:55:01 kali CRON[12602]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 21 12:55:01 kali CRON[12595]: pam_unix(cron:session): session closed for user root
+May 21 13:04:10 kali gnome-shell[2294]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 21 13:04:10 kali gnome-shell[2294]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 21 13:05:01 kali CRON[16603]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 21 13:05:01 kali CRON[16605]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 21 13:05:01 kali CRON[16603]: pam_unix(cron:session): session closed for user root
+May 21 13:06:44 kali gnome-shell[2294]: Old animationInfo removed from actor [0x55c4245e0d60 MetaWindowActorWayland]
+May 21 13:06:45 kali gnome-shell[2294]: Error in size change accounting.
+May 21 13:06:46 kali gnome-shell[2294]: Error in size change accounting.
+May 21 13:06:48 kali gnome-shell[2294]: Error in size change accounting.
+May 21 13:06:51 kali systemd[2078]: Started app-gnome-org.gnome.Terminal-17337.scope - Application launched by gnome-shell.
+May 21 13:06:51 kali dbus-daemon[2102]: [session uid=1000 pid=2102 pidfd=5] Activating via systemd: service name='org.gnome.Terminal' unit='gnome-terminal-server.service' requested by ':1.102' (uid=1000 pid=17337 comm="/usr/bin/gnome-terminal" label="unconfined")
+May 21 13:06:51 kali systemd[2078]: Created slice app-org.gnome.Terminal.slice - Slice /app/org.gnome.Terminal.
+May 21 13:06:51 kali systemd[2078]: Starting gnome-terminal-server.service - GNOME Terminal Server...
+May 21 13:06:52 kali dbus-daemon[2102]: [session uid=1000 pid=2102 pidfd=5] Successfully activated service 'org.gnome.Terminal'
+May 21 13:06:52 kali systemd[2078]: Started gnome-terminal-server.service - GNOME Terminal Server.
+May 21 13:06:52 kali systemd[2078]: Started vte-spawn-1c9cc0df-b85e-4022-8aa0-71fabb4e6716.scope - VTE child process 17476 launched by org.gnome.Terminal process 17352.
+May 21 13:06:59 kali sudo[17631]:    harsh : TTY=pts/0 ; PWD=/home/harsh ; USER=root ; COMMAND=/usr/bin/su
+May 21 13:06:59 kali sudo[17631]: pam_unix(sudo:session): session opened for user root(uid=0) by harsh(uid=1000)
+May 21 13:06:59 kali su[17648]: (to root) root on pts/1
+May 21 13:06:59 kali su[17648]: pam_unix(su:session): session opened for user root(uid=0) by harsh(uid=0)
+May 21 13:06:59 kali systemd-logind[628]: Existing logind session ID 3 used by new audit session, ignoring.
+May 21 13:06:59 kali systemd[1]: Created slice user-0.slice - User Slice of UID 0.
+May 21 13:06:59 kali systemd[1]: Starting user-runtime-dir@0.service - User Runtime Directory /run/user/0...
+May 21 13:06:59 kali systemd-logind[628]: New session 'c2' of user 'root' with class 'user-early' and type 'tty'.
+May 21 13:06:59 kali systemd[1]: Finished user-runtime-dir@0.service - User Runtime Directory /run/user/0.
+May 21 13:06:59 kali systemd[1]: Starting user@0.service - User Manager for UID 0...
+May 21 13:06:59 kali (systemd)[17652]: pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+May 21 13:06:59 kali systemd-logind[628]: New session '8' of user 'root' with class 'manager-early' and type 'unspecified'.
+May 21 13:06:59 kali systemd[17652]: Queued start job for default target default.target.
+May 21 13:06:59 kali systemd[17652]: Created slice app.slice - User Application Slice.
+May 21 13:06:59 kali systemd[17652]: Created slice session.slice - User Core Session Slice.
+May 21 13:06:59 kali systemd[17652]: Reached target paths.target - Paths.
+May 21 13:06:59 kali systemd[17652]: Reached target timers.target - Timers.
+May 21 13:06:59 kali systemd[17652]: Starting dbus.socket - D-Bus User Message Bus Socket...
+May 21 13:06:59 kali systemd[17652]: Listening on dirmngr.socket - GnuPG network certificate management daemon.
+May 21 13:06:59 kali systemd[17652]: Listening on gnome-keyring-daemon.socket - GNOME Keyring daemon.
+May 21 13:06:59 kali systemd[17652]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 21 13:06:59 kali systemd[17652]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+May 21 13:06:59 kali systemd[17652]: Starting gpg-agent.socket - GnuPG cryptographic agent and passphrase cache...
+May 21 13:06:59 kali systemd[17652]: Listening on keyboxd.socket - GnuPG public key management service.
+May 21 13:06:59 kali systemd[17652]: Listening on pipewire-pulse.socket - PipeWire PulseAudio.
+May 21 13:06:59 kali systemd[17652]: Listening on pipewire.socket - PipeWire Multimedia System Sockets.
+May 21 13:06:59 kali systemd[17652]: Listening on speech-dispatcher.socket - Speech Dispatcher Socket.
+May 21 13:06:59 kali systemd[17652]: Starting ssh-agent.socket - OpenSSH Agent socket...
+May 21 13:06:59 kali systemd[17652]: Listening on systemd-ask-password.socket - Query the User Interactively for a Password.
+May 21 13:06:59 kali systemd[17652]: Listening on dbus.socket - D-Bus User Message Bus Socket.
+May 21 13:06:59 kali systemd[17652]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+May 21 13:06:59 kali systemd[17652]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+May 21 13:06:59 kali systemd[17652]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+May 21 13:06:59 kali systemd[17652]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+May 21 13:06:59 kali systemd[17652]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+May 21 13:06:59 kali systemd[17652]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+May 21 13:06:59 kali systemd[17652]: Reached target sockets.target - Sockets.
+May 21 13:06:59 kali systemd[17652]: Reached target basic.target - Basic System.
+May 21 13:06:59 kali systemd[1]: Started user@0.service - User Manager for UID 0.
+May 21 13:06:59 kali systemd[17652]: Starting dbus.service - D-Bus User Message Bus...
+May 21 13:06:59 kali systemd[1]: Started session-c2.scope - Session c2 of User root.
+May 21 13:06:59 kali systemd[17652]: Started pipewire.service - PipeWire Multimedia Service.
+May 21 13:06:59 kali dbus-daemon[17675]: [session uid=0 pid=17675 pidfd=5] AppArmor D-Bus mediation is enabled
+May 21 13:06:59 kali systemd[17652]: Started dbus.service - D-Bus User Message Bus.
+May 21 13:06:59 kali systemd[17652]: mpris-proxy.service - Bluetooth mpris proxy skipped, unmet condition check ConditionUser=!@system
+May 21 13:06:59 kali systemd[17652]: Started wireplumber.service - Multimedia Service Session Manager.
+May 21 13:06:59 kali systemd[17652]: Started filter-chain.service - PipeWire filter chain daemon.
+May 21 13:06:59 kali systemd[17652]: Started pipewire-pulse.service - PipeWire PulseAudio.
+May 21 13:06:59 kali systemd[17652]: Reached target default.target - Main User Target.
+May 21 13:06:59 kali systemd[17652]: Startup finished in 347ms.
+May 21 13:07:00 kali wireplumber[17679]: wp-device: SPA handle 'api.libcamera.enum.manager' could not be loaded; is it installed?
+May 21 13:07:00 kali wireplumber[17679]: s-monitors-libcamera: PipeWire's libcamera SPA plugin is missing or broken. Some camera types may not be supported.
+May 21 13:07:01 kali dbus-daemon[17675]: [session uid=0 pid=17675 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.4' (uid=0 pid=17679 comm="/usr/bin/wireplumber" label="unconfined")
+May 21 13:07:01 kali systemd[17652]: Starting xdg-permission-store.service - sandboxed app permission store...
+May 21 13:07:01 kali dbus-daemon[17675]: [session uid=0 pid=17675 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+May 21 13:07:01 kali systemd[17652]: Started xdg-permission-store.service - sandboxed app permission store.
+May 21 13:07:30 kali NetworkManager[684]: <info>  [1779383250.0492] dhcp4 (wlan0): state changed new lease, address=172.20.10.2
+May 21 13:07:30 kali dbus-daemon[621]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=684 comm="/usr/sbin/NetworkManager --no-daemon" label="unconfined")
+May 21 13:07:30 kali systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+May 21 13:07:30 kali dbus-daemon[621]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+May 21 13:07:30 kali systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+May 21 13:07:31 kali gnome-shell[2294]: Old animationInfo removed from actor [0x55c4244b3dd0 MetaWindowActorWayland]
+May 21 13:07:31 kali gnome-shell[2294]: Error in size change accounting.
+May 21 13:07:40 kali systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+May 21 13:07:41 kali gnome-shell[2294]: Error in size change accounting.
+May 21 13:07:43 kali gnome-shell[2294]: Error in size change accounting.
+May 21 13:08:03 kali kernel: perf: interrupt took too long (2504 > 2500), lowering kernel.perf_event_max_sample_rate to 79750
+May 21 13:08:28 kali gnome-shell[2294]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 21 13:08:28 kali gnome-shell[2294]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 21 13:09:01 kali CRON[18819]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 21 13:09:01 kali CRON[18821]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+May 21 13:09:01 kali CRON[18819]: pam_unix(cron:session): session closed for user root
+May 21 13:09:06 kali systemd[1]: Starting phpsessionclean.service - Clean php session files...
+May 21 13:09:06 kali systemd[1]: phpsessionclean.service: Deactivated successfully.
+May 21 13:09:06 kali systemd[1]: Finished phpsessionclean.service - Clean php session files.
+May 21 13:11:02 kali gnome-shell[2294]: Error in size change accounting.
+May 21 13:11:03 kali gnome-shell[2294]: Error in size change accounting.
+May 21 13:11:47 kali systemd[1]: apt-daily-upgrade.service - Daily apt upgrade and clean activities skipped, unmet condition check ConditionACPower=true
+May 21 13:13:26 kali systemd[1]: logrotate.service - Rotate log files skipped, unmet condition check ConditionACPower=true
+May 21 13:15:01 kali CRON[22155]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 21 13:15:01 kali CRON[22157]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 21 13:15:01 kali CRON[22155]: pam_unix(cron:session): session closed for user root
+May 21 13:15:51 kali gnome-shell[2294]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 21 13:15:51 kali gnome-shell[2294]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 21 13:17:01 kali CRON[22964]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 21 13:17:01 kali CRON[22966]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+May 21 13:17:01 kali CRON[22964]: pam_unix(cron:session): session closed for user root
+May 21 13:17:54 kali gnome-shell[2294]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 21 13:17:54 kali gnome-shell[2294]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 21 13:20:57 kali kernel: perf: interrupt took too long (3135 > 3130), lowering kernel.perf_event_max_sample_rate to 63750
+May 21 13:23:14 kali gnome-shell[2294]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 21 13:23:14 kali gnome-shell[2294]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 21 13:23:56 kali systemd[1]: Starting fwupd-refresh.service - Refresh fwupd metadata and update motd...
+May 21 13:23:56 kali dbus-daemon[621]: [system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service' requested by ':1.171' (uid=977 pid=26289 comm="/usr/bin/fwupdmgr refresh" label="unconfined")
+May 21 13:23:56 kali systemd[1]: Starting modprobe@sd_mod.service - Load Kernel Module sd_mod...
+May 21 13:23:56 kali systemd[1]: modprobe@sd_mod.service: Deactivated successfully.
+May 21 13:23:56 kali systemd[1]: Finished modprobe@sd_mod.service - Load Kernel Module sd_mod.
+May 21 13:23:56 kali systemd[1]: Starting fwupd.service - Firmware update daemon...
+May 21 13:23:57 kali systemd[1]: run-media-root-SYSTEM.mount: Deactivated successfully.
+May 21 13:23:57 kali udisksd[2579]: Cleaning up mount point /run/media/root/SYSTEM (device 259:1 is not mounted)
+May 21 13:23:57 kali udisksd[2579]: Cleaning up mount point /run/media/root/SYSTEM (device 259:1 is not mounted)
+May 21 13:23:57 kali gnome-shell[2294]: libinput error: event5  - ELAN1300:00 04F3:3087 Touchpad: kernel bug: Touch jump detected and discarded.
+May 21 13:23:57 kali gnome-shell[2294]: See https://wayland.freedesktop.org/libinput/doc/1.31.0/touchpad-jumping-cursors.html for details
+May 21 13:23:58 kali fwupd[26298]: 17:23:58.155 FuMain               fwupd 2.1.1 ready for requests (locale en_US.UTF-8)
+May 21 13:23:58 kali dbus-daemon[621]: [system] Successfully activated service 'org.freedesktop.fwupd'
+May 21 13:23:58 kali systemd[1]: Started fwupd.service - Firmware update daemon.
+May 21 13:23:58 kali fwupdmgr[26289]: Updating lvfs
+May 21 13:24:01 kali fwupdmgr[26289]: Successfully downloaded new metadata:
+May 21 13:24:01 kali fwupdmgr[26289]:  • 6 devices are updatable
+May 21 13:24:01 kali fwupdmgr[26289]:  • 3 devices are supported in the enabled remotes (an update has been published)
+May 21 13:24:01 kali systemd[1]: fwupd-refresh.service: Deactivated successfully.
+May 21 13:24:01 kali systemd[1]: Finished fwupd-refresh.service - Refresh fwupd metadata and update motd.
+May 21 13:25:01 kali CRON[26763]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+May 21 13:25:01 kali CRON[26765]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 21 13:25:01 kali CRON[26763]: pam_unix(cron:session): session closed for user root
+May 21 13:29:40 kali sshd-session[29039]: Invalid user fakeuser from ::1 port 47972
+May 21 13:29:41 kali sshd-session[29039]: pam_unix(sshd:auth): check pass; user unknown
+May 21 13:29:41 kali sshd-session[29039]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1
+May 21 13:29:43 kali sshd-session[29039]: Failed password for invalid user fakeuser from ::1 port 47972 ssh2
+May 21 13:29:46 kali sshd-session[29039]: pam_unix(sshd:auth): check pass; user unknown
+May 21 13:29:47 kali sshd-session[29039]: Failed password for invalid user fakeuser from ::1 port 47972 ssh2
+May 21 13:29:50 kali sshd-session[29039]: pam_unix(sshd:auth): check pass; user unknown
+May 21 13:29:52 kali sshd-session[29039]: Failed password for invalid user fakeuser from ::1 port 47972 ssh2
+May 21 13:29:52 kali sshd-session[29039]: Connection closed by invalid user fakeuser ::1 port 47972 [preauth]
+May 21 13:29:52 kali sshd-session[29039]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1

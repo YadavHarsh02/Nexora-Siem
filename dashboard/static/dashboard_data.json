@@ -1,10 +1,42 @@
 {
     "alerts": [
         {
+            "alert_type": "brute_force_attack",
+            "severity": "LOW",
+            "description": "Repeated failed login attempts detected against user fakeuser",
+            "timestamp": "May 21 13:29:52",
+            "source_ip": "::1",
+            "username": "fakeuser",
+            "event_count": 3,
+            "mitre_attack": {
+                "technique_id": "T1110",
+                "technique": "Brute Force",
+                "tactic": "Credential Access"
+            },
+            "risk_score": 40,
+            "priority": "MEDIUM"
+        },
+        {
+            "alert_type": "invalid_user_attempt",
+            "severity": "MEDIUM",
+            "description": "Invalid user login attempt detected",
+            "timestamp": "May 21 13:29:40",
+            "source_ip": "::1",
+            "username": "fakeuser",
+            "event_count": 1,
+            "mitre_attack": {
+                "technique_id": "T1589",
+                "technique": "Gather Victim Identity Information",
+                "tactic": "Reconnaissance"
+            },
+            "risk_score": 50,
+            "priority": "MEDIUM"
+        },
+        {
             "alert_type": "sudo_activity",
             "severity": "LOW",
             "description": "Sudo command execution detected",
-            "timestamp": "May 19 23:04:18",
+            "timestamp": "May 21 13:06:59",
             "source_ip": "unknown",
             "username": "harsh",
             "event_count": 1,
@@ -17,11 +49,24 @@
             "priority": "LOW"
         }
     ],
-    "attack_chains": [],
+    "attack_chains": [
+        {
+            "chain_type": "brute_force_sequence",
+            "source": "::1_fakeuser",
+            "events": [
+                "invalid_user",
+                "failed_login",
+                "failed_login",
+                "failed_login"
+            ],
+            "severity": "MEDIUM",
+            "description": "Repeated failed login attempts detected"
+        }
+    ],
     "ml_analysis": {
         "prediction": "benign",
-        "confidence": 1.76
+        "confidence": 22.52
     },
-    "alert_count": 1,
-    "attack_chain_count": 0
+    "alert_count": 3,
+    "attack_chain_count": 1
 }
