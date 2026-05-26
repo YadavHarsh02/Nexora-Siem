@@ -1,6 +1,3 @@
-# Use infra/Dockerfile for production builds.
-# This root file forwards to the same image definition.
-
 FROM python:3.13-slim
 
 WORKDIR /app

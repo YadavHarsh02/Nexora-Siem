@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Nexora SIEM</title>
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <div class="header">
+
+        <h1>Nexora SIEM</h1>
+
+        <div class="status">
+            SOC STATUS: ACTIVE
+        </div>
+
+    </div>
+
+    <!-- =========================
+         LIVE TICKER
+    ========================= -->
+
+    <div class="ticker-wrapper">
+
+        <div
+            class="ticker"
+            id="liveTicker"
+        >
+
+            Waiting for alerts...
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         STATS
+    ========================= -->
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h2>Total Alerts</h2>
+
+            <p id="totalAlerts">
+                0
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>High Severity</h2>
+
+            <p id="highAlerts">
+                0
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Medium Severity</h2>
+
+            <p id="mediumAlerts">
+                0
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Low Severity</h2>
+
+            <p id="lowAlerts">
+                0
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         CHARTS
+    ========================= -->
+
+    <div class="charts-container">
+
+        <div class="chart-card">
+
+            <h2>
+                Severity Distribution
+            </h2>
+
+            <canvas id="severityChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h2>
+                Alert Type Distribution
+            </h2>
+
+            <canvas id="typeChart"></canvas>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         THREAT HUNT
+    ========================= -->
+
+    <div class="hunt-box">
+
+        <h2>
+            Threat Hunt Console
+        </h2>
+
+        <div class="hunt-controls">
+
+            <input
+                type="text"
+                id="huntInput"
+                placeholder="Search IP / user / severity / alert type"
+            >
+
+            <button onclick="huntSearch()">
+                Hunt
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         MITRE PANEL
+    ========================= -->
+
+    <div class="mitre-panel">
+
+        <h2>
+            MITRE ATT&CK Mapping
+        </h2>
+
+        <div
+            class="mitre-grid"
+            id="mitreContainer"
+        >
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         THREAT INTEL
+    ========================= -->
+
+    <div class="intel-panel">
+
+        <h2>
+            Threat Intelligence
+        </h2>
+
+        <div
+            class="intel-grid"
+            id="intelContainer"
+        >
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         CORRELATION PANEL
+    ========================= -->
+
+    <div class="correlation-panel">
+
+        <h2>
+            Correlated Attack Chains
+        </h2>
+
+        <div
+            class="correlation-grid"
+            id="correlationContainer"
+        >
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         ALERT TABLE
+    ========================= -->
+
+    <div class="table-container">
+
+        <h2>
+            Recent Alerts
+        </h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Timestamp</th>
+
+                    <th>Alert Type</th>
+
+                    <th>Severity</th>
+
+                    <th>Source IP</th>
+
+                    <th>User</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="alertsTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- =========================
+         MODAL
+    ========================= -->
+
+    <div
+        class="modal"
+        id="alertModal"
+    >
+
+        <div class="modal-content">
+
+            <span
+                class="close-btn"
+                onclick="closeModal()"
+            >
+                &times;
+            </span>
+
+            <div id="modalBody">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         POPUP ALERT
+    ========================= -->
+
+    <div
+        class="popup"
+        id="alertPopup"
+    >
+
+    </div>
+
+    <!-- =========================
+         ALERT SOUND
+    ========================= -->
+
+    <audio id="alertSound">
+
+        <source
+            src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+            type="audio/ogg"
+        >
+
+    </audio>
+
+    <!-- =========================
+         CHART JS
+    ========================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- =========================
+         DASHBOARD JS
+    ========================= -->
+
+    <script
+        src="dashboard.js"
+    ></script>
+
+</body>
+
+</html>

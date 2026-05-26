@@ -8,6 +8,28 @@ For lab, educational, and authorized environments only.
 
 ---
 
+## Quick start
+
+```bash
+cd mini-siem
+python3 -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+pip install -e .
+
+# Batch SIEM pipeline (menu)
+python main.py
+
+# API server
+uvicorn apps.api.main:app --reload
+
+# Frontend (separate terminal)
+cd frontend/nexora && python -m http.server 5500
+```
+
+See **[ARCHITECTURE.md](ARCHITECTURE.md)** for the full layout.
+
+---
+
 # Features
 
 - Real-Time Log Monitoring
@@ -21,17 +43,16 @@ For lab, educational, and authorized environments only.
 - ElasticSearch Integration
 - Modern Web UI
 - CORS Enabled API
-- Scalable MERN-Based Architecture
+- Production-style Python package layout (`src/siem` + `apps/`)
 
 ---
 
 # Tech Stack
 
-- ElasticSearch
-- Flask
-- Docker
-- Python (AI/ML modules)
-- Tailwind CSS
+- Python / FastAPI / scikit-learn
+- Elasticsearch
+- Static HTML/JS dashboard (`frontend/nexora`)
+- Docker Compose (`infra/`)
 ---
 
 # Usage Notes
