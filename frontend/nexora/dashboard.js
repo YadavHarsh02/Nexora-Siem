@@ -3,8 +3,17 @@ let typeChart;
 
 let previousAlertCount = 0;
 
+function apiBase() {
+    const config = window.NEXORA_CONFIG || {};
+    return config.API_URL || "http://127.0.0.1:8000";
+}
+
+async function authHeaders() {
+    return { "Content-Type": "application/json" };
+}
+
 // =========================
-// LOAD DASHBOARD
+// LOAD DASHBOARD (live pipeline from Elastic)
 // =========================
 
 async function loadDashboard() {
@@ -12,8 +21,14 @@ async function loadDashboard() {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/alerts/recent"
+            `${apiBase()}/api/v1/live/dashboard`,
+            { headers: await authHeaders() }
         );
+
+        if (response.status === 401) {
+            console.log("Sign in required for live dashboard");
+            return;
+        }
 
         const data = await response.json();
 
@@ -33,6 +48,14 @@ async function loadDashboard() {
 
         triggerLivePopup(alerts);
 
+        if (data.attack_chains) {
+            renderCorrelation(data.attack_chains);
+        }
+
+        if (data.event_count === 0 && data.message) {
+            console.log(data.message);
+        }
+
     } catch (error) {
 
         console.log(
@@ -45,7 +68,7 @@ async function loadDashboard() {
 }
 
 // =========================
-// LOAD CORRELATION CHAINS
+// LOAD CORRELATION CHAINS (legacy fallback)
 // =========================
 
 async function loadCorrelationChains() {
@@ -53,7 +76,8 @@ async function loadCorrelationChains() {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/correlation/chains"
+            `${apiBase()}/correlation/chains`,
+            { headers: await authHeaders() }
         );
 
         const data = await response.json();

@@ -1,0 +1,31 @@
+################ Nexora Connector — Winlogbeat ################
+# User ID (do not change): {nexora_user_id}
+# Logs are tagged and stored in Elastic index: {events_index}
+################################################################
+
+winlogbeat.event_logs:
+  - name: Security
+    ignore_older: 72h
+  - name: System
+    ignore_older: 72h
+  - name: Microsoft-Windows-Sysmon/Operational
+    ignore_older: 72h
+
+processors:
+  - add_fields:
+      target: ""
+      fields:
+        nexora_user_id: "{nexora_user_id}"
+  - add_host_metadata: ~
+
+# Ship directly to Elastic Cloud (Nexora dashboard reads from here)
+output.elasticsearch:
+  hosts: ["{elastic_host}:443"]
+  api_key: "{elastic_api_key}"
+  index: "{events_index}"
+
+setup.ilm.enabled: false
+setup.template.enabled: false
+
+logging.level: info
+logging.to_files: true

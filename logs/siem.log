@@ -247,3 +247,8 @@
 2026-05-21 13:30:18,783 - INFO - POST https://my-security-project-e18dd2.es.us-central1.gcp.elastic.cloud:443/mini_siem_alerts/_doc [status:201 duration:0.716s]
 2026-05-21 13:30:19,603 - INFO - POST https://my-security-project-e18dd2.es.us-central1.gcp.elastic.cloud:443/mini_siem_alerts/_doc [status:201 duration:0.819s]
 2026-05-21 13:30:20,235 - INFO - POST https://my-security-project-e18dd2.es.us-central1.gcp.elastic.cloud:443/mini_siem_alerts/_doc [status:201 duration:0.631s]
+2026-05-27 09:08:27,507 - INFO - Collected journal logs: /home/harsh/projects/mini-siem/data/raw/auth_20260527_090827.log
+2026-05-27 09:09:02,128 - INFO - HEAD https://my-security-project-e18dd2.es.us-central1.gcp.elastic.cloud:443/mini_siem_alerts [status:200 duration:1.547s]
+2026-05-27 09:09:02,844 - INFO - POST https://my-security-project-e18dd2.es.us-central1.gcp.elastic.cloud:443/mini_siem_alerts/_doc [status:201 duration:0.716s]
+2026-05-27 09:09:03,458 - INFO - POST https://my-security-project-e18dd2.es.us-central1.gcp.elastic.cloud:443/mini_siem_alerts/_doc [status:201 duration:0.613s]
+2026-05-27 09:09:04,073 - INFO - POST https://my-security-project-e18dd2.es.us-central1.gcp.elastic.cloud:443/mini_siem_alerts/_doc [status:201 duration:0.614s]

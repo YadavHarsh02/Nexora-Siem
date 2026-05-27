@@ -12,3 +12,4 @@ logs/
 data/raw/*.log
 data/parsed/parsed_logs.json
 data/exports/
+frontend/nexora/config.js

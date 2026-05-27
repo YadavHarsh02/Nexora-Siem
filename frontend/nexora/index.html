@@ -38,6 +38,26 @@
     </div>
 
     <!-- =========================
+         CONNECTOR
+    ========================= -->
+
+    <div
+        id="connectorPanel"
+        style="padding: 1rem 2rem; border-bottom: 1px solid #1e293b;"
+    >
+        <button
+            id="downloadConnectorBtn"
+            type="button"
+        >
+            Download Nexora Connector (Winlogbeat)
+        </button>
+        <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.5rem;">
+            Install Winlogbeat on Windows, replace its config with this file,
+            then start the agent. Logs go to Elastic Cloud.
+        </p>
+    </div>
+
+    <!-- =========================
          LIVE TICKER
     ========================= -->
 
@@ -309,13 +329,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- =========================
-         DASHBOARD JS
-    ========================= -->
-
-    <script
-        src="dashboard.js"
-    ></script>
+    <script src="config.js"></script>
+    <script src="auth.js"></script>
+    <script src="dashboard.js"></script>
 
 </body>
 
