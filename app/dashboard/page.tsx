@@ -46,6 +46,13 @@ interface Metrics {
   ml_confidence: number;
   soc_health_score: number;
 }
+interface RawEvent {
+  timestamp: string;
+  event_type: string;
+  username: string;
+  source_ip: string;
+  message: string;
+}
 
 interface DashboardData {
   user_id: string;
@@ -54,6 +61,7 @@ interface DashboardData {
   attack_chains: AttackChain[];
   ml_analysis: MLAnalysis | null;
   metrics: Metrics | null;
+  raw_events: RawEvent[];
 }
 
 // Premium Mock Data for Offline/Demo Fallback
@@ -137,7 +145,37 @@ const MOCK_DASHBOARD_DATA: DashboardData = {
     ml_prediction: "malicious",
     ml_confidence: 84.75,
     soc_health_score: 72.4
-  }
+  },
+  raw_events: [
+    {
+      timestamp: "2026-05-31T04:52:18.905Z",
+      event_type: "windows_event",
+      username: "HARSSSHHH$",
+      source_ip: "unknown",
+      message: "A user's local group membership was enumerated. Subject: Security ID: S-1-5-1-..."
+    },
+    {
+      timestamp: "2026-05-31T04:52:18.904Z",
+      event_type: "windows_event",
+      username: "HARSSSHHH$",
+      source_ip: "unknown",
+      message: "A user's local group membership was enumerated. Subject: Security ID: S-1-5-1-..."
+    },
+    {
+      timestamp: "2026-05-31T04:52:18.903Z",
+      event_type: "windows_event",
+      username: "HARSSSHHH$",
+      source_ip: "unknown",
+      message: "A user's local group membership was enumerated. Subject: Security ID: S-1-5-1-..."
+    },
+    {
+      timestamp: "2026-05-31T04:52:18.902Z",
+      event_type: "windows_event",
+      username: "HARSSSHHH$",
+      source_ip: "unknown",
+      message: "A user's local group membership was enumerated. Subject: Security ID: S-1-5-1-..."
+    }
+  ]
 };
 
 const API_BASE_URL = "http://127.0.0.1:8000";
@@ -145,7 +183,7 @@ const WS_BASE_URL = "ws://127.0.0.1:8000";
 
 export default function SocDashboard() {
   const [data, setData] = useState<DashboardData>(MOCK_DASHBOARD_DATA);
-  const [isDemoMode, setIsDemoMode] = useState<boolean>(true);
+  const [isDemoMode, setIsDemoMode] = useState<boolean>(false);
   const [backendOnline, setBackendOnline] = useState<boolean>(false);
   const [wsConnected, setWsConnected] = useState<boolean>(false);
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -315,10 +353,10 @@ export default function SocDashboard() {
   const handleDownloadConnector = async () => {
     setDownloading(true);
     try {
-      const url = backendOnline 
+      const url = backendOnline
         ? `${API_BASE_URL}/api/v1/connector/winlogbeat.yml`
         : "data:text/yaml;charset=utf-8," + encodeURIComponent("winlogbeat:\n  output.elasticsearch:\n    hosts: ['localhost:9200']\n  nexora_user_id: 'demo_user'");
-      
+
       const link = document.createElement("a");
       link.href = url;
       link.download = "nexora-winlogbeat-config.yml";
@@ -372,7 +410,7 @@ export default function SocDashboard() {
 
   // SVG Chart calculation helpers
   const alertsToDisplay = searchResult !== null ? searchResult : data.alerts;
-  
+
   // Count alert types
   const typeMap: Record<string, number> = {};
   alertsToDisplay.forEach((a) => {
@@ -399,7 +437,7 @@ export default function SocDashboard() {
   return (
     <div className="min-h-screen bg-black text-white font-body py-10 selection:bg-white selection:text-black">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-        
+
         {/* Navigation Breadcrumb */}
         <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10 pb-6 border-b border-outline-variant">
           <div>
@@ -418,9 +456,8 @@ export default function SocDashboard() {
             <button
               onClick={() => setSoundEnabled(!soundEnabled)}
               id="btn-sound-toggle"
-              className={`p-2 rounded border border-outline-variant hover:border-outline transition-colors ${
-                soundEnabled ? "text-primary bg-white/5" : "text-white/35"
-              }`}
+              className={`p-2 rounded border border-outline-variant hover:border-outline transition-colors ${soundEnabled ? "text-primary bg-white/5" : "text-white/35"
+                }`}
               title="Toggle Audio Alarm Trigger"
             >
               {soundEnabled ? (
@@ -460,11 +497,10 @@ export default function SocDashboard() {
                   setData(MOCK_DASHBOARD_DATA);
                 }
               }}
-              className={`px-4 py-2 border rounded font-mono text-xs transition-colors cursor-pointer ${
-                isDemoMode
+              className={`px-4 py-2 border rounded font-mono text-xs transition-colors cursor-pointer ${isDemoMode
                   ? "bg-white text-black border-transparent"
                   : "bg-white/5 text-white/60 border-outline-variant hover:border-outline"
-              }`}
+                }`}
             >
               {isDemoMode ? "MODE: DEMO DATA" : "MODE: LIVE CLOUD"}
             </button>
@@ -472,19 +508,16 @@ export default function SocDashboard() {
             {/* Connection Status Indicator */}
             <div
               id="status-indicator"
-              className={`flex items-center gap-2.5 px-4 py-2 border rounded font-mono text-xs ${
-                backendOnline
+              className={`flex items-center gap-2.5 px-4 py-2 border rounded font-mono text-xs ${backendOnline
                   ? "bg-emerald-500/5 text-emerald-400 border-emerald-500/20"
                   : "bg-amber-500/5 text-amber-400 border-amber-500/20"
-              }`}
+                }`}
             >
               <span className={`w-2 h-2 rounded-full relative flex`}>
-                <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${
-                  backendOnline ? "bg-emerald-400" : "bg-amber-400"
-                }`}></span>
-                <span className={`relative inline-flex rounded-full h-2 w-2 ${
-                  backendOnline ? "bg-emerald-500" : "bg-amber-500"
-                }`}></span>
+                <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${backendOnline ? "bg-emerald-400" : "bg-amber-400"
+                  }`}></span>
+                <span className={`relative inline-flex rounded-full h-2 w-2 ${backendOnline ? "bg-emerald-500" : "bg-amber-500"
+                  }`}></span>
               </span>
               {backendOnline ? (wsConnected ? "SOC_TUNNEL: ONLINE" : "REST_API: CONNECTED") : "DEMO_MODE: OFFLINE"}
             </div>
@@ -493,7 +526,7 @@ export default function SocDashboard() {
 
         {/* Section 1: KPI Statistics Grid */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-          
+
           <div className="monolith-card p-6 flex flex-col justify-between min-h-[120px]">
             <p className="font-mono text-xs text-white/40 tracking-widest uppercase">Total Alerts</p>
             <div className="flex items-baseline justify-between mt-4">
@@ -521,11 +554,10 @@ export default function SocDashboard() {
                   {data.ml_analysis ? `${data.ml_analysis.confidence}% confidence` : "no_analysis"}
                 </span>
               </div>
-              <span className={`text-[10px] font-mono px-2 py-0.5 border ${
-                (data.ml_analysis?.prediction === "malicious")
+              <span className={`text-[10px] font-mono px-2 py-0.5 border ${(data.ml_analysis?.prediction === "malicious")
                   ? "text-red-400 bg-red-500/10 border-red-500/25"
                   : "text-blue-400 bg-blue-500/10 border-blue-500/25"
-              }`}>
+                }`}>
                 {(data.ml_analysis?.prediction === "malicious") ? "THREAT_FOUND" : "SYSTEM_SAFE"}
               </span>
             </div>
@@ -553,17 +585,17 @@ export default function SocDashboard() {
 
         {/* Section 2: Visual Threat Analysis (SVG Charts) */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-10">
-          
+
           {/* Doughnut Chart: Severity Distribution */}
           <div className="lg:col-span-5 monolith-card p-6">
             <h2 className="font-mono text-xs font-semibold tracking-wider text-white/50 mb-6 uppercase">Severity Distribution</h2>
             <div className="flex flex-col sm:flex-row items-center justify-around gap-8">
-              
+
               <div className="relative w-40 h-40 flex items-center justify-center">
                 <svg className="w-full h-full transform -rotate-90" viewBox="0 0 120 120">
                   {/* Base track */}
                   <circle cx="60" cy="60" r={radius} fill="transparent" stroke="#262626" strokeWidth="12" />
-                  
+
                   {/* High severity segment */}
                   {highCount > 0 && (
                     <circle
@@ -578,7 +610,7 @@ export default function SocDashboard() {
                       className="transition-all duration-1000"
                     />
                   )}
-                  
+
                   {/* Medium severity segment */}
                   {medCount > 0 && (
                     <circle
@@ -696,7 +728,7 @@ export default function SocDashboard() {
                 </button>
               )}
             </div>
-            
+
             {/* Quick pre-defined hunts */}
             <div className="flex flex-wrap gap-2.5 items-center">
               <button
@@ -732,10 +764,11 @@ export default function SocDashboard() {
         </section>
 
         {/* Section 4: Main Console Logs Stream & Correlation Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch lg:min-h-[400px]">
+
           {/* Recent Alerts Feed Table */}
-          <div className="lg:col-span-8 monolith-card p-6 overflow-hidden">
+          <div className="lg:col-span-8 lg:relative h-[600px] lg:h-auto">
+            <div className="lg:absolute lg:inset-0 monolith-card p-6 overflow-hidden flex flex-col h-full w-full">
             <div className="flex justify-between items-center mb-6">
               <h2 className="font-mono text-xs font-semibold tracking-wider text-white/50 uppercase">
                 {searchResult !== null ? "Threat Search Results" : "Recent Threat Feed"}
@@ -750,7 +783,7 @@ export default function SocDashboard() {
               )}
             </div>
 
-            <div className="overflow-x-auto">
+            <div className="overflow-auto flex-1 hide-scrollbar">
               <table className="w-full text-left font-mono text-xs">
                 <thead>
                   <tr className="border-b border-outline-variant pb-2 text-white/35">
@@ -801,10 +834,11 @@ export default function SocDashboard() {
               </table>
             </div>
           </div>
+          </div>
 
           {/* Right Sidebar: Correlated Incidents & Attack Chains */}
           <div className="lg:col-span-4 space-y-8">
-            
+
             {/* Correlation chains */}
             <div className="monolith-card p-6">
               <h2 className="font-mono text-xs font-semibold tracking-wider text-white/50 mb-6 uppercase">Correlated Attack Chains</h2>
@@ -821,7 +855,7 @@ export default function SocDashboard() {
                           <span className={`px-1.5 py-0.5 text-[9px] font-bold tracking-wide ${style.badge}`}>{chain.severity}</span>
                         </div>
                         <p className="font-sans text-xs text-white/60 mb-3">{chain.description}</p>
-                        
+
                         {/* Event Flow arrows */}
                         <div className="flex flex-wrap items-center gap-2 font-mono text-[9px] text-white/40">
                           {chain.events.map((e, eIdx) => (
@@ -862,10 +896,64 @@ export default function SocDashboard() {
                 )}
               </div>
             </div>
-
           </div>
 
         </div>
+
+        {/* Section 5: Raw System Events (Log Stream) */}
+        <section className="monolith-card p-6 mt-10">
+          <h2 className="font-mono text-xs font-semibold tracking-wider text-white/50 mb-6 uppercase">
+            Raw System Events (Log Stream)
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left font-mono text-xs">
+              <thead>
+                <tr className="border-b border-outline-variant pb-2 text-white/35">
+                  <th className="py-3 font-normal">TIMESTAMP</th>
+                  <th className="py-3 font-normal">EVENT TYPE</th>
+                  <th className="py-3 font-normal">USERNAME</th>
+                  <th className="py-3 font-normal">SOURCE IP</th>
+                  <th className="py-3 font-normal">MESSAGE / DESCRIPTION</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-outline-variant">
+                {(!data.raw_events || data.raw_events.length === 0) ? (
+                  <tr>
+                    <td colSpan={5} className="py-6 text-center text-white/30">
+                      No raw system events found in cache database.
+                    </td>
+                  </tr>
+                ) : (
+                  data.raw_events.slice(0, 5).map((event, idx) => (
+                    <tr key={idx} className="hover:bg-white/5 transition-colors group">
+                      <td className="py-3.5 text-white/60 whitespace-nowrap">{event.timestamp}</td>
+                      <td className="py-3.5">
+                        <span className="px-2 py-0.5 rounded text-[10px] font-bold tracking-wider bg-white/5 text-white/70 border border-outline-variant uppercase">
+                          {event.event_type}
+                        </span>
+                      </td>
+                      <td className="py-3.5 text-white/65">{event.username}</td>
+                      <td className="py-3.5 text-white/65">{event.source_ip}</td>
+                      <td
+                        className="py-3.5 text-white/60 max-w-[400px] truncate"
+                        title={event.message}
+                      >
+                        {event.message}
+                      </td>
+                    </tr>
+                  ))
+                )}
+              </tbody>
+            </table>
+          </div>
+          {data.raw_events && data.raw_events.length > 5 && (
+            <div className="mt-6 flex justify-center">
+              <Link href="/event-logs" className="px-6 py-2 border border-outline-variant rounded font-mono text-xs hover:bg-white/5 transition-colors uppercase text-white/70 hover:text-white">
+                Load More Events
+              </Link>
+            </div>
+          )}
+        </section>
 
       </div>
 
