@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+elasticsearch
+scikit-learn
+pandas
+numpy
+python-dotenv
+PyYAML
+requests
+websockets
+cryptography
+PyJWT
+Flask

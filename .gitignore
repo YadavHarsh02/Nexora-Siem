@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Python & SIEM backend specific ignores
+/Nexora-Siem/venv/
+/Nexora-Siem/venv_old_broken/
+/Nexora-Siem/.env
+/Nexora-Siem/data/raw/*.log
+/Nexora-Siem/simulated_alerts.json
+/Nexora-Siem/__pycache__/
+**/*.pyc
+/dashboard_output.json

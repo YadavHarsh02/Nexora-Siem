@@ -1,0 +1,15 @@
+venv/
+venv_old_broken/
+__pycache__/
+*.pyc
+*.egg-info/
+.env
+node_modules/
+dist/
+.vscode/
+.idea/
+logs/
+data/raw/*.log
+data/parsed/parsed_logs.json
+data/exports/
+frontend/nexora/config.js
